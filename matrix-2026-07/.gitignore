@@ -1,0 +1,14 @@
+# Generated simulation/build outputs
+.venv/
+out/
+simulations/results/
+/lifesat
+.oppbuildspec
+*.o
+*.d
+*.pyc
+__pycache__/
+
+# The forensic logs of a run land here; the calibrated D2 threshold does not.
+results/*
+!results/d2_thresholds.txt

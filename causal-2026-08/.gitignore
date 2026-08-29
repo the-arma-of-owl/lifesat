@@ -1,0 +1,12 @@
+# Generated simulation/build outputs
+.venv/
+results/
+simulations/results/
+out/
+/lifesat
+.oppbuildspec
+*.o
+*.d
+*.pyc
+__pycache__/
+.pytest_cache/

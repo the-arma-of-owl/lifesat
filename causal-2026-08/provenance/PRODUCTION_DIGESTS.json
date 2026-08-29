@@ -1,0 +1,9 @@
+{
+  "accepted_contract_sha256": "dd3b1081045a0568d97de6dad83219f65d80b813f97afc27dccf0d3894cb0054",
+  "amendment_contract_sha256": "7934ab67f94d774df57a9fc8a978bae99d684835ef412c84627252011ce9bbfa",
+  "driver_executable_inventory_sha256": "4328b25639e11b46b7e38df44f82a1d85bcc90c90b6324dad6f999d9d60080e0",
+  "fleet_settlement_sha256": "4d1841d0d5d884df117e87ad26d53bd4a8e313e963ce7020750749c9e3a35fe0",
+  "producing_code_tree_digest": "0f34237ed2f80bb019b4fd955ec2f3573157943b7ada318bc8a7c8dd7031e074",
+  "producing_config_sha256": "445b7c7db7ee792f0a68780d7166a95f29ca3914c44d70fc22e0074ec5a391d4",
+  "producing_executable_sha256": "f02e8fb3f9af078177c45dd24363138c08d8cec88d60ce4fb1c9c4d9562d5ec6"
+}

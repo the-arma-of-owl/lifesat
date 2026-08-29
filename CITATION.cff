@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the record below."
+title: "LIFESAT"
+type: software
+license: MIT
+authors:
+  - family-names: "Çam"
+    given-names: "Efe"
+    orcid: "https://orcid.org/0009-0003-2488-1287"
+repository-code: "https://github.com/the-arma-of-owl/lifesat"
+url: "https://github.com/the-arma-of-owl/lifesat"
+version: "1.0.0"
+date-released: "2026-08-29"
+abstract: >-
+  OMNeT++/INET simulation sources, analysis pipeline, provenance records and
+  regression tests for the LIFESAT spacecraft anomaly-triage study. Two
+  experiment generations are kept separate: the detection matrix and the
+  cause-discrimination fleet. The latter is the frozen tree the accepted
+  1,404-run fleet was executed on. The sealed scoring contract and the
+  accepted tools package are deposited with the run artefacts rather than
+  with the source, because their identity is the digest of their bytes.
+keywords:
+  - spacecraft cybersecurity
+  - digital twin
+  - delay-tolerant telemetry
+  - digital forensics
+  - OMNeT++
+  - INET

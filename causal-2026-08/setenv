@@ -1,0 +1,44 @@
+# LIFESAT environment. Usage:
+#   export OMNETPP_ROOT=/path/to/omnetpp-6.4.0
+#   export INET_ROOT=/path/to/inet-4.7.0
+#   source ./setenv
+
+_lifesat_root="$(cd "$(dirname "${BASH_SOURCE[0]:-$0}")" && pwd)"
+export LIFESAT_ROOT="$_lifesat_root"
+if [[ -z "${LIFESAT_PY:-}" ]]; then
+    if [[ -x "$_lifesat_root/.venv/bin/python" ]]; then
+        export LIFESAT_PY="$_lifesat_root/.venv/bin/python"
+    else
+        export LIFESAT_PY="python3"
+    fi
+fi
+
+: "${OMNETPP_ROOT:?Set OMNETPP_ROOT before sourcing setenv}"
+: "${INET_ROOT:?Set INET_ROOT before sourcing setenv}"
+
+# opp_env builds require this marker; ordinary installations ignore it.
+export OPP_ENV_VERSION="${OPP_ENV_VERSION:-26.05}"
+case $- in *u*) _lifesat_u=1; set +u ;; *) _lifesat_u=0 ;; esac
+source "$OMNETPP_ROOT/setenv" -q
+[ "$_lifesat_u" = 1 ] && set -u
+unset _lifesat_u
+
+# Some Nix-built OMNeT++ distributions keep libpython outside default linker
+# paths. Derive it from Makefile.inc when present; do nothing elsewhere.
+if [ -f "$OMNETPP_ROOT/Makefile.inc" ]; then
+    LIFESAT_NIX_PY="$(grep -oE '/nix/store/[^ ]*python3-[0-9.]+' "$OMNETPP_ROOT/Makefile.inc" | head -1)"
+    if [ -n "$LIFESAT_NIX_PY" ] && [ -d "$LIFESAT_NIX_PY/lib" ]; then
+        export LIBRARY_PATH="$LIFESAT_NIX_PY/lib:${LIBRARY_PATH:-}"
+        export LD_LIBRARY_PATH="$LIFESAT_NIX_PY/lib:${LD_LIBRARY_PATH:-}"
+    fi
+    unset LIFESAT_NIX_PY
+fi
+
+export LD_LIBRARY_PATH="$INET_ROOT/src:${LD_LIBRARY_PATH:-}"
+export NEDPATH="$INET_ROOT/src:$LIFESAT_ROOT/src:$LIFESAT_ROOT/simulations"
+export PATH="$LIFESAT_ROOT/bin:$PATH"
+
+_inet_version="unknown"
+[ -f "$INET_ROOT/Version" ] && _inet_version="$(<"$INET_ROOT/Version")"
+echo "LIFESAT environment ready (INET $_inet_version)"
+unset _inet_version _lifesat_root

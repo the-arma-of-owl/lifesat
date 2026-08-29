@@ -1,0 +1,9 @@
+# LIFESAT D2 thresholds -- from 10 attack-free runs
+# 1550 traffic windows, 1500 iat windows
+# threshold = mu +- 3.0 sigma
+muPps=0.087957
+sigmaPps=0.023913
+muBps=45.033978
+sigmaBps=12.243244
+muIat=10.000001
+sigmaIat=0.000151

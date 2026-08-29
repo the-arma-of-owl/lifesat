@@ -1,0 +1,2 @@
+# Independent orbital-contact verification (analysis/verify_access.py)
+sgp4==2.27

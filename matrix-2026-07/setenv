@@ -1,0 +1,44 @@
+# LIFESAT environment setup.  Usage:  source setenv
+# Expects OMNeT++ 6.4.0 and INET 4.7.0 installed under $LIFESAT_WS.
+
+export LIFESAT_WS="${LIFESAT_WS:-$HOME/lifesat_workspace}"
+export INET_ROOT="${INET_ROOT:-$LIFESAT_WS/inet-4.7.0}"
+export LIFESAT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]:-$0}")" && pwd)"
+
+# analysis and verification scripts; a repo-local venv is used when present
+if [ -z "${LIFESAT_PY:-}" ]; then
+    if [ -x "$LIFESAT_ROOT/.venv/bin/python" ]; then
+        export LIFESAT_PY="$LIFESAT_ROOT/.venv/bin/python"
+    else
+        export LIFESAT_PY="python3"
+    fi
+fi
+
+# opp_env builds require this marker; ordinary installations ignore it
+export OPP_ENV_VERSION="${OPP_ENV_VERSION:-26.05}"
+
+# OMNeT++'s own setenv reads an unset IN_NIX_SHELL; relax -u for that call only
+case $- in *u*) _u=1; set +u ;; *) _u=0 ;; esac
+source "${OMNETPP_ROOT:?Set OMNETPP_ROOT before sourcing setenv}/setenv" -q
+[ "$_u" = 1 ] && set -u
+unset _u
+
+# Some Nix-built OMNeT++ distributions keep libpython outside the default linker
+# paths.  Derive it from Makefile.inc when present; do nothing elsewhere.
+if [ -f "$OMNETPP_ROOT/Makefile.inc" ]; then
+    _nixpy="$(grep -oE '/nix/store/[^ ]*python3-[0-9.]+' "$OMNETPP_ROOT/Makefile.inc" | head -1)"
+    if [ -n "$_nixpy" ] && [ -d "$_nixpy/lib" ]; then
+        export LIBRARY_PATH="$_nixpy/lib${LIBRARY_PATH:+:$LIBRARY_PATH}"
+        export LD_LIBRARY_PATH="$_nixpy/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+    fi
+    unset _nixpy
+fi
+
+export LD_LIBRARY_PATH="$INET_ROOT/src${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+
+# Makefile.inc calls "ccache clang++"; bin/ccache is a pass-through wrapper so the
+# generated Makefile.inc does not need editing when ccache is absent.
+export PATH="$LIFESAT_ROOT/bin:$PATH"
+
+export NEDPATH="$INET_ROOT/src:$LIFESAT_ROOT/src:$LIFESAT_ROOT/simulations"
+echo "LIFESAT environment ready (omnetpp 6.4.0, inet $(cat "$INET_ROOT/Version" 2>/dev/null))"

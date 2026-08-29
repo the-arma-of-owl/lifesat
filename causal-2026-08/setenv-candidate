@@ -1,0 +1,20 @@
+# LIFESAT Phase 3 candidate environment.  Usage:  source setenv-candidate
+#
+# The historical `setenv` pins LIFESAT_ROOT to $LIFESAT_WS/lifesat, which is the
+# ORIGINAL build root and is not writable Phase 3 territory.  This wrapper keeps
+# every OMNeT++/INET setting from that file and then re-points LIFESAT_ROOT and
+# NEDPATH at this candidate, so a Phase 3 build can never link against, or read
+# NED from, the historical tree by accident.
+
+_lifesat_candidate_dir="$(cd "$(dirname "${BASH_SOURCE[0]:-$0}")" && pwd)"
+
+case $- in *u*) _lifesat_cu=1; set +u ;; *) _lifesat_cu=0 ;; esac
+source "$_lifesat_candidate_dir/setenv"
+[ "$_lifesat_cu" = 1 ] && set -u; unset _lifesat_cu
+
+export LIFESAT_ROOT="$_lifesat_candidate_dir"
+export NEDPATH="$INET_ROOT/src:$LIFESAT_ROOT/src:$LIFESAT_ROOT/simulations"
+export PATH="$LIFESAT_ROOT/bin:$PATH"
+
+echo "LIFESAT Phase 3 candidate root: $LIFESAT_ROOT"
+unset _lifesat_candidate_dir
