@@ -51,6 +51,12 @@ def main():
     ap.add_argument("--matrix", default="results/matrix.json")
     ap.add_argument("--max-fpr", type=float, default=0.01)
     args = ap.parse_args()
+    if not Path(args.matrix).exists():
+        raise SystemExit(
+            "no matrix results at %s. The matrix is not run by the gate script "
+            "because it takes about 25 minutes; run it first:\n"
+            "  python3 analysis/calibrate_d2.py --seeds 30\n"
+            "  python3 analysis/run_matrix.py --pilot 30" % args.matrix)
     data = json.loads(Path(args.matrix).read_text())
     cells, n = data["cells"], data["seeds"]
     ok = True

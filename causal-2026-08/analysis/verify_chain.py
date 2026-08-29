@@ -17,7 +17,7 @@ record_t = "idx,time,category,fields"  (the first four fields of the CSV row)
 """
 
 import argparse
-import csv
+import csv, os
 import hashlib
 import sys
 from pathlib import Path
@@ -33,6 +33,10 @@ def sha256_hex(*parts):
 
 
 def read_log(path):
+    if not os.path.exists(path):
+        raise SystemExit(
+            "no forensic log at %s. The runs that produce it are not launched "
+            "by the gate script; run the scenario first, from simulations/." % path)
     csv.field_size_limit(sys.maxsize)
     rows = []
     with open(path, newline="") as f:
