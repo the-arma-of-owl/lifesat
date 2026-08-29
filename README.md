@@ -44,34 +44,56 @@ not included.
 
 ## Install from scratch
 
-### Linux
+### 1. System packages
+
+Debian and Ubuntu:
 
 ```bash
 sudo apt install build-essential clang bison flex perl python3 python3-pip \
-                 qtbase5-dev libxml2-dev zlib1g-dev
+                 python3-venv libxml2-dev zlib1g-dev
 ```
 
-Download OMNeT++ 6.4.0 and INET 4.7.0, then:
+macOS:
 
 ```bash
-cd omnetpp-6.4.0 && source setenv && ./configure && make -j$(nproc)
-cd ../inet-4.7.0  && source setenv && make makefiles && make -j$(nproc)
+brew install bison flex libxml2
 ```
 
-### macOS
+Xcode command line tools provide the compiler. On Windows, use WSL2 with
+Ubuntu and follow the Debian steps; the native toolchain that ships with
+OMNeT++ also works, but the analysis scripts assume a POSIX shell.
+
+Nothing here needs the OMNeT++ IDE or the Qt graphical environment. The runs
+are launched with `Cmdenv`, so the `-core` distribution is enough and Qt is not
+a dependency.
+
+### 2. OMNeT++ and INET
+
+Download `omnetpp-6.4.0-core.tgz` from the OMNeT++ 6.4.0 release and
+`inet-4.7.0-src.tgz` from the INET 4.7.0 release, unpack both, then:
 
 ```bash
-brew install bison flex qt@5 libxml2
+cd omnetpp-6.4.0 && source setenv && ./configure WITH_QTENV=no WITH_OSG=no && make -j$(nproc)
+cd ../inet-4.7.0  && source setenv && make makefiles && make -j$(nproc) MODE=release
 ```
 
-Then build OMNeT++ and INET as above. Xcode command line tools provide the
-compiler.
+`source setenv` must be sourced, not piped: `source setenv | tail` runs it in a
+subshell and the environment never reaches your shell.
 
-### Windows
+### 3. Python packages
 
-Use WSL2 with Ubuntu and follow the Linux steps. The native Windows toolchain
-that ships with OMNeT++ also works, but the analysis scripts assume a POSIX
-shell.
+One package is needed, and only for the independent orbital-contact check. A
+virtual environment inside the experiment directory is picked up automatically
+by `setenv`:
+
+```bash
+cd lifesat/matrix-2026-07          # and again in causal-2026-08
+python3 -m venv .venv
+./.venv/bin/pip install -r ../requirements.txt
+```
+
+Without it the R2 gate stops with a message naming the package. Everything
+else, including the build and the other gates, runs on a bare Python 3.10.
 
 ## Build and run
 

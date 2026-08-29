@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# Build and run outputs
+out/
+/lifesat
+*.o
+*.d
+.oppbuildspec
+
+# Instance directories created by the twin service
+dtaas/instances/

@@ -94,6 +94,9 @@ export OMNETPP_ROOT=/path/to/omnetpp-6.4.0
 export INET_ROOT=/path/to/inet-4.7.0
 source ./setenv
 make MODE=release -j$(nproc)
+
+python3 -m venv .venv                                  # for the R2 gate only
+./.venv/bin/pip install -r ../requirements.txt
 ```
 
 ## Run

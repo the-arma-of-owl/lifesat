@@ -25,7 +25,8 @@ from pathlib import Path
 try:
     from sgp4.api import Satrec, jday, WGS72, WGS84
 except ImportError:
-    sys.exit("ERROR: the python package 'sgp4' is required.  Use the LIFESAT_PY interpreter.")
+    sys.exit("ERROR: the python package 'sgp4' is required.\n"
+             "  python3 -m venv .venv && ./.venv/bin/pip install -r ../requirements.txt")
 
 WGS84_A = 6378137.0
 WGS84_F = 1.0 / 298.257223563

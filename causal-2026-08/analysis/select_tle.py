@@ -24,7 +24,8 @@ from pathlib import Path
 try:
     from sgp4.api import Satrec, WGS84, jday
 except ImportError:
-    sys.exit("ERROR: the python package 'sgp4' is required (LIFESAT_PY interpreter).")
+    sys.exit("ERROR: the python package 'sgp4' is required.\n"
+             "  python3 -m venv .venv && ./.venv/bin/pip install -r ../requirements.txt")
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from verify_access import gmst, teme_to_ecef, geodetic_to_ecef, elevation_deg  # noqa: E402
