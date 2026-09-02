@@ -1,7 +1,26 @@
-# LIFESAT
+<h1 align="center">LIFESAT</h1>
 
-Simulation code and analysis for a forensic-ready digital twin framework for
-cybersecurity in LEO CubeSats.
+<p align="center">
+  Simulation code and analysis for a forensic-ready digital twin framework
+  for cybersecurity in LEO CubeSats
+</p>
+
+<p align="center">
+  <a href="https://doi.org/10.5281/zenodo.22262545"><img alt="DOI" src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.22262545-1682D4"></a>
+  <img alt="License MIT" src="https://img.shields.io/badge/license-MIT-blue">
+  <img alt="OMNeT++ 6.4.0" src="https://img.shields.io/badge/OMNeT%2B%2B-6.4.0-informational">
+  <img alt="INET 4.7.0" src="https://img.shields.io/badge/INET-4.7.0-informational">
+  <img alt="2604 runs" src="https://img.shields.io/badge/evaluated%20runs-2%2C604-success">
+</p>
+
+<p align="center">
+  <img src="docs/architecture.svg" alt="LIFESAT data flow and defence layering: uplink commands pass D1 command authorisation, downlink telemetry is compared against the digital twin model, and the operator mediates every uplink" width="680">
+</p>
+
+<p align="center">
+  <sub>Data flow and defence layering, Figure 1 of the paper. Architecture only:
+  the diagram states no detection rate and no effectiveness claim.</sub>
+</p>
 
 The framework separates three questions that anomaly detection in a spacecraft
 usually merges: whether a command is authentic, whether the received state is

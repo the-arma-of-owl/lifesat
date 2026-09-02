@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="470" height="247.8" viewBox="0 0 470 247.8" role="img">
+<title id="fig1-title">LIFESAT data flow and defence layering</title>
+<desc id="fig1-desc">Architecture diagram. No effectiveness claim.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#000000"/></marker></defs>
+<rect id="fig1-canvas" x="0" y="0" width="470" height="247.8" fill="#FFFFFF"/>
+<text id="fig1-seg-ground" x="54.00" y="13.00" font-family="Helvetica, Arial, sans-serif" font-size="9.5" font-weight="bold" fill="#000000" text-anchor="middle">Ground segment</text>
+<text id="fig1-seg-space" x="238.00" y="13.00" font-family="Helvetica, Arial, sans-serif" font-size="9.5" font-weight="bold" fill="#000000" text-anchor="middle">Space segment</text>
+<text id="fig1-seg-twin" x="414.00" y="13.00" font-family="Helvetica, Arial, sans-serif" font-size="9.5" font-weight="bold" fill="#000000" text-anchor="middle">Twin and evidence</text>
+<rect id="fig1-node-groundstation" x="6.00" y="20.00" width="96.00" height="48.60" rx="3" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/>
+<text id="fig1-node-groundstation-l1-l1" x="54.00" y="33.50" font-family="Helvetica, Arial, sans-serif" font-size="8.5" font-weight="bold" fill="#000000" text-anchor="middle">Ground station /</text>
+<text id="fig1-node-groundstation-l1-l2" x="54.00" y="44.00" font-family="Helvetica, Arial, sans-serif" font-size="8.5" font-weight="bold" fill="#000000" text-anchor="middle">operator</text>
+<text id="fig1-node-groundstation-l2-l1" x="54.00" y="54.00" font-family="Helvetica, Arial, sans-serif" font-size="8.0" font-weight="normal" fill="#000000" text-anchor="middle">operator decides and</text>
+<text id="fig1-node-groundstation-l2-l2" x="54.00" y="63.60" font-family="Helvetica, Arial, sans-serif" font-size="8.0" font-weight="normal" fill="#000000" text-anchor="middle">releases</text>
+<rect id="fig1-node-cubesat" x="190.00" y="20.00" width="96.00" height="48.60" rx="3" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/>
+<text id="fig1-node-cubesat-l1-l1" x="238.00" y="33.50" font-family="Helvetica, Arial, sans-serif" font-size="8.5" font-weight="bold" fill="#000000" text-anchor="middle">CubeSat / spacecraft</text>
+<text id="fig1-node-cubesat-l1-l2" x="238.00" y="44.00" font-family="Helvetica, Arial, sans-serif" font-size="8.5" font-weight="bold" fill="#000000" text-anchor="middle">state</text>
+<text id="fig1-node-cubesat-l2-l1" x="238.00" y="54.00" font-family="Helvetica, Arial, sans-serif" font-size="8.0" font-weight="normal" fill="#000000" text-anchor="middle">physical, logical,</text>
+<text id="fig1-node-cubesat-l2-l2" x="238.00" y="63.60" font-family="Helvetica, Arial, sans-serif" font-size="8.0" font-weight="normal" fill="#000000" text-anchor="middle">security</text>
+<rect id="fig1-node-twin" x="366.00" y="20.00" width="96.00" height="48.60" rx="3" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/>
+<text id="fig1-node-twin-l1" x="414.00" y="38.75" font-family="Helvetica, Arial, sans-serif" font-size="8.5" font-weight="bold" fill="#000000" text-anchor="middle">Digital twin</text>
+<text id="fig1-node-twin-l2-l1" x="414.00" y="48.75" font-family="Helvetica, Arial, sans-serif" font-size="8.0" font-weight="normal" fill="#000000" text-anchor="middle">declared behavioural</text>
+<text id="fig1-node-twin-l2-l2" x="414.00" y="58.35" font-family="Helvetica, Arial, sans-serif" font-size="8.0" font-weight="normal" fill="#000000" text-anchor="middle">model</text>
+<line id="fig1-edge-uplink-operator" x1="104.00" y1="44.30" x2="188.00" y2="44.30" stroke="#0072B2" stroke-width="1.6" marker-end="url(#arrow)"/>
+<text id="fig1-edge-uplink-operator-l" x="146.00" y="37.80" font-family="Helvetica, Arial, sans-serif" font-size="7.5" font-weight="normal" fill="#0072B2" text-anchor="middle">operator-mediated uplink</text>
+<text id="fig1-edge-uplink-operator-l2" x="146.00" y="56.30" font-family="Helvetica, Arial, sans-serif" font-size="7.5" font-weight="normal" fill="#0072B2" text-anchor="middle">(released by operator)</text>
+<line id="fig1-edge-downlink-telemetry" x1="288.00" y1="44.30" x2="364.00" y2="44.30" stroke="#D55E00" stroke-width="1.6" stroke-dasharray="5 3" marker-end="url(#arrow)"/>
+<text id="fig1-edge-downlink-telemetry-l" x="326.00" y="37.80" font-family="Helvetica, Arial, sans-serif" font-size="7.5" font-weight="normal" fill="#D55E00" text-anchor="middle">downlink telemetry</text>
+<text id="fig1-edge-downlink-telemetry-l2" x="326.00" y="56.30" font-family="Helvetica, Arial, sans-serif" font-size="7.5" font-weight="normal" fill="#D55E00" text-anchor="middle">automatic, intermittent</text>
+<text id="fig1-note-no-auto" x="238.00" y="82.60" font-family="Helvetica, Arial, sans-serif" font-size="7.5" font-weight="normal" fill="#D55E00" text-anchor="middle">no automatic twin-to-spacecraft command path</text>
+<text id="fig1-edge-alert-to-operator-l" x="146.00" y="92.60" font-family="Helvetica, Arial, sans-serif" font-size="7.5" font-weight="normal" fill="#000000" text-anchor="middle">alert returns to the operator</text>
+<polyline id="fig1-edge-alert-to-operator" points="390.00,108.60 390.00,101.60 54.00,101.60 54.00,70.60" fill="none" stroke="#000000" stroke-width="1.0" stroke-dasharray="3 2" marker-end="url(#arrow)"/>
+<rect id="fig1-node-alerts" x="366.00" y="112.60" width="96.00" height="20.00" rx="3" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/>
+<text id="fig1-node-alerts-l1" x="414.00" y="125.60" font-family="Helvetica, Arial, sans-serif" font-size="8.0" font-weight="normal" fill="#000000" text-anchor="middle">Alert / decision output</text>
+<rect id="fig1-node-collector" x="366.00" y="148.60" width="96.00" height="20.00" rx="3" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/>
+<text id="fig1-node-collector-l1" x="414.00" y="161.60" font-family="Helvetica, Arial, sans-serif" font-size="8.0" font-weight="bold" fill="#000000" text-anchor="middle">Collector</text>
+<rect id="fig1-node-hashchain" x="366.00" y="184.60" width="96.00" height="39.20" rx="3" fill="#FFFFFF" stroke="#000000" stroke-width="1.2"/>
+<text id="fig1-node-hashchain-l1-l1" x="414.00" y="197.60" font-family="Helvetica, Arial, sans-serif" font-size="8.0" font-weight="normal" fill="#000000" text-anchor="middle">Append-only forensic</text>
+<text id="fig1-node-hashchain-l1-l2" x="414.00" y="207.20" font-family="Helvetica, Arial, sans-serif" font-size="8.0" font-weight="normal" fill="#000000" text-anchor="middle">hash chain (evidence</text>
+<text id="fig1-node-hashchain-l1-l3" x="414.00" y="216.80" font-family="Helvetica, Arial, sans-serif" font-size="8.0" font-weight="normal" fill="#000000" text-anchor="middle">record)</text>
+<line id="fig1-edge-twin-alerts" x1="414.00" y1="70.60" x2="414.00" y2="110.60" stroke="#000000" stroke-width="1.1" marker-end="url(#arrow)"/>
+<line id="fig1-edge-twin-collector" x1="414.00" y1="134.60" x2="414.00" y2="146.60" stroke="#009E73" stroke-width="1.3" stroke-dasharray="2 2" marker-end="url(#arrow)"/>
+<line id="fig1-edge-collector-hashchain" x1="414.00" y1="170.60" x2="414.00" y2="182.60" stroke="#009E73" stroke-width="1.3" stroke-dasharray="2 2" marker-end="url(#arrow)"/>
+<text id="fig1-edge-evidence-l" x="362.00" y="179.60" font-family="Helvetica, Arial, sans-serif" font-size="7.5" font-weight="normal" fill="#009E73" text-anchor="end">evidence</text>
+<rect id="fig1-layer-d1" x="6.00" y="112.60" width="304.00" height="87.10" rx="3" fill="#EFEFEF" stroke="#000000" stroke-width="1.4"/>
+<text id="fig1-layer-d1-l1" x="158.00" y="129.10" font-family="Helvetica, Arial, sans-serif" font-size="8.5" font-weight="bold" fill="#000000" text-anchor="middle">D1 — command authorisation (common base)</text>
+<rect id="fig1-layer-d2" x="14.00" y="135.10" width="140.00" height="41.10" rx="3" fill="#E3EEF6" stroke="#000000" stroke-width="1.1"/>
+<text id="fig1-layer-d2-l1" x="84.00" y="148.60" font-family="Helvetica, Arial, sans-serif" font-size="8.5" font-weight="bold" fill="#000000" text-anchor="middle">D2 = D1 + flow anomaly</text>
+<text id="fig1-layer-d2-l2" x="84.00" y="159.60" font-family="Helvetica, Arial, sans-serif" font-size="8.0" font-weight="normal" fill="#000000" text-anchor="middle">observes the downlink packet flow</text>
+<text id="fig1-layer-d2-l3" x="84.00" y="169.20" font-family="Helvetica, Arial, sans-serif" font-size="8.0" font-weight="normal" fill="#000000" text-anchor="middle">at the ground station</text>
+<rect id="fig1-layer-d3" x="162.00" y="135.10" width="140.00" height="41.10" rx="3" fill="#FBEDE2" stroke="#000000" stroke-width="1.1"/>
+<text id="fig1-layer-d3-l1" x="232.00" y="148.60" font-family="Helvetica, Arial, sans-serif" font-size="8.5" font-weight="bold" fill="#000000" text-anchor="middle">D3 = D1 + twin deviation</text>
+<text id="fig1-layer-d3-l2" x="232.00" y="159.60" font-family="Helvetica, Arial, sans-serif" font-size="8.0" font-weight="normal" fill="#000000" text-anchor="middle">compares observed telemetry</text>
+<text id="fig1-layer-d3-l3" x="232.00" y="169.20" font-family="Helvetica, Arial, sans-serif" font-size="8.0" font-weight="normal" fill="#000000" text-anchor="middle">against the twin model</text>
+<text id="fig1-layer-note" x="158.00" y="191.70" font-family="Helvetica, Arial, sans-serif" font-size="7.5" font-weight="normal" fill="#000000" text-anchor="middle">D2 and D3 extend D1 independently and are not fused with one another</text>
+<text id="fig1-scope-note" x="6.00" y="239.80" font-family="Helvetica, Arial, sans-serif" font-size="7.5" font-weight="normal" fill="#000000" text-anchor="start">Architecture only: the diagram states no detection rate and no effectiveness claim.</text>
+</svg>
