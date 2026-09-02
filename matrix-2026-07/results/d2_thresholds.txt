@@ -1,6 +1,6 @@
-# LIFESAT D2 thresholds -- from 10 attack-free runs
-# 1550 traffic windows, 1500 iat windows
-# threshold = mu +- 3.0 sigma
+# LIFESAT D2 esikleri — 10 saldirisiz kosudan
+# 1550 trafikli pencere, 1500 iat penceresi
+# esik = mu +- 3.0 sigma
 muPps=0.087957
 sigmaPps=0.023913
 muBps=45.033978

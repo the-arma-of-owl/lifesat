@@ -23,22 +23,12 @@ csv.field_size_limit(sys.maxsize)
 HERE = os.path.dirname(os.path.abspath(__file__))
 SIM = os.path.dirname(os.path.dirname(HERE))              # .../simulation
 RESULTS = os.path.join(SIM, "results")
-# The sealed contract package is deposited with the run artefacts, not with
-# the source: its identity is the digest of its bytes, and several of those
-# digests were produced by the accepting party. Point LIFESAT_SPECS at it.
-SPECS = os.environ.get("LIFESAT_SPECS", os.path.join(SIM, "specs"))
+SPECS = os.path.join(SIM, "specs")
 CONTRACT_JSON = os.path.join(SPECS, "scoring-contract-v1.json")
 
 ACCEPTED_CONTRACT_SHA256 = \
     "913848492f82502f5a28243534eaa3e2e19c3c023ebd8b49df8027b8ccf54e95"
 ACCEPTED_CONTRACT_VERSION = "1.4.3-candidate"
-
-if not os.path.exists(CONTRACT_JSON):
-    raise SystemExit(
-        "the sealed contract package is not present at %s.\n"
-        "It is deposited with the run artefacts rather than with the source, "
-        "because its identity is the digest of its bytes. Set LIFESAT_SPECS to "
-        "the directory holding scoring-contract-v1.json." % SPECS)
 
 
 # ---------------------------------------------------------------------------

@@ -125,18 +125,40 @@ demonstrated.
 This repository holds source, configuration and the TLE input. It does not hold
 run outputs.
 
-The forensic logs, the scored result sets and the accepted contract root that
-the analysis pins itself to are archived separately, because they are large and
-because several of the pins are digests of files produced by the accepting
-party rather than by this code. `causal-2026-08/README.md` lists the
-environment variables that point the analysis at them.
+The raw forensic records and the scored result sets are deposited separately,
+because they are large. The deposit holds every raw record of both experiment
+generations, the scored layer for both, and the twin ablation results, and it
+is the citable companion to this repository:
 
-The archive reference and its checksums are added here when the deposit is
-made.
+    https://doi.org/10.5281/zenodo.22262545
+
+The accepted contract root that the analysis pins itself to is not released.
+Several of its pins are digests of files produced by the accepting party rather
+than by this code, and its identity is the digest of its bytes.
+`causal-2026-08/README.md` lists the environment variables that point the
+analysis at it if you hold it.
+
+## Citation
+
+This code supports
+
+> Efe Cam, "A Forensic-Ready Digital Twin Framework for Full-Lifecycle
+> Cybersecurity in LEO CubeSats", 77th International Astronautical Congress
+> (IAC 2026), Antalya, Turkiye, 5 to 9 October 2026. Paper IAC-26-D5.4.11.
+
+If you use this code or the deposited result sets in academic work, please
+cite that paper and the deposit:
+
+> https://doi.org/10.5281/zenodo.22262545
+ `CITATION.cff` carries the same
+information in machine-readable form, and GitHub renders it as a
+"Cite this repository" button.
 
 ## License
 
-MIT, see `LICENSE`.
+MIT, see `LICENSE`. The licence requires that the copyright and licence
+notices are preserved in copies and substantial portions. It does not by
+itself require academic citation; the request above does.
 
 The simulator and its model library are separate works with their own terms:
 OMNeT++ 6.4.0 is distributed under the Academic Public License, which is free

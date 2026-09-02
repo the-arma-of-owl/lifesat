@@ -7,18 +7,24 @@ authors:
   - family-names: "Çam"
     given-names: "Efe"
     orcid: "https://orcid.org/0009-0003-2488-1287"
+doi: "10.5281/zenodo.22262545"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.22262545"
+    description: "Archived code and result sets"
 repository-code: "https://github.com/the-arma-of-owl/lifesat"
 url: "https://github.com/the-arma-of-owl/lifesat"
 version: "1.0.0"
-date-released: "2026-08-29"
+date-released: "2026-09-03"
 abstract: >-
   OMNeT++/INET simulation sources, analysis pipeline, provenance records and
   regression tests for the LIFESAT spacecraft anomaly-triage study. Two
   experiment generations are kept separate: the detection matrix and the
   cause-discrimination fleet. The latter is the frozen tree the accepted
   1,404-run fleet was executed on. The sealed scoring contract and the
-  accepted tools package are deposited with the run artefacts rather than
-  with the source, because their identity is the digest of their bytes.
+  accepted tools package are not part of this release, because their
+  identity is the digest of their bytes and they cannot be reformatted
+  without breaking it. The analysis code pins those digests.
 keywords:
   - spacecraft cybersecurity
   - digital twin
