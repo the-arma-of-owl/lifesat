@@ -62,6 +62,13 @@ PY
 
 Expected: `8 1 1.0 0.9090909090909091`
 
+These are the historical scorer's values. The paper's Table 11 reports the same
+cell as precision 0.0000 and recall `undefined`, because it applies the
+corrected F3 ontology of section 6.1: a command-side effect opens only on a
+hostile *acceptance*, and under D1 no hostile command is accepted. The two
+numbers are not in conflict; they answer different questions. See the root
+`README.md`, "Two scoring layers".
+
 ## Gates
 
 ```bash

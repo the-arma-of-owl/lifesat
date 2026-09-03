@@ -206,7 +206,7 @@ void Twin::applyConfirmedPhysicalEffects(size_t from, size_t to)
             continue;
         if (approved[i].paramKey == "dischargeRate") {
             model.setDischargeRate(approved[i].paramValue);
-            nominalDischargeRate = approved[i].paramValue;   // tolerans terimi de kayar
+            nominalDischargeRate = approved[i].paramValue;   // the tolerance term shifts with it
             updatesAppliedToModel++;
             if (collector)
                 collector->logEvent("twin.modelUpdated",

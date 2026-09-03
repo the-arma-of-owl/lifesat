@@ -26,7 +26,7 @@ def _env_path(name: str, default: Path) -> Path:
 
 
 ROOT = Path(__file__).resolve().parent
-CODE = _env_path("LIFESAT_CODE", ROOT.parent / "kod" / "LifesatCodeBase")
+CODE = _env_path("LIFESAT_CODE", ROOT.parent / "matrix-2026-07")
 SIMS = CODE / "simulations"
 BIN = CODE / "out" / "clang-release" / "lifesat"
 INSTANCES = _env_path("LIFESAT_INSTANCES", ROOT / "instances")

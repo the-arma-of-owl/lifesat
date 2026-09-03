@@ -26,7 +26,7 @@ simple FlowDetector
         // 10 s (0.1 pps). a 1 s window holds exactly one packet, giving sigma = 0 and a
         // degenerate zero-width band. the method (mu +/- k*sigma) transfers, the
         // parameter does not. 60 s gives about six windows per pass.
-        double windowSize @unit(s) = default(60s);   // [TASARIM VARSAYIMI]
+        double windowSize @unit(s) = default(60s);   // [DESIGN ASSUMPTION]
         double sigmaFactor = default(3.0);       // the mu+/-3sigma of Rodrigues et al.
 
         // resolution floor. some attack-free statistics are exactly deterministic

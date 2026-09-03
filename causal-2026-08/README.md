@@ -30,7 +30,8 @@ this is a missing input rather than a difference in the code.
 ## The sealed contract package
 
 The scoring contract, the rescore decision matrix and the rerun authorisation
-dossier are **not** in this repository and are not publicly released.
+dossier are **not** in this repository. They are deposited with the run
+artefacts, under `arsiv/specs-sealed/`.
 
 The reason is that their identity is the digest of their bytes. Each is bound
 by a checksum manifest, each names the digests of the others, and the analysis
@@ -43,10 +44,10 @@ which is a third tree, archived alongside them.
 
 The same applies to the accepted tools package (`causal_core.py` and its
 siblings), which the episode and generator-closure analyses import. It is bound
-by digest in the same way and is likewise not released.
+by digest in the same way and is deposited alongside the contract, under
+`arsiv/tools-accepted/`.
 
-If you hold the sealed package, point both at it to run the parts that need
-them:
+Point both at the unpacked deposit to run the parts that need them:
 
 ```bash
 export LIFESAT_SPECS=/path/to/specs-sealed
@@ -124,8 +125,9 @@ Paths are read from the environment with repository-relative defaults:
 | `LIFESAT_SPECS` | `specs/` (see below; the package is archived separately) |
 
 The accepted root holds the contract and the membership settlement the analysis
-pins itself to. It is not distributed with this source, because the pins are
-digests of files the accepting party produced.
+pins itself to. It is deposited with the run artefacts rather than with this
+source, under `accepted_phase2_v7/`, because the pins are digests of files the
+accepting party produced.
 
 ## Expected values
 

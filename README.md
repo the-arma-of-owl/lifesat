@@ -144,18 +144,62 @@ demonstrated.
 This repository holds source, configuration and the TLE input. It does not hold
 run outputs.
 
-The raw forensic records and the scored result sets are deposited separately,
-because they are large. The deposit holds every raw record of both experiment
-generations, the scored layer for both, and the twin ablation results, and it
-is the citable companion to this repository:
+The raw forensic records, the scored result sets, the sealed contract packages
+and the twin-ablation evaluator are deposited separately, because they are large
+and because several of them are identified by the digest of their bytes rather
+than by their text. The deposit is the citable companion to this repository:
 
-    https://doi.org/10.5281/zenodo.22262545
+    https://doi.org/10.5281/zenodo.22262544
 
-The accepted contract root that the analysis pins itself to is not released.
-Several of its pins are digests of files produced by the accepting party rather
-than by this code, and its identity is the digest of its bytes.
-`causal-2026-08/README.md` lists the environment variables that point the
-analysis at it if you hold it.
+That link always resolves to the newest version. `causal-2026-08/README.md`
+lists the environment variables that point the analysis at the sealed packages
+once you have unpacked them.
+
+### Frozen artefacts keep their original bytes
+
+Three files in this repository are identified by the digest of their bytes and
+are published exactly as the experiments loaded them, not reformatted:
+
+| file | pinned by |
+|---|---|
+| `matrix-2026-07/results/d2_thresholds.txt` | the paper, by SHA-256 |
+| `matrix-2026-07/simulations/lifesat.ini` | `config_sha256` in the ablation provenance record |
+| `causal-2026-08/simulations/lifesat.ini` | the same digest |
+
+Their comment lines are in the author's working language rather than English.
+That is deliberate. Translating a comment changes the bytes, which changes the
+digest, which would make the published provenance records false. The numeric
+content of these files is unaffected and is documented in English elsewhere.
+
+The same rule applies to the sealed contract packages in the deposit: they are
+published as accepted, including their internal process notes, because their
+identity is the digest of their bytes.
+
+### Two scoring layers, and which one the paper reports
+
+`matrix.json` in the deposit is the **historical layer**. It is what the scorer
+in `matrix-2026-07/analysis/score.py` produces from the 1,200 raw records, and
+rescoring reproduces it exactly, 1,200 of 1,200.
+
+**It is not the object the paper's Tables 11 to 14 report.** Those tables use a
+corrected F3 ontology, stated in section 6.1 of the paper: a command-side effect
+begins only when a uniquely matched hostile *acceptance* changes the prevailing
+value. Under D1, hostile commands are rejected before acceptance, so no effect
+opens, the truth-positive denominator is absent, and direct D3 recall is
+reported as `undefined` rather than as a number. The rejection evidence is
+reported separately as F4.
+
+The historical scorer does not make that distinction and credits D3 with
+detecting commands D1 had already blocked. The two objects therefore disagree
+for cells B0, A1, A2 and A3, by design. For example, the historical layer gives
+A1-D3 seed 0 as tp=8, fp=1, recall=1.0, precision=0.8889, while Table 11 gives
+precision 0.0000 and recall `undefined` for the same cell.
+
+The corrected production chain, its sealed contract, the accepted tools package
+and the reruns it consumes are in the deposit under `arsiv/` and
+`accepted_phase2_v7/`. They are published exactly as accepted, not reformatted,
+because their identity is the digest of their bytes and the pins are recorded in
+`causal-2026-08/analysis/causal/authority.py`.
 
 ## Citation
 

@@ -22,9 +22,9 @@ abstract: >-
   experiment generations are kept separate: the detection matrix and the
   cause-discrimination fleet. The latter is the frozen tree the accepted
   1,404-run fleet was executed on. The sealed scoring contract and the
-  accepted tools package are not part of this release, because their
-  identity is the digest of their bytes and they cannot be reformatted
-  without breaking it. The analysis code pins those digests.
+  accepted tools package are deposited with the run artefacts rather than
+  with the source, because their identity is the digest of their bytes and
+  they cannot be reformatted without breaking it.
 keywords:
   - spacecraft cybersecurity
   - digital twin

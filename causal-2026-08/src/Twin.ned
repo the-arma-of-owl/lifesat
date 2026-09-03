@@ -39,7 +39,7 @@ simple Twin
         // the bound the twin declares; it does not know the actual offset
         double rateUncertainty = default(0.10); // %10
 
-        // --- tolerans ------------------------------------------------------
+        // --- tolerance -----------------------------------------------------
         double noiseSigma = default(0.01);      // V, calibrated from B0
         double sigmaFactor = default(3.0);      // how many sigma (same family as D2's mu+/-3sigma)
         double maxTemporalBound @unit(s) = default(24h);  // beyond this it is "unknown"
