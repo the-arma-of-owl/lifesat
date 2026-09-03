@@ -7,10 +7,10 @@ authors:
   - family-names: "Çam"
     given-names: "Efe"
     orcid: "https://orcid.org/0009-0003-2488-1287"
-doi: "10.5281/zenodo.22262545"
+doi: "10.5281/zenodo.22262544"
 identifiers:
   - type: doi
-    value: "10.5281/zenodo.22262545"
+    value: "10.5281/zenodo.22262544"
     description: "Archived code and result sets"
 repository-code: "https://github.com/the-arma-of-owl/lifesat"
 url: "https://github.com/the-arma-of-owl/lifesat"

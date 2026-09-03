@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <a href="https://doi.org/10.5281/zenodo.22262545"><img alt="DOI" src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.22262545-1682D4"></a>
+  <a href="https://doi.org/10.5281/zenodo.22262544"><img alt="DOI" src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.22262544-1682D4"></a>
   <img alt="License MIT" src="https://img.shields.io/badge/license-MIT-blue">
   <img alt="OMNeT++ 6.4.0" src="https://img.shields.io/badge/OMNeT%2B%2B-6.4.0-informational">
   <img alt="INET 4.7.0" src="https://img.shields.io/badge/INET-4.7.0-informational">
@@ -212,7 +212,7 @@ This code supports
 If you use this code or the deposited result sets in academic work, please
 cite that paper and the deposit:
 
-> https://doi.org/10.5281/zenodo.22262545
+> https://doi.org/10.5281/zenodo.22262544
  `CITATION.cff` carries the same
 information in machine-readable form, and GitHub renders it as a
 "Cite this repository" button.
