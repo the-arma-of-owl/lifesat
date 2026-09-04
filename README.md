@@ -165,6 +165,12 @@ are published exactly as the experiments loaded them, not reformatted:
 | `matrix-2026-07/results/d2_thresholds.txt` | the paper, by SHA-256 |
 | `matrix-2026-07/simulations/lifesat.ini` | `config_sha256` in the ablation provenance record |
 | `causal-2026-08/simulations/lifesat.ini` | the same digest |
+| `causal-2026-08/analysis/score.py` | `scorer` pin in `build_corrected_package_v1.py` |
+| `causal-2026-08/analysis/scoring/output.py` | the same composite digest |
+
+The last two are hashed together with the other eight files of the scoring
+package into one digest, `de16e29c…`, which the corrected-package build refuses
+to proceed without.
 
 Their comment lines are in the author's working language rather than English.
 That is deliberate. Translating a comment changes the bytes, which changes the
@@ -174,6 +180,42 @@ content of these files is unaffected and is documented in English elsewhere.
 The same rule applies to the sealed contract packages in the deposit: they are
 published as accepted, including their internal process notes, because their
 identity is the digest of their bytes.
+
+### Reproducing Tables 11 to 14
+
+The corrected production chain rebuilds the paper's Tables 11 to 14 from the
+1,200 historical raw records plus the 180 reruns for A1-D3, A2-D3 and A3-D3.
+Unpack the code archive, the raw matrix, the sealed contracts and the
+corrected-package inputs, then arrange them as the build expects:
+
+```bash
+SIM=lifesat-1.0.2/causal-2026-08
+cp -r results              $SIM/                 # raw-matrix archive
+cp -r results-v2-iss06     $SIM/                 # corrected-package-inputs
+mkdir -p $SIM/specs && cp arsiv/specs-sealed/*.json arsiv/specs-sealed/*.md $SIM/specs/
+mkdir -p verification && cp ISS06_FLEET_VERIFICATION.json verification/
+
+cd $SIM/analysis
+LIFESAT_SPECS=$PWD/../specs \
+LIFESAT_SEAL=/path/to/ACCEPTANCE_SEAL.json \
+python3 build_corrected_package_v1.py
+```
+
+It refuses to run unless five pins hold: the contract JSON, the acceptance
+seal, the composite scorer digest, the historical raw tree and the rerun tree.
+On success it prints `"verdict": "GREEN"` with 1,200 selected runs over 20
+cells and writes `results-v2-corrected/`, whose `CORRECTED_RESULTS.json`
+carries the Table 11 values:
+
+| cell | precision | recall | FPR |
+|---|---|---|---|
+| B0-D3 | 0.0000 | undefined | 0.0016 |
+| A1-D3 | 0.0000 | undefined | 0.0020 |
+| A2-D3 | 0.0000 | undefined | 0.0018 |
+| A3-D3 | 0.0000 | undefined | 0.0018 |
+| A4-D3 | 0.8081 | 0.9161 | 0.0020 |
+
+and the Table 14 layer rates, 0.9965 for modification and 0.7996 for delay.
 
 ### Two scoring layers, and which one the paper reports
 

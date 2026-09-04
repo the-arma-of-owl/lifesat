@@ -1,41 +1,40 @@
 #!/usr/bin/env python3
 """
-LIFESAT -- scoring one run: matching detector verdicts against the answer key.
+LIFESAT — bir koşunun skorlanması: cevap anahtarı ile dedektör kararlarının eşlenmesi.
 
-THIS IS THE MEASUREMENT POINT OF THE STUDY.  The real question is not "how
-many alarms" but "which alarm corresponds to which attack" -- and before that,
-"what happened": was an action executed, was it prevented, did it really change the state.
+🔴 BURASI ÇALIŞMANIN ÖLÇÜM NOKTASI.  Asıl soru "kaç alarm" değil, "hangi alarm
+hangi saldırıya karşılık geliyor" — ve bundan önce "ne oldu": bir aksiyon
+yürütüldü mü, engellendi mi, durumu gerçekten değiştirdi mi.
 
-How R1 is preserved: the answer key (*-truth.csv) is invisible to every detector
-during the run. This script runs offline and joins the two files, so scoring
-never lets a detector see the key.
+Kural R1'in nasıl korunduğu: cevap anahtarı (`*-truth.csv`) **koşu sırasında**
+hiçbir dedektöre görünmez.  Bu betik çevrim dışı çalışır ve iki dosyayı
+birleştirir — skorlamanın cevap anahtarını kullanması meşrudur, dedektörün
+kullanması değil.
 
-This version implements the accepted scoring contract
-(lifesat-scoring-contract/v1, 1.4.3-candidate; the 1.4.2 seal is the historical authority):
+Bu sürüm kabul edilmiş scoring contract'ı uygular
+(lifesat-scoring-contract/v1, 1.4.3-candidate; 1.4.2 mührü tarihsel authority):
 
-  · the action id derives from the truth row index; cmdId is provenance only,
-    so in A3 the replayed command's own legitimate acceptance stays benign;
-  · F0 execution, F1 prevention and F2 state change are separate families; an
-    acceptance that rewrites the same value is `accepted_idempotent_no_change`
-    and produces no effect event;
-  · the effect window closes on the next acceptance writing a DIFFERENT value to
-    the same key -- legitimate or adversarial alike; one alarm credits at most one
-    effect event;
-  · D2's decision unit is the (run, window) pair; per-observation duplication and
-    the asymmetric 60 s grace have been removed;
-  · A4 actions partition exactly into modification/delay/drop/unresolved and the
-    decision-opportunity class of the drops is reported;
-  · the F4 denominator is D1 reject EVIDENCE events (not the observed counter
-    transition), eligibility is set by telemetry source time, and the counter
-    is not filtered;
-  · an undefined ratio is null plus a reason code, never 0.0; F0.5 is computed
-    from the count form; macro-over-defined-runs and the pooled ratio are separate fields.
+  · aksiyon kimliği truth satır indeksinden türetilir; cmdId yalnız provenance'tır,
+    dolayısıyla A3'te tekrarlanan komutun kendi meşru kabulü benign kalır;
+  · F0 yürütme, F1 önleme ve F2 durum değişimi ayrı ailelerdir; aynı değeri
+    yeniden yazan kabul `accepted_idempotent_no_change`'tir ve effect event üretmez;
+  · effect window aynı anahtara FARKLI değer yazan sonraki kabulde kapanır —
+    meşru ya da düşman fark etmez; bir alarm en fazla bir effect event'e kredi verir;
+  · D2'nin karar birimi (koşu, pencere) çiftidir; gözlem başına çoğaltma ve
+    asimetrik 60 s grace kaldırılmıştır;
+  · A4 aksiyonları modification/delay/drop/unresolved olarak tam bölünür ve
+    drop'ların karar-fırsatı sınıfı raporlanır;
+  · F4 paydası D1 ret KANITI olaylarıdır (gözlenen sayaç geçişi değil),
+    uygunluk telemetri kaynak zamanıyla belirlenir, sayaç kanal etiketine göre
+    filtrelenmez;
+  · tanımsız oran null + reason code'dur, asla 0,0 değildir; F0.5 sayım formundan
+    hesaplanır; macro-over-defined-runs ile pooled ratio ayrı alanlardır.
 
-Metrics (§6 decision, K-59):
-  · F0.5   precision-weighted (a false alarm is expensive for the operator), count form
-  · F1C    event-based recall + point-based precision (composite F-score)
-  · FPR    separately, on its own
-  F1PA is not used -- the random detector scores 0.912 there (K-59).
+Metrikler (§6 kararı, K-59):
+  · F0.5   kesinlik ağırlıklı (operatör için yanlış alarm pahalı), sayım formu
+  · F1C    olay bazlı recall + nokta bazlı precision (composite F-score)
+  · FPR    ayrıca, tek başına
+  🔴 F1PA kullanılmaz — rastgele dedektör orada 0,912 alıyor (K-59).
 """
 
 import argparse
@@ -213,7 +212,7 @@ def _delays(runs):
 
 
 def _fmt(value, digits=3):
-    return " -- " if value is None else "%.*f" % (digits, value)
+    return "—" if value is None else "%.*f" % (digits, value)
 
 
 def main():
@@ -233,23 +232,23 @@ def main():
         return 0
 
     t = r["truth"]
-    print(f"\nanswer key: {r['episodes']} episodes · {t['hostileCommands']} hostile "
-          f"actions ({t['hostileDelivered']} delivered) · {t['stateChanged']} state "
-          f"changes · {t['acceptedIdempotentNoChange']} idempotent acceptances")
-    print(f"telemetry     : {t['tamperedTm']} tampered · {t['delayedTm']} delayed "
-          f"· {t['droppedTm']} dropped · {t['unresolvedTm']} unresolved")
-    print(f"effect events : {r['effectIntervals']}")
-    print(f"F1 prevention : {r['F1']['numerator']}/{r['F1']['denominator']}"
+    print(f"\ncevap anahtarı: {r['episodes']} epizot · {t['hostileCommands']} düşman "
+          f"aksiyon ({t['hostileDelivered']} teslim) · {t['stateChanged']} durum "
+          f"değişimi · {t['acceptedIdempotentNoChange']} idempotent kabul")
+    print(f"telemetri     : {t['tamperedTm']} tahrif · {t['delayedTm']} geciktirilmiş "
+          f"· {t['droppedTm']} düşürülmüş · {t['unresolvedTm']} çözümsüz")
+    print(f"etki olayı    : {r['effectIntervals']}")
+    print(f"F1 önleme     : {r['F1']['numerator']}/{r['F1']['denominator']}"
           f"   F4 raporlama: {r['F4']['reported']}/{r['F4']['denominator']}\n")
-    print(f"{'detector':<10}{'unit':<28}{'TP':>5}{'FP':>5}{'FN':>5}"
-          f"{'precision':>10}{'recall':>9}{'FPR':>9}{'F0.5':>8}{'F1C':>8}")
-    print("-" * 97)
+    print(f"{'dedektör':<10}{'birim':<28}{'TP':>5}{'FP':>5}{'FN':>5}"
+          f"{'kesinlik':>10}{'recall':>9}{'FPR':>9}{'F0.5':>8}{'F1C':>8}")
+    print("─" * 97)
     for name in ("D3", "D2", "RND"):
         s = r["F3"][name]
         print(f"{name:<10}{s['evaluation_unit']:<28}{s['tp']:>5}{s['fp']:>5}"
               f"{s['fn']:>5}{_fmt(s['precision']):>10}{_fmt(s['recall']):>9}"
               f"{_fmt(s['fpr'], 4):>9}{_fmt(s['f05']):>8}{_fmt(s['f1c']):>8}")
-    print("\n[FAIL] Undefined values are shown as ' -- '; they must not be confused with 0.0.")
+    print("\n🔴 Tanımsız değerler '—' olarak gösterilir; 0,0 ile karıştırılmamalıdır.")
     return 0
 
 

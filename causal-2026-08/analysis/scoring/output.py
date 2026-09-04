@@ -44,9 +44,7 @@ def build_provenance(sim_root, run_identities, generated_utc, contract_version,
     results = os.path.join(sim_root, "results")
     return {
         "contract_version": contract_version,
-        "contract_json_sha256": sha256_file(
-            os.environ.get("LIFESAT_SPECS_CONTRACT",
-                           os.path.join(sim_root, CONTRACT_RELPATH))),
+        "contract_json_sha256": sha256_file(os.path.join(sim_root, CONTRACT_RELPATH)),
         "scorer_sha256": scorer_digest(sim_root),
         "matrix_json_sha256": sha256_file(os.path.join(results, "matrix.json")),
         "results_tree_digest": tree_digest(results),
