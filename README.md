@@ -189,15 +189,22 @@ Unpack the code archive, the raw matrix, the sealed contracts and the
 corrected-package inputs, then arrange them as the build expects:
 
 ```bash
-SIM=lifesat-1.0.2/causal-2026-08
-cp -r results              $SIM/                 # raw-matrix archive
-cp -r results-v2-iss06     $SIM/                 # corrected-package-inputs
-mkdir -p $SIM/specs && cp arsiv/specs-sealed/*.json arsiv/specs-sealed/*.md $SIM/specs/
-mkdir -p verification && cp ISS06_FLEET_VERIFICATION.json verification/
+# unzip, in one directory:
+#   lifesat-code-1.0.2.zip  lifesat-raw-matrix-1200.zip
+#   lifesat-sealed-contracts.zip  lifesat-corrected-package-inputs.zip
+ROOT=$PWD
+SIM=$ROOT/lifesat-1.0.2/causal-2026-08
+
+cp -r $ROOT/results          $SIM/          # historical raw records
+cp -r $ROOT/results-v2-iss06 $SIM/          # the 180 A1/A2/A3-D3 reruns
+mkdir -p $SIM/specs
+cp $ROOT/arsiv/specs-sealed/*.json $ROOT/arsiv/specs-sealed/*.md $SIM/specs/
+mkdir -p $ROOT/lifesat-1.0.2/verification
+cp $ROOT/verification/ISS06_FLEET_VERIFICATION.json $ROOT/lifesat-1.0.2/verification/
 
 cd $SIM/analysis
-LIFESAT_SPECS=$PWD/../specs \
-LIFESAT_SEAL=/path/to/ACCEPTANCE_SEAL.json \
+LIFESAT_SPECS=$SIM/specs \
+LIFESAT_SEAL=$ROOT/ACCEPTANCE_SEAL.json \
 python3 build_corrected_package_v1.py
 ```
 
