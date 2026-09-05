@@ -1,0 +1,4470 @@
+{
+  "authority": {
+    "authority_utc": "2026-08-11T15:51:34Z",
+    "contract_json_sha256": "913848492f82502f5a28243534eaa3e2e19c3c023ebd8b49df8027b8ccf54e95",
+    "contract_version": "1.4.3-candidate",
+    "old_raw_tree_sha256": "09893fc41cd5fab122b2d956bda46664d60d3b9f33aa68f95d4d41b408711c16",
+    "rerun_tree_sha256": "f7e1d5fe90340d8bef2a0a512322d6b6017b39c56c1cec20a9531a0a01685b63",
+    "scorer_sha256": "8eaa4663270190ad907e2d5e5fc8ea7b420bd4e1295681517135090cca65c677",
+    "seal_sha256": "5c575f3cee35000b4da45c63312ea166ed632b6a4efd7e3fc85efe707ea8d813"
+  },
+  "authority_utc_note": "this package carries NO wall-clock time; the timestamp above is the seal's accepted_utc, so two builds are byte-identical",
+  "cells": [
+    {
+      "cell": "A1-D0",
+      "defence": "D0",
+      "estimands": [
+        {
+          "arms": {
+            "execution_rate": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 487,
+              "estimand_id": "EST-F0-01",
+              "evaluation_unit": "attack_action",
+              "macro_mean_over_defined_runs": 0.9727005652835172,
+              "numerator": 474,
+              "observed_denominator": 487,
+              "observed_numerator": 474,
+              "pooled_ratio": 0.973305954825462,
+              "result_family": "F0_attack_execution",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 0.9878099838969404,
+                "ci_low": 0.9552868014052224,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 0.9727005652835172
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F0-01",
+          "evaluation_unit": "attack_action",
+          "kind": "ratio",
+          "result_family": "F0_attack_execution",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "state_transition_rate": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 487,
+              "estimand_id": "EST-F2-01",
+              "evaluation_unit": "attack_action",
+              "macro_mean_over_defined_runs": 0.9727005652835172,
+              "numerator": 474,
+              "observed_denominator": 487,
+              "observed_numerator": 474,
+              "pooled_ratio": 0.973305954825462,
+              "result_family": "F2_state_transition",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 0.9878099838969404,
+                "ci_low": 0.9552868014052224,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 0.9727005652835172
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F2-01",
+          "evaluation_unit": "attack_action",
+          "kind": "ratio",
+          "result_family": "F2_state_transition",
+          "status": "RESCORE_REQUIRED"
+        }
+      ],
+      "run_count": 60,
+      "scenario": "A1",
+      "source": "results"
+    },
+    {
+      "cell": "A1-D1",
+      "defence": "D1",
+      "estimands": [
+        {
+          "arms": {
+            "execution_rate": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 487,
+              "estimand_id": "EST-F0-01",
+              "evaluation_unit": "attack_action",
+              "macro_mean_over_defined_runs": 0.9727005652835172,
+              "numerator": 474,
+              "observed_denominator": 487,
+              "observed_numerator": 474,
+              "pooled_ratio": 0.973305954825462,
+              "result_family": "F0_attack_execution",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 0.9878099838969404,
+                "ci_low": 0.9552868014052224,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 0.9727005652835172
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F0-01",
+          "evaluation_unit": "attack_action",
+          "kind": "ratio",
+          "result_family": "F0_attack_execution",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "prevention_rate": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 474,
+              "estimand_id": "EST-F1-01",
+              "evaluation_unit": "command_authorisation_attempt",
+              "macro_mean_over_defined_runs": 1.0,
+              "numerator": 474,
+              "observed_denominator": 474,
+              "observed_numerator": 474,
+              "pooled_ratio": 1.0,
+              "result_family": "F1_prevention",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 1.0,
+                "ci_low": 1.0,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 1.0
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F1-01",
+          "evaluation_unit": "command_authorisation_attempt",
+          "kind": "ratio",
+          "result_family": "F1_prevention",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "acceptance_rate": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 474,
+              "estimand_id": "EST-F1-02",
+              "evaluation_unit": "command_authorisation_attempt",
+              "macro_mean_over_defined_runs": 0.0,
+              "numerator": 0,
+              "observed_denominator": 474,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "result_family": "F1_prevention",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": null,
+              "value": 0.0
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F1-02",
+          "evaluation_unit": "command_authorisation_attempt",
+          "kind": "ratio",
+          "result_family": "F1_prevention",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "state_transition_rate": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 487,
+              "estimand_id": "EST-F2-01",
+              "evaluation_unit": "attack_action",
+              "macro_mean_over_defined_runs": 0.0,
+              "numerator": 0,
+              "observed_denominator": 487,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "result_family": "F2_state_transition",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": null,
+              "value": 0.0
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F2-01",
+          "evaluation_unit": "attack_action",
+          "kind": "ratio",
+          "result_family": "F2_state_transition",
+          "status": "RESCORE_REQUIRED"
+        }
+      ],
+      "run_count": 60,
+      "scenario": "A1",
+      "source": "results"
+    },
+    {
+      "cell": "A1-D2",
+      "defence": "D2",
+      "estimands": [
+        {
+          "arms": {
+            "execution_rate": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 487,
+              "estimand_id": "EST-F0-01",
+              "evaluation_unit": "attack_action",
+              "macro_mean_over_defined_runs": 0.9727005652835172,
+              "numerator": 474,
+              "observed_denominator": 487,
+              "observed_numerator": 474,
+              "pooled_ratio": 0.973305954825462,
+              "result_family": "F0_attack_execution",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 0.9878099838969404,
+                "ci_low": 0.9552868014052224,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 0.9727005652835172
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F0-01",
+          "evaluation_unit": "attack_action",
+          "kind": "ratio",
+          "result_family": "F0_attack_execution",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "prevention_rate": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 474,
+              "estimand_id": "EST-F1-01",
+              "evaluation_unit": "command_authorisation_attempt",
+              "macro_mean_over_defined_runs": 1.0,
+              "numerator": 474,
+              "observed_denominator": 474,
+              "observed_numerator": 474,
+              "pooled_ratio": 1.0,
+              "result_family": "F1_prevention",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 1.0,
+                "ci_low": 1.0,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 1.0
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F1-01",
+          "evaluation_unit": "command_authorisation_attempt",
+          "kind": "ratio",
+          "result_family": "F1_prevention",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "acceptance_rate": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 474,
+              "estimand_id": "EST-F1-02",
+              "evaluation_unit": "command_authorisation_attempt",
+              "macro_mean_over_defined_runs": 0.0,
+              "numerator": 0,
+              "observed_denominator": 474,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "result_family": "F1_prevention",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": null,
+              "value": 0.0
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F1-02",
+          "evaluation_unit": "command_authorisation_attempt",
+          "kind": "ratio",
+          "result_family": "F1_prevention",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "state_transition_rate": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 487,
+              "estimand_id": "EST-F2-01",
+              "evaluation_unit": "attack_action",
+              "macro_mean_over_defined_runs": 0.0,
+              "numerator": 0,
+              "observed_denominator": 487,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "result_family": "F2_state_transition",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": null,
+              "value": 0.0
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F2-01",
+          "evaluation_unit": "attack_action",
+          "kind": "ratio",
+          "result_family": "F2_state_transition",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "event_recall": {
+              "defined_run_count": 0,
+              "defined_value_qualifier_code": null,
+              "denominator": 0,
+              "estimand_id": "EST-F3-D2-01",
+              "evaluation_unit": "flow_window_60s",
+              "macro_mean_over_defined_runs": null,
+              "numerator": 0,
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": "no_defined_run_in_cell",
+              "value": null
+            },
+            "fpr": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 9300,
+              "estimand_id": "EST-F3-D2-01",
+              "evaluation_unit": "flow_window_60s",
+              "macro_mean_over_defined_runs": 0.0,
+              "numerator": 0,
+              "observed_denominator": 9300,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": null,
+              "value": 0.0
+            },
+            "precision": {
+              "defined_run_count": 0,
+              "defined_value_qualifier_code": null,
+              "denominator": 0,
+              "estimand_id": "EST-F3-D2-01",
+              "evaluation_unit": "flow_window_60s",
+              "macro_mean_over_defined_runs": null,
+              "numerator": 0,
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": "no_defined_run_in_cell",
+              "value": null
+            },
+            "recall": {
+              "defined_run_count": 0,
+              "defined_value_qualifier_code": null,
+              "denominator": 0,
+              "estimand_id": "EST-F3-D2-01",
+              "evaluation_unit": "flow_window_60s",
+              "macro_mean_over_defined_runs": null,
+              "numerator": 0,
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": "no_defined_run_in_cell",
+              "value": null
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F3-D2-01",
+          "evaluation_unit": "flow_window_60s",
+          "kind": "ratio",
+          "result_family": "F3_direct_detection",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "event_recall": {
+              "defined_run_count": 0,
+              "defined_value_qualifier_code": null,
+              "denominator": 0,
+              "estimand_id": "EST-F3-RND-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": null,
+              "numerator": 0,
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": "no_defined_run_in_cell",
+              "value": null
+            },
+            "fpr": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 49080,
+              "estimand_id": "EST-F3-RND-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": 0.009800325998370007,
+              "numerator": 481,
+              "observed_denominator": 49080,
+              "observed_numerator": 481,
+              "pooled_ratio": 0.009800325998370009,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 0.010594947025264872,
+                "ci_low": 0.008985330073349633,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 0.009800325998370007
+            },
+            "precision": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 481,
+              "estimand_id": "EST-F3-RND-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": 0.0,
+              "numerator": 0,
+              "observed_denominator": 481,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": null,
+              "value": 0.0
+            },
+            "recall": {
+              "defined_run_count": 0,
+              "defined_value_qualifier_code": null,
+              "denominator": 0,
+              "estimand_id": "EST-F3-RND-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": null,
+              "numerator": 0,
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": "no_defined_run_in_cell",
+              "value": null
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F3-RND-01",
+          "evaluation_unit": "received_telemetry_observation",
+          "kind": "ratio",
+          "result_family": "F3_direct_detection",
+          "status": "RESCORE_REQUIRED"
+        }
+      ],
+      "run_count": 60,
+      "scenario": "A1",
+      "source": "results"
+    },
+    {
+      "cell": "A1-D3",
+      "defence": "D3",
+      "estimands": [
+        {
+          "arms": {
+            "execution_rate": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 487,
+              "estimand_id": "EST-F0-01",
+              "evaluation_unit": "attack_action",
+              "macro_mean_over_defined_runs": 0.9727005652835172,
+              "numerator": 474,
+              "observed_denominator": 487,
+              "observed_numerator": 474,
+              "pooled_ratio": 0.973305954825462,
+              "result_family": "F0_attack_execution",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 0.9878099838969404,
+                "ci_low": 0.9552868014052224,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 0.9727005652835172
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F0-01",
+          "evaluation_unit": "attack_action",
+          "kind": "ratio",
+          "result_family": "F0_attack_execution",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "prevention_rate": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 474,
+              "estimand_id": "EST-F1-01",
+              "evaluation_unit": "command_authorisation_attempt",
+              "macro_mean_over_defined_runs": 1.0,
+              "numerator": 474,
+              "observed_denominator": 474,
+              "observed_numerator": 474,
+              "pooled_ratio": 1.0,
+              "result_family": "F1_prevention",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 1.0,
+                "ci_low": 1.0,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 1.0
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F1-01",
+          "evaluation_unit": "command_authorisation_attempt",
+          "kind": "ratio",
+          "result_family": "F1_prevention",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "acceptance_rate": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 474,
+              "estimand_id": "EST-F1-02",
+              "evaluation_unit": "command_authorisation_attempt",
+              "macro_mean_over_defined_runs": 0.0,
+              "numerator": 0,
+              "observed_denominator": 474,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "result_family": "F1_prevention",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": null,
+              "value": 0.0
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F1-02",
+          "evaluation_unit": "command_authorisation_attempt",
+          "kind": "ratio",
+          "result_family": "F1_prevention",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "state_transition_rate": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 487,
+              "estimand_id": "EST-F2-01",
+              "evaluation_unit": "attack_action",
+              "macro_mean_over_defined_runs": 0.0,
+              "numerator": 0,
+              "observed_denominator": 487,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "result_family": "F2_state_transition",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": null,
+              "value": 0.0
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F2-01",
+          "evaluation_unit": "attack_action",
+          "kind": "ratio",
+          "result_family": "F2_state_transition",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "event_recall": {
+              "defined_run_count": 0,
+              "defined_value_qualifier_code": null,
+              "denominator": 0,
+              "estimand_id": "EST-F3-D3-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": null,
+              "numerator": 0,
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": "no_defined_run_in_cell",
+              "value": null
+            },
+            "fpr": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 48606,
+              "estimand_id": "EST-F3-D3-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": 0.001976925071836076,
+              "numerator": 96,
+              "observed_denominator": 48606,
+              "observed_numerator": 96,
+              "pooled_ratio": 0.0019750648068139736,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 0.0023734044038224793,
+                "ci_low": 0.0016021254246687956,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 0.001976925071836076
+            },
+            "precision": {
+              "defined_run_count": 49,
+              "defined_value_qualifier_code": null,
+              "denominator": 96,
+              "estimand_id": "EST-F3-D3-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": 0.0,
+              "numerator": 0,
+              "observed_denominator": 96,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": null,
+              "value": 0.0
+            },
+            "recall": {
+              "defined_run_count": 0,
+              "defined_value_qualifier_code": null,
+              "denominator": 0,
+              "estimand_id": "EST-F3-D3-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": null,
+              "numerator": 0,
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": "no_defined_run_in_cell",
+              "value": null
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F3-D3-01",
+          "evaluation_unit": "received_telemetry_observation",
+          "kind": "ratio",
+          "result_family": "F3_direct_detection",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "event_recall": {
+              "defined_run_count": 0,
+              "defined_value_qualifier_code": null,
+              "denominator": 0,
+              "estimand_id": "EST-F3-D3-02",
+              "evaluation_unit": "effect_event",
+              "macro_mean_over_defined_runs": null,
+              "numerator": 0,
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": "no_defined_run_in_cell",
+              "value": null
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F3-D3-02",
+          "evaluation_unit": "effect_event",
+          "kind": "ratio",
+          "result_family": "F3_direct_detection",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "event_recall": {
+              "defined_run_count": 0,
+              "defined_value_qualifier_code": null,
+              "denominator": 0,
+              "estimand_id": "EST-F3-RND-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": null,
+              "numerator": 0,
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": "no_defined_run_in_cell",
+              "value": null
+            },
+            "fpr": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 49080,
+              "estimand_id": "EST-F3-RND-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": 0.009800325998370007,
+              "numerator": 481,
+              "observed_denominator": 49080,
+              "observed_numerator": 481,
+              "pooled_ratio": 0.009800325998370009,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 0.010594947025264872,
+                "ci_low": 0.008985330073349633,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 0.009800325998370007
+            },
+            "precision": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 481,
+              "estimand_id": "EST-F3-RND-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": 0.0,
+              "numerator": 0,
+              "observed_denominator": 481,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": null,
+              "value": 0.0
+            },
+            "recall": {
+              "defined_run_count": 0,
+              "defined_value_qualifier_code": null,
+              "denominator": 0,
+              "estimand_id": "EST-F3-RND-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": null,
+              "numerator": 0,
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": "no_defined_run_in_cell",
+              "value": null
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F3-RND-01",
+          "evaluation_unit": "received_telemetry_observation",
+          "kind": "ratio",
+          "result_family": "F3_direct_detection",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "secondary_reporting_rate": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 474,
+              "estimand_id": "EST-F4-01",
+              "evaluation_unit": "d1_rejection_evidence_event",
+              "macro_mean_over_defined_runs": 1.0,
+              "numerator": 474,
+              "observed_denominator": 474,
+              "observed_numerator": 474,
+              "pooled_ratio": 1.0,
+              "result_family": "F4_secondary_reporting",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 1.0,
+                "ci_low": 1.0,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 1.0
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F4-01",
+          "evaluation_unit": "d1_rejection_evidence_event",
+          "kind": "ratio",
+          "result_family": "F4_secondary_reporting",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "runs_with_a_missed_effect_event": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 60,
+              "estimand_id": "EST-AUX-01",
+              "evaluation_unit": "run",
+              "macro_mean_over_defined_runs": 0.0,
+              "numerator": 0,
+              "observed_denominator": 60,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": null,
+              "value": 0.0
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-AUX-01",
+          "evaluation_unit": "run",
+          "kind": "ratio",
+          "result_family": "F3_direct_detection",
+          "status": "RESCORE_REQUIRED"
+        }
+      ],
+      "run_count": 60,
+      "scenario": "A1",
+      "source": "results-v2-iss06"
+    },
+    {
+      "cell": "A2-D0",
+      "defence": "D0",
+      "estimands": [
+        {
+          "arms": {
+            "execution_rate": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 472,
+              "estimand_id": "EST-F0-01",
+              "evaluation_unit": "attack_action",
+              "macro_mean_over_defined_runs": 0.8839757696007696,
+              "numerator": 414,
+              "observed_denominator": 472,
+              "observed_numerator": 414,
+              "pooled_ratio": 0.8771186440677966,
+              "result_family": "F0_attack_execution",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 0.9180844155844156,
+                "ci_low": 0.8455808080808079,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 0.8839757696007696
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F0-01",
+          "evaluation_unit": "attack_action",
+          "kind": "ratio",
+          "result_family": "F0_attack_execution",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "state_transition_rate": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 472,
+              "estimand_id": "EST-F2-01",
+              "evaluation_unit": "attack_action",
+              "macro_mean_over_defined_runs": 0.6963600288600289,
+              "numerator": 328,
+              "observed_denominator": 472,
+              "observed_numerator": 328,
+              "pooled_ratio": 0.6949152542372882,
+              "result_family": "F2_state_transition",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 0.7382647907647908,
+                "ci_low": 0.6527627465127465,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 0.6963600288600289
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F2-01",
+          "evaluation_unit": "attack_action",
+          "kind": "ratio",
+          "result_family": "F2_state_transition",
+          "status": "RESCORE_REQUIRED"
+        }
+      ],
+      "run_count": 60,
+      "scenario": "A2",
+      "source": "results"
+    },
+    {
+      "cell": "A2-D1",
+      "defence": "D1",
+      "estimands": [
+        {
+          "arms": {
+            "execution_rate": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 472,
+              "estimand_id": "EST-F0-01",
+              "evaluation_unit": "attack_action",
+              "macro_mean_over_defined_runs": 0.8839757696007696,
+              "numerator": 414,
+              "observed_denominator": 472,
+              "observed_numerator": 414,
+              "pooled_ratio": 0.8771186440677966,
+              "result_family": "F0_attack_execution",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 0.9180844155844156,
+                "ci_low": 0.8455808080808079,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 0.8839757696007696
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F0-01",
+          "evaluation_unit": "attack_action",
+          "kind": "ratio",
+          "result_family": "F0_attack_execution",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "prevention_rate": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 414,
+              "estimand_id": "EST-F1-01",
+              "evaluation_unit": "command_authorisation_attempt",
+              "macro_mean_over_defined_runs": 1.0,
+              "numerator": 414,
+              "observed_denominator": 414,
+              "observed_numerator": 414,
+              "pooled_ratio": 1.0,
+              "result_family": "F1_prevention",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 1.0,
+                "ci_low": 1.0,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 1.0
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F1-01",
+          "evaluation_unit": "command_authorisation_attempt",
+          "kind": "ratio",
+          "result_family": "F1_prevention",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "acceptance_rate": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 414,
+              "estimand_id": "EST-F1-02",
+              "evaluation_unit": "command_authorisation_attempt",
+              "macro_mean_over_defined_runs": 0.0,
+              "numerator": 0,
+              "observed_denominator": 414,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "result_family": "F1_prevention",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": null,
+              "value": 0.0
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F1-02",
+          "evaluation_unit": "command_authorisation_attempt",
+          "kind": "ratio",
+          "result_family": "F1_prevention",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "state_transition_rate": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 472,
+              "estimand_id": "EST-F2-01",
+              "evaluation_unit": "attack_action",
+              "macro_mean_over_defined_runs": 0.0,
+              "numerator": 0,
+              "observed_denominator": 472,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "result_family": "F2_state_transition",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": null,
+              "value": 0.0
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F2-01",
+          "evaluation_unit": "attack_action",
+          "kind": "ratio",
+          "result_family": "F2_state_transition",
+          "status": "RESCORE_REQUIRED"
+        }
+      ],
+      "run_count": 60,
+      "scenario": "A2",
+      "source": "results"
+    },
+    {
+      "cell": "A2-D2",
+      "defence": "D2",
+      "estimands": [
+        {
+          "arms": {
+            "execution_rate": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 472,
+              "estimand_id": "EST-F0-01",
+              "evaluation_unit": "attack_action",
+              "macro_mean_over_defined_runs": 0.8839757696007696,
+              "numerator": 414,
+              "observed_denominator": 472,
+              "observed_numerator": 414,
+              "pooled_ratio": 0.8771186440677966,
+              "result_family": "F0_attack_execution",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 0.9180844155844156,
+                "ci_low": 0.8455808080808079,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 0.8839757696007696
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F0-01",
+          "evaluation_unit": "attack_action",
+          "kind": "ratio",
+          "result_family": "F0_attack_execution",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "prevention_rate": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 414,
+              "estimand_id": "EST-F1-01",
+              "evaluation_unit": "command_authorisation_attempt",
+              "macro_mean_over_defined_runs": 1.0,
+              "numerator": 414,
+              "observed_denominator": 414,
+              "observed_numerator": 414,
+              "pooled_ratio": 1.0,
+              "result_family": "F1_prevention",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 1.0,
+                "ci_low": 1.0,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 1.0
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F1-01",
+          "evaluation_unit": "command_authorisation_attempt",
+          "kind": "ratio",
+          "result_family": "F1_prevention",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "acceptance_rate": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 414,
+              "estimand_id": "EST-F1-02",
+              "evaluation_unit": "command_authorisation_attempt",
+              "macro_mean_over_defined_runs": 0.0,
+              "numerator": 0,
+              "observed_denominator": 414,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "result_family": "F1_prevention",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": null,
+              "value": 0.0
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F1-02",
+          "evaluation_unit": "command_authorisation_attempt",
+          "kind": "ratio",
+          "result_family": "F1_prevention",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "state_transition_rate": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 472,
+              "estimand_id": "EST-F2-01",
+              "evaluation_unit": "attack_action",
+              "macro_mean_over_defined_runs": 0.0,
+              "numerator": 0,
+              "observed_denominator": 472,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "result_family": "F2_state_transition",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": null,
+              "value": 0.0
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F2-01",
+          "evaluation_unit": "attack_action",
+          "kind": "ratio",
+          "result_family": "F2_state_transition",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "event_recall": {
+              "defined_run_count": 0,
+              "defined_value_qualifier_code": null,
+              "denominator": 0,
+              "estimand_id": "EST-F3-D2-01",
+              "evaluation_unit": "flow_window_60s",
+              "macro_mean_over_defined_runs": null,
+              "numerator": 0,
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": "no_defined_run_in_cell",
+              "value": null
+            },
+            "fpr": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 9300,
+              "estimand_id": "EST-F3-D2-01",
+              "evaluation_unit": "flow_window_60s",
+              "macro_mean_over_defined_runs": 0.0,
+              "numerator": 0,
+              "observed_denominator": 9300,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": null,
+              "value": 0.0
+            },
+            "precision": {
+              "defined_run_count": 0,
+              "defined_value_qualifier_code": null,
+              "denominator": 0,
+              "estimand_id": "EST-F3-D2-01",
+              "evaluation_unit": "flow_window_60s",
+              "macro_mean_over_defined_runs": null,
+              "numerator": 0,
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": "no_defined_run_in_cell",
+              "value": null
+            },
+            "recall": {
+              "defined_run_count": 0,
+              "defined_value_qualifier_code": null,
+              "denominator": 0,
+              "estimand_id": "EST-F3-D2-01",
+              "evaluation_unit": "flow_window_60s",
+              "macro_mean_over_defined_runs": null,
+              "numerator": 0,
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": "no_defined_run_in_cell",
+              "value": null
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F3-D2-01",
+          "evaluation_unit": "flow_window_60s",
+          "kind": "ratio",
+          "result_family": "F3_direct_detection",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "event_recall": {
+              "defined_run_count": 0,
+              "defined_value_qualifier_code": null,
+              "denominator": 0,
+              "estimand_id": "EST-F3-RND-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": null,
+              "numerator": 0,
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": "no_defined_run_in_cell",
+              "value": null
+            },
+            "fpr": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 49080,
+              "estimand_id": "EST-F3-RND-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": 0.010452322738386309,
+              "numerator": 513,
+              "observed_denominator": 49080,
+              "observed_numerator": 513,
+              "pooled_ratio": 0.010452322738386309,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 0.011185819070904645,
+                "ci_low": 0.00971882640586797,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 0.010452322738386309
+            },
+            "precision": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 513,
+              "estimand_id": "EST-F3-RND-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": 0.0,
+              "numerator": 0,
+              "observed_denominator": 513,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": null,
+              "value": 0.0
+            },
+            "recall": {
+              "defined_run_count": 0,
+              "defined_value_qualifier_code": null,
+              "denominator": 0,
+              "estimand_id": "EST-F3-RND-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": null,
+              "numerator": 0,
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": "no_defined_run_in_cell",
+              "value": null
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F3-RND-01",
+          "evaluation_unit": "received_telemetry_observation",
+          "kind": "ratio",
+          "result_family": "F3_direct_detection",
+          "status": "RESCORE_REQUIRED"
+        }
+      ],
+      "run_count": 60,
+      "scenario": "A2",
+      "source": "results"
+    },
+    {
+      "cell": "A2-D3",
+      "defence": "D3",
+      "estimands": [
+        {
+          "arms": {
+            "execution_rate": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 472,
+              "estimand_id": "EST-F0-01",
+              "evaluation_unit": "attack_action",
+              "macro_mean_over_defined_runs": 0.8839757696007696,
+              "numerator": 414,
+              "observed_denominator": 472,
+              "observed_numerator": 414,
+              "pooled_ratio": 0.8771186440677966,
+              "result_family": "F0_attack_execution",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 0.9180844155844156,
+                "ci_low": 0.8455808080808079,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 0.8839757696007696
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F0-01",
+          "evaluation_unit": "attack_action",
+          "kind": "ratio",
+          "result_family": "F0_attack_execution",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "prevention_rate": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 414,
+              "estimand_id": "EST-F1-01",
+              "evaluation_unit": "command_authorisation_attempt",
+              "macro_mean_over_defined_runs": 1.0,
+              "numerator": 414,
+              "observed_denominator": 414,
+              "observed_numerator": 414,
+              "pooled_ratio": 1.0,
+              "result_family": "F1_prevention",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 1.0,
+                "ci_low": 1.0,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 1.0
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F1-01",
+          "evaluation_unit": "command_authorisation_attempt",
+          "kind": "ratio",
+          "result_family": "F1_prevention",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "acceptance_rate": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 414,
+              "estimand_id": "EST-F1-02",
+              "evaluation_unit": "command_authorisation_attempt",
+              "macro_mean_over_defined_runs": 0.0,
+              "numerator": 0,
+              "observed_denominator": 414,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "result_family": "F1_prevention",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": null,
+              "value": 0.0
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F1-02",
+          "evaluation_unit": "command_authorisation_attempt",
+          "kind": "ratio",
+          "result_family": "F1_prevention",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "state_transition_rate": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 472,
+              "estimand_id": "EST-F2-01",
+              "evaluation_unit": "attack_action",
+              "macro_mean_over_defined_runs": 0.0,
+              "numerator": 0,
+              "observed_denominator": 472,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "result_family": "F2_state_transition",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": null,
+              "value": 0.0
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F2-01",
+          "evaluation_unit": "attack_action",
+          "kind": "ratio",
+          "result_family": "F2_state_transition",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "event_recall": {
+              "defined_run_count": 0,
+              "defined_value_qualifier_code": null,
+              "denominator": 0,
+              "estimand_id": "EST-F3-D3-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": null,
+              "numerator": 0,
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": "no_defined_run_in_cell",
+              "value": null
+            },
+            "fpr": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 48666,
+              "estimand_id": "EST-F3-D3-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": 0.0018279300192575267,
+              "numerator": 89,
+              "observed_denominator": 48666,
+              "observed_numerator": 89,
+              "pooled_ratio": 0.0018287921752352771,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 0.0022181264989273026,
+                "ci_low": 0.0014794199169262526,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 0.0018279300192575267
+            },
+            "precision": {
+              "defined_run_count": 48,
+              "defined_value_qualifier_code": null,
+              "denominator": 89,
+              "estimand_id": "EST-F3-D3-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": 0.0,
+              "numerator": 0,
+              "observed_denominator": 89,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": null,
+              "value": 0.0
+            },
+            "recall": {
+              "defined_run_count": 0,
+              "defined_value_qualifier_code": null,
+              "denominator": 0,
+              "estimand_id": "EST-F3-D3-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": null,
+              "numerator": 0,
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": "no_defined_run_in_cell",
+              "value": null
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F3-D3-01",
+          "evaluation_unit": "received_telemetry_observation",
+          "kind": "ratio",
+          "result_family": "F3_direct_detection",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "event_recall": {
+              "defined_run_count": 0,
+              "defined_value_qualifier_code": null,
+              "denominator": 0,
+              "estimand_id": "EST-F3-D3-02",
+              "evaluation_unit": "effect_event",
+              "macro_mean_over_defined_runs": null,
+              "numerator": 0,
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": "no_defined_run_in_cell",
+              "value": null
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F3-D3-02",
+          "evaluation_unit": "effect_event",
+          "kind": "ratio",
+          "result_family": "F3_direct_detection",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "event_recall": {
+              "defined_run_count": 0,
+              "defined_value_qualifier_code": null,
+              "denominator": 0,
+              "estimand_id": "EST-F3-RND-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": null,
+              "numerator": 0,
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": "no_defined_run_in_cell",
+              "value": null
+            },
+            "fpr": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 49080,
+              "estimand_id": "EST-F3-RND-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": 0.010452322738386309,
+              "numerator": 513,
+              "observed_denominator": 49080,
+              "observed_numerator": 513,
+              "pooled_ratio": 0.010452322738386309,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 0.011185819070904645,
+                "ci_low": 0.00971882640586797,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 0.010452322738386309
+            },
+            "precision": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 513,
+              "estimand_id": "EST-F3-RND-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": 0.0,
+              "numerator": 0,
+              "observed_denominator": 513,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": null,
+              "value": 0.0
+            },
+            "recall": {
+              "defined_run_count": 0,
+              "defined_value_qualifier_code": null,
+              "denominator": 0,
+              "estimand_id": "EST-F3-RND-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": null,
+              "numerator": 0,
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": "no_defined_run_in_cell",
+              "value": null
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F3-RND-01",
+          "evaluation_unit": "received_telemetry_observation",
+          "kind": "ratio",
+          "result_family": "F3_direct_detection",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "secondary_reporting_rate": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 414,
+              "estimand_id": "EST-F4-01",
+              "evaluation_unit": "d1_rejection_evidence_event",
+              "macro_mean_over_defined_runs": 1.0,
+              "numerator": 414,
+              "observed_denominator": 414,
+              "observed_numerator": 414,
+              "pooled_ratio": 1.0,
+              "result_family": "F4_secondary_reporting",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 1.0,
+                "ci_low": 1.0,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 1.0
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F4-01",
+          "evaluation_unit": "d1_rejection_evidence_event",
+          "kind": "ratio",
+          "result_family": "F4_secondary_reporting",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "runs_with_a_missed_effect_event": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 60,
+              "estimand_id": "EST-AUX-01",
+              "evaluation_unit": "run",
+              "macro_mean_over_defined_runs": 0.0,
+              "numerator": 0,
+              "observed_denominator": 60,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": null,
+              "value": 0.0
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-AUX-01",
+          "evaluation_unit": "run",
+          "kind": "ratio",
+          "result_family": "F3_direct_detection",
+          "status": "RESCORE_REQUIRED"
+        }
+      ],
+      "run_count": 60,
+      "scenario": "A2",
+      "source": "results-v2-iss06"
+    },
+    {
+      "cell": "A3-D0",
+      "defence": "D0",
+      "estimands": [
+        {
+          "arms": {
+            "execution_rate": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 472,
+              "estimand_id": "EST-F0-01",
+              "evaluation_unit": "attack_action",
+              "macro_mean_over_defined_runs": 0.8839757696007696,
+              "numerator": 414,
+              "observed_denominator": 472,
+              "observed_numerator": 414,
+              "pooled_ratio": 0.8771186440677966,
+              "result_family": "F0_attack_execution",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 0.9180844155844156,
+                "ci_low": 0.8455808080808079,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 0.8839757696007696
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F0-01",
+          "evaluation_unit": "attack_action",
+          "kind": "ratio",
+          "result_family": "F0_attack_execution",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "state_transition_rate": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 472,
+              "estimand_id": "EST-F2-01",
+              "evaluation_unit": "attack_action",
+              "macro_mean_over_defined_runs": 0.7082362313612314,
+              "numerator": 330,
+              "observed_denominator": 472,
+              "observed_numerator": 330,
+              "pooled_ratio": 0.6991525423728814,
+              "result_family": "F2_state_transition",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 0.7505690836940838,
+                "ci_low": 0.6643656806156808,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 0.7082362313612314
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F2-01",
+          "evaluation_unit": "attack_action",
+          "kind": "ratio",
+          "result_family": "F2_state_transition",
+          "status": "RESCORE_REQUIRED"
+        }
+      ],
+      "run_count": 60,
+      "scenario": "A3",
+      "source": "results"
+    },
+    {
+      "cell": "A3-D1",
+      "defence": "D1",
+      "estimands": [
+        {
+          "arms": {
+            "execution_rate": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 472,
+              "estimand_id": "EST-F0-01",
+              "evaluation_unit": "attack_action",
+              "macro_mean_over_defined_runs": 0.8839757696007696,
+              "numerator": 414,
+              "observed_denominator": 472,
+              "observed_numerator": 414,
+              "pooled_ratio": 0.8771186440677966,
+              "result_family": "F0_attack_execution",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 0.9180844155844156,
+                "ci_low": 0.8455808080808079,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 0.8839757696007696
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F0-01",
+          "evaluation_unit": "attack_action",
+          "kind": "ratio",
+          "result_family": "F0_attack_execution",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "prevention_rate": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 414,
+              "estimand_id": "EST-F1-01",
+              "evaluation_unit": "command_authorisation_attempt",
+              "macro_mean_over_defined_runs": 1.0,
+              "numerator": 414,
+              "observed_denominator": 414,
+              "observed_numerator": 414,
+              "pooled_ratio": 1.0,
+              "result_family": "F1_prevention",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 1.0,
+                "ci_low": 1.0,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 1.0
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F1-01",
+          "evaluation_unit": "command_authorisation_attempt",
+          "kind": "ratio",
+          "result_family": "F1_prevention",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "acceptance_rate": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 414,
+              "estimand_id": "EST-F1-02",
+              "evaluation_unit": "command_authorisation_attempt",
+              "macro_mean_over_defined_runs": 0.0,
+              "numerator": 0,
+              "observed_denominator": 414,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "result_family": "F1_prevention",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": null,
+              "value": 0.0
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F1-02",
+          "evaluation_unit": "command_authorisation_attempt",
+          "kind": "ratio",
+          "result_family": "F1_prevention",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "state_transition_rate": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 472,
+              "estimand_id": "EST-F2-01",
+              "evaluation_unit": "attack_action",
+              "macro_mean_over_defined_runs": 0.0,
+              "numerator": 0,
+              "observed_denominator": 472,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "result_family": "F2_state_transition",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": null,
+              "value": 0.0
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F2-01",
+          "evaluation_unit": "attack_action",
+          "kind": "ratio",
+          "result_family": "F2_state_transition",
+          "status": "RESCORE_REQUIRED"
+        }
+      ],
+      "run_count": 60,
+      "scenario": "A3",
+      "source": "results"
+    },
+    {
+      "cell": "A3-D2",
+      "defence": "D2",
+      "estimands": [
+        {
+          "arms": {
+            "execution_rate": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 472,
+              "estimand_id": "EST-F0-01",
+              "evaluation_unit": "attack_action",
+              "macro_mean_over_defined_runs": 0.8839757696007696,
+              "numerator": 414,
+              "observed_denominator": 472,
+              "observed_numerator": 414,
+              "pooled_ratio": 0.8771186440677966,
+              "result_family": "F0_attack_execution",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 0.9180844155844156,
+                "ci_low": 0.8455808080808079,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 0.8839757696007696
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F0-01",
+          "evaluation_unit": "attack_action",
+          "kind": "ratio",
+          "result_family": "F0_attack_execution",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "prevention_rate": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 414,
+              "estimand_id": "EST-F1-01",
+              "evaluation_unit": "command_authorisation_attempt",
+              "macro_mean_over_defined_runs": 1.0,
+              "numerator": 414,
+              "observed_denominator": 414,
+              "observed_numerator": 414,
+              "pooled_ratio": 1.0,
+              "result_family": "F1_prevention",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 1.0,
+                "ci_low": 1.0,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 1.0
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F1-01",
+          "evaluation_unit": "command_authorisation_attempt",
+          "kind": "ratio",
+          "result_family": "F1_prevention",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "acceptance_rate": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 414,
+              "estimand_id": "EST-F1-02",
+              "evaluation_unit": "command_authorisation_attempt",
+              "macro_mean_over_defined_runs": 0.0,
+              "numerator": 0,
+              "observed_denominator": 414,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "result_family": "F1_prevention",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": null,
+              "value": 0.0
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F1-02",
+          "evaluation_unit": "command_authorisation_attempt",
+          "kind": "ratio",
+          "result_family": "F1_prevention",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "state_transition_rate": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 472,
+              "estimand_id": "EST-F2-01",
+              "evaluation_unit": "attack_action",
+              "macro_mean_over_defined_runs": 0.0,
+              "numerator": 0,
+              "observed_denominator": 472,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "result_family": "F2_state_transition",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": null,
+              "value": 0.0
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F2-01",
+          "evaluation_unit": "attack_action",
+          "kind": "ratio",
+          "result_family": "F2_state_transition",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "event_recall": {
+              "defined_run_count": 0,
+              "defined_value_qualifier_code": null,
+              "denominator": 0,
+              "estimand_id": "EST-F3-D2-01",
+              "evaluation_unit": "flow_window_60s",
+              "macro_mean_over_defined_runs": null,
+              "numerator": 0,
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": "no_defined_run_in_cell",
+              "value": null
+            },
+            "fpr": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 9300,
+              "estimand_id": "EST-F3-D2-01",
+              "evaluation_unit": "flow_window_60s",
+              "macro_mean_over_defined_runs": 0.0,
+              "numerator": 0,
+              "observed_denominator": 9300,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": null,
+              "value": 0.0
+            },
+            "precision": {
+              "defined_run_count": 0,
+              "defined_value_qualifier_code": null,
+              "denominator": 0,
+              "estimand_id": "EST-F3-D2-01",
+              "evaluation_unit": "flow_window_60s",
+              "macro_mean_over_defined_runs": null,
+              "numerator": 0,
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": "no_defined_run_in_cell",
+              "value": null
+            },
+            "recall": {
+              "defined_run_count": 0,
+              "defined_value_qualifier_code": null,
+              "denominator": 0,
+              "estimand_id": "EST-F3-D2-01",
+              "evaluation_unit": "flow_window_60s",
+              "macro_mean_over_defined_runs": null,
+              "numerator": 0,
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": "no_defined_run_in_cell",
+              "value": null
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F3-D2-01",
+          "evaluation_unit": "flow_window_60s",
+          "kind": "ratio",
+          "result_family": "F3_direct_detection",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "event_recall": {
+              "defined_run_count": 0,
+              "defined_value_qualifier_code": null,
+              "denominator": 0,
+              "estimand_id": "EST-F3-RND-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": null,
+              "numerator": 0,
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": "no_defined_run_in_cell",
+              "value": null
+            },
+            "fpr": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 49080,
+              "estimand_id": "EST-F3-RND-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": 0.010452322738386309,
+              "numerator": 513,
+              "observed_denominator": 49080,
+              "observed_numerator": 513,
+              "pooled_ratio": 0.010452322738386309,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 0.011185819070904645,
+                "ci_low": 0.00971882640586797,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 0.010452322738386309
+            },
+            "precision": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 513,
+              "estimand_id": "EST-F3-RND-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": 0.0,
+              "numerator": 0,
+              "observed_denominator": 513,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": null,
+              "value": 0.0
+            },
+            "recall": {
+              "defined_run_count": 0,
+              "defined_value_qualifier_code": null,
+              "denominator": 0,
+              "estimand_id": "EST-F3-RND-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": null,
+              "numerator": 0,
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": "no_defined_run_in_cell",
+              "value": null
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F3-RND-01",
+          "evaluation_unit": "received_telemetry_observation",
+          "kind": "ratio",
+          "result_family": "F3_direct_detection",
+          "status": "RESCORE_REQUIRED"
+        }
+      ],
+      "run_count": 60,
+      "scenario": "A3",
+      "source": "results"
+    },
+    {
+      "cell": "A3-D3",
+      "defence": "D3",
+      "estimands": [
+        {
+          "arms": {
+            "execution_rate": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 472,
+              "estimand_id": "EST-F0-01",
+              "evaluation_unit": "attack_action",
+              "macro_mean_over_defined_runs": 0.8839757696007696,
+              "numerator": 414,
+              "observed_denominator": 472,
+              "observed_numerator": 414,
+              "pooled_ratio": 0.8771186440677966,
+              "result_family": "F0_attack_execution",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 0.9180844155844156,
+                "ci_low": 0.8455808080808079,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 0.8839757696007696
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F0-01",
+          "evaluation_unit": "attack_action",
+          "kind": "ratio",
+          "result_family": "F0_attack_execution",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "prevention_rate": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 414,
+              "estimand_id": "EST-F1-01",
+              "evaluation_unit": "command_authorisation_attempt",
+              "macro_mean_over_defined_runs": 1.0,
+              "numerator": 414,
+              "observed_denominator": 414,
+              "observed_numerator": 414,
+              "pooled_ratio": 1.0,
+              "result_family": "F1_prevention",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 1.0,
+                "ci_low": 1.0,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 1.0
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F1-01",
+          "evaluation_unit": "command_authorisation_attempt",
+          "kind": "ratio",
+          "result_family": "F1_prevention",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "acceptance_rate": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 414,
+              "estimand_id": "EST-F1-02",
+              "evaluation_unit": "command_authorisation_attempt",
+              "macro_mean_over_defined_runs": 0.0,
+              "numerator": 0,
+              "observed_denominator": 414,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "result_family": "F1_prevention",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": null,
+              "value": 0.0
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F1-02",
+          "evaluation_unit": "command_authorisation_attempt",
+          "kind": "ratio",
+          "result_family": "F1_prevention",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "state_transition_rate": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 472,
+              "estimand_id": "EST-F2-01",
+              "evaluation_unit": "attack_action",
+              "macro_mean_over_defined_runs": 0.0,
+              "numerator": 0,
+              "observed_denominator": 472,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "result_family": "F2_state_transition",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": null,
+              "value": 0.0
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F2-01",
+          "evaluation_unit": "attack_action",
+          "kind": "ratio",
+          "result_family": "F2_state_transition",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "event_recall": {
+              "defined_run_count": 0,
+              "defined_value_qualifier_code": null,
+              "denominator": 0,
+              "estimand_id": "EST-F3-D3-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": null,
+              "numerator": 0,
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": "no_defined_run_in_cell",
+              "value": null
+            },
+            "fpr": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 48666,
+              "estimand_id": "EST-F3-D3-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": 0.0018279300192575267,
+              "numerator": 89,
+              "observed_denominator": 48666,
+              "observed_numerator": 89,
+              "pooled_ratio": 0.0018287921752352771,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 0.0022181264989273026,
+                "ci_low": 0.0014794199169262526,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 0.0018279300192575267
+            },
+            "precision": {
+              "defined_run_count": 48,
+              "defined_value_qualifier_code": null,
+              "denominator": 89,
+              "estimand_id": "EST-F3-D3-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": 0.0,
+              "numerator": 0,
+              "observed_denominator": 89,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": null,
+              "value": 0.0
+            },
+            "recall": {
+              "defined_run_count": 0,
+              "defined_value_qualifier_code": null,
+              "denominator": 0,
+              "estimand_id": "EST-F3-D3-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": null,
+              "numerator": 0,
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": "no_defined_run_in_cell",
+              "value": null
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F3-D3-01",
+          "evaluation_unit": "received_telemetry_observation",
+          "kind": "ratio",
+          "result_family": "F3_direct_detection",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "event_recall": {
+              "defined_run_count": 0,
+              "defined_value_qualifier_code": null,
+              "denominator": 0,
+              "estimand_id": "EST-F3-D3-02",
+              "evaluation_unit": "effect_event",
+              "macro_mean_over_defined_runs": null,
+              "numerator": 0,
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": "no_defined_run_in_cell",
+              "value": null
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F3-D3-02",
+          "evaluation_unit": "effect_event",
+          "kind": "ratio",
+          "result_family": "F3_direct_detection",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "event_recall": {
+              "defined_run_count": 0,
+              "defined_value_qualifier_code": null,
+              "denominator": 0,
+              "estimand_id": "EST-F3-RND-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": null,
+              "numerator": 0,
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": "no_defined_run_in_cell",
+              "value": null
+            },
+            "fpr": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 49080,
+              "estimand_id": "EST-F3-RND-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": 0.010452322738386309,
+              "numerator": 513,
+              "observed_denominator": 49080,
+              "observed_numerator": 513,
+              "pooled_ratio": 0.010452322738386309,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 0.011185819070904645,
+                "ci_low": 0.00971882640586797,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 0.010452322738386309
+            },
+            "precision": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 513,
+              "estimand_id": "EST-F3-RND-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": 0.0,
+              "numerator": 0,
+              "observed_denominator": 513,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": null,
+              "value": 0.0
+            },
+            "recall": {
+              "defined_run_count": 0,
+              "defined_value_qualifier_code": null,
+              "denominator": 0,
+              "estimand_id": "EST-F3-RND-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": null,
+              "numerator": 0,
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": "no_defined_run_in_cell",
+              "value": null
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F3-RND-01",
+          "evaluation_unit": "received_telemetry_observation",
+          "kind": "ratio",
+          "result_family": "F3_direct_detection",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "secondary_reporting_rate": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 414,
+              "estimand_id": "EST-F4-01",
+              "evaluation_unit": "d1_rejection_evidence_event",
+              "macro_mean_over_defined_runs": 1.0,
+              "numerator": 414,
+              "observed_denominator": 414,
+              "observed_numerator": 414,
+              "pooled_ratio": 1.0,
+              "result_family": "F4_secondary_reporting",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 1.0,
+                "ci_low": 1.0,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 1.0
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F4-01",
+          "evaluation_unit": "d1_rejection_evidence_event",
+          "kind": "ratio",
+          "result_family": "F4_secondary_reporting",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "runs_with_a_missed_effect_event": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 60,
+              "estimand_id": "EST-AUX-01",
+              "evaluation_unit": "run",
+              "macro_mean_over_defined_runs": 0.0,
+              "numerator": 0,
+              "observed_denominator": 60,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": null,
+              "value": 0.0
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-AUX-01",
+          "evaluation_unit": "run",
+          "kind": "ratio",
+          "result_family": "F3_direct_detection",
+          "status": "RESCORE_REQUIRED"
+        }
+      ],
+      "run_count": 60,
+      "scenario": "A3",
+      "source": "results-v2-iss06"
+    },
+    {
+      "cell": "A4-D0",
+      "defence": "D0",
+      "estimands": [
+        {
+          "arms": {
+            "execution_rate": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 749,
+              "estimand_id": "EST-F0-01",
+              "evaluation_unit": "attack_action",
+              "macro_mean_over_defined_runs": 1.0,
+              "numerator": 749,
+              "observed_denominator": 749,
+              "observed_numerator": 749,
+              "pooled_ratio": 1.0,
+              "result_family": "F0_attack_execution",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 1.0,
+                "ci_low": 1.0,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 1.0
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F0-01",
+          "evaluation_unit": "attack_action",
+          "kind": "ratio",
+          "result_family": "F0_attack_execution",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {},
+          "counts": {
+            "dispositions": {
+              "dropped": 249,
+              "received_delayed": 230,
+              "received_modified": 270,
+              "unresolved": 0
+            },
+            "total_actions": 749
+          },
+          "estimand_id": "EST-F0-02",
+          "evaluation_unit": "attack_action",
+          "kind": "accounting",
+          "result_family": "F0_attack_execution",
+          "status": "RESCORE_REQUIRED"
+        }
+      ],
+      "run_count": 60,
+      "scenario": "A4",
+      "source": "results"
+    },
+    {
+      "cell": "A4-D1",
+      "defence": "D1",
+      "estimands": [
+        {
+          "arms": {
+            "execution_rate": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 749,
+              "estimand_id": "EST-F0-01",
+              "evaluation_unit": "attack_action",
+              "macro_mean_over_defined_runs": 1.0,
+              "numerator": 749,
+              "observed_denominator": 749,
+              "observed_numerator": 749,
+              "pooled_ratio": 1.0,
+              "result_family": "F0_attack_execution",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 1.0,
+                "ci_low": 1.0,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 1.0
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F0-01",
+          "evaluation_unit": "attack_action",
+          "kind": "ratio",
+          "result_family": "F0_attack_execution",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {},
+          "counts": {
+            "dispositions": {
+              "dropped": 249,
+              "received_delayed": 230,
+              "received_modified": 270,
+              "unresolved": 0
+            },
+            "total_actions": 749
+          },
+          "estimand_id": "EST-F0-02",
+          "evaluation_unit": "attack_action",
+          "kind": "accounting",
+          "result_family": "F0_attack_execution",
+          "status": "RESCORE_REQUIRED"
+        }
+      ],
+      "run_count": 60,
+      "scenario": "A4",
+      "source": "results"
+    },
+    {
+      "cell": "A4-D2",
+      "defence": "D2",
+      "estimands": [
+        {
+          "arms": {
+            "execution_rate": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 749,
+              "estimand_id": "EST-F0-01",
+              "evaluation_unit": "attack_action",
+              "macro_mean_over_defined_runs": 1.0,
+              "numerator": 749,
+              "observed_denominator": 749,
+              "observed_numerator": 749,
+              "pooled_ratio": 1.0,
+              "result_family": "F0_attack_execution",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 1.0,
+                "ci_low": 1.0,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 1.0
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F0-01",
+          "evaluation_unit": "attack_action",
+          "kind": "ratio",
+          "result_family": "F0_attack_execution",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {},
+          "counts": {
+            "dispositions": {
+              "dropped": 249,
+              "received_delayed": 230,
+              "received_modified": 270,
+              "unresolved": 0
+            },
+            "total_actions": 749
+          },
+          "estimand_id": "EST-F0-02",
+          "evaluation_unit": "attack_action",
+          "kind": "accounting",
+          "result_family": "F0_attack_execution",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "event_recall": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 469,
+              "estimand_id": "EST-F3-D2-01",
+              "evaluation_unit": "flow_window_60s",
+              "macro_mean_over_defined_runs": 0.5504237891737892,
+              "numerator": 254,
+              "observed_denominator": 469,
+              "observed_numerator": 254,
+              "pooled_ratio": 0.5415778251599147,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 0.5963117438117439,
+                "ci_low": 0.503859843859844,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 0.5504237891737892
+            },
+            "fpr": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 8832,
+              "estimand_id": "EST-F3-D2-01",
+              "evaluation_unit": "flow_window_60s",
+              "macro_mean_over_defined_runs": 0.002718465261004607,
+              "numerator": 24,
+              "observed_denominator": 8832,
+              "observed_numerator": 24,
+              "pooled_ratio": 0.002717391304347826,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 0.0040594050536263875,
+                "ci_low": 0.0015804807650453621,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 0.002718465261004607
+            },
+            "precision": {
+              "defined_run_count": 59,
+              "defined_value_qualifier_code": null,
+              "denominator": 278,
+              "estimand_id": "EST-F3-D2-01",
+              "evaluation_unit": "flow_window_60s",
+              "macro_mean_over_defined_runs": 0.9164777313082397,
+              "numerator": 254,
+              "observed_denominator": 278,
+              "observed_numerator": 254,
+              "pooled_ratio": 0.9136690647482014,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 0.9539071098393133,
+                "ci_low": 0.8742057377650598,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 0.9164777313082397
+            },
+            "recall": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 469,
+              "estimand_id": "EST-F3-D2-01",
+              "evaluation_unit": "flow_window_60s",
+              "macro_mean_over_defined_runs": 0.5504237891737892,
+              "numerator": 254,
+              "observed_denominator": 469,
+              "observed_numerator": 254,
+              "pooled_ratio": 0.5415778251599147,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 0.5963117438117439,
+                "ci_low": 0.503859843859844,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 0.5504237891737892
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F3-D2-01",
+          "evaluation_unit": "flow_window_60s",
+          "kind": "ratio",
+          "result_family": "F3_direct_detection",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "event_recall": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 500,
+              "estimand_id": "EST-F3-RND-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": 0.010984015984015985,
+              "numerator": 7,
+              "observed_denominator": 500,
+              "observed_numerator": 7,
+              "pooled_ratio": 0.014,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 0.019019314019314018,
+                "ci_low": 0.004139194139194139,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 0.010984015984015985
+            },
+            "fpr": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 48331,
+              "estimand_id": "EST-F3-RND-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": 0.010016791995268011,
+              "numerator": 484,
+              "observed_denominator": 48331,
+              "observed_numerator": 484,
+              "pooled_ratio": 0.010014276551281787,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 0.010900183888525133,
+                "ci_low": 0.009126507103722222,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 0.010016791995268011
+            },
+            "precision": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 491,
+              "estimand_id": "EST-F3-RND-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": 0.011612739112739112,
+              "numerator": 7,
+              "observed_denominator": 491,
+              "observed_numerator": 7,
+              "pooled_ratio": 0.014256619144602852,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 0.02046092796092796,
+                "ci_low": 0.004232804232804232,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 0.011612739112739112
+            },
+            "recall": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 500,
+              "estimand_id": "EST-F3-RND-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": 0.010984015984015985,
+              "numerator": 7,
+              "observed_denominator": 500,
+              "observed_numerator": 7,
+              "pooled_ratio": 0.014,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 0.019019314019314018,
+                "ci_low": 0.004139194139194139,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 0.010984015984015985
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F3-RND-01",
+          "evaluation_unit": "received_telemetry_observation",
+          "kind": "ratio",
+          "result_family": "F3_direct_detection",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "alarming_truth_positive_window_rate": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 9301,
+              "estimand_id": "EST-A4-L3-01",
+              "evaluation_unit": "flow_window_60s",
+              "macro_mean_over_defined_runs": 0.02730771916255787,
+              "numerator": 254,
+              "observed_denominator": 9301,
+              "observed_numerator": 254,
+              "pooled_ratio": 0.02730889151704118,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 0.031182133278907478,
+                "ci_low": 0.02354772467675692,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 0.02730771916255787
+            },
+            "truth_positive_window_recall": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 469,
+              "estimand_id": "EST-A4-L3-01",
+              "evaluation_unit": "flow_window_60s",
+              "macro_mean_over_defined_runs": 0.5504237891737892,
+              "numerator": 254,
+              "observed_denominator": 469,
+              "observed_numerator": 254,
+              "pooled_ratio": 0.5415778251599147,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 0.5963117438117439,
+                "ci_low": 0.503859843859844,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 0.5504237891737892
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-A4-L3-01",
+          "evaluation_unit": "flow_window_60s",
+          "kind": "ratio",
+          "result_family": "F3_direct_detection",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "alarm_covered_drop_rate": {
+              "defined_run_count": 58,
+              "defined_value_qualifier_code": null,
+              "denominator": 248,
+              "estimand_id": "EST-A4-L3-02",
+              "evaluation_unit": "attack_action",
+              "macro_mean_over_defined_runs": 0.8229269293924467,
+              "numerator": 209,
+              "observed_denominator": 248,
+              "observed_numerator": 209,
+              "pooled_ratio": 0.842741935483871,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 0.879679802955665,
+                "ci_low": 0.7551313628899836,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 0.8229269293924467
+            }
+          },
+          "counts": {
+            "drop_opportunity_classes": {
+              "covered_by_alarming_expected_arrival_window": 209,
+              "denominator": 248,
+              "native_decision_opportunity": 248,
+              "no_native_decision_opportunity": 1,
+              "numerator": 209,
+              "unresolved": 0
+            }
+          },
+          "estimand_id": "EST-A4-L3-02",
+          "evaluation_unit": "attack_action",
+          "kind": "mixed",
+          "result_family": "F3_direct_detection",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {},
+          "counts": null,
+          "estimand_id": "EST-A4-L4-01",
+          "kind": "not_applicable",
+          "reason": "NOT APPLICABLE by structural non-observability, not by missing instrumentation. D3 is arrival-driven: the evaluation unit received_telemetry_observation exists only when a packet arrives, so a dropped packet never instantiates it and the estimand has an empty decision set by construction. Binding a drop to a synthetic receive timestamp is forbidden (INV-09); a synthetic miss and a retrofitted absence detector are equally forbidden, the latter because it would measure a different detector than the one under study. The A4 drop count and its no_decision_opportunity accounting are retained under EST-A4-L2-02 as RESCORE_REQUIRED. Manuscript limitation: D3 cannot directly decide on telemetry that never reaches it. Future work, out of scope: a detector for expected-but-absent telemetry.",
+          "status": "NO_ACTION"
+        }
+      ],
+      "run_count": 60,
+      "scenario": "A4",
+      "source": "results"
+    },
+    {
+      "cell": "A4-D3",
+      "defence": "D3",
+      "estimands": [
+        {
+          "arms": {
+            "execution_rate": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 749,
+              "estimand_id": "EST-F0-01",
+              "evaluation_unit": "attack_action",
+              "macro_mean_over_defined_runs": 1.0,
+              "numerator": 749,
+              "observed_denominator": 749,
+              "observed_numerator": 749,
+              "pooled_ratio": 1.0,
+              "result_family": "F0_attack_execution",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 1.0,
+                "ci_low": 1.0,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 1.0
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F0-01",
+          "evaluation_unit": "attack_action",
+          "kind": "ratio",
+          "result_family": "F0_attack_execution",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {},
+          "counts": {
+            "dispositions": {
+              "dropped": 249,
+              "received_delayed": 230,
+              "received_modified": 270,
+              "unresolved": 0
+            },
+            "total_actions": 749
+          },
+          "estimand_id": "EST-F0-02",
+          "evaluation_unit": "attack_action",
+          "kind": "accounting",
+          "result_family": "F0_attack_execution",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "event_recall": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 500,
+              "estimand_id": "EST-F3-D3-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": 0.9160839623339624,
+              "numerator": 458,
+              "observed_denominator": 500,
+              "observed_numerator": 458,
+              "pooled_ratio": 0.916,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 0.9393722018722016,
+                "ci_low": 0.8915294427794425,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 0.9160839623339624
+            },
+            "fpr": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 48331,
+              "estimand_id": "EST-F3-D3-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": 0.00198613509171368,
+              "numerator": 96,
+              "observed_denominator": 48331,
+              "observed_numerator": 96,
+              "pooled_ratio": 0.001986302787031098,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 0.0023977850981061507,
+                "ci_low": 0.0015937294723424047,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 0.00198613509171368
+            },
+            "precision": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 554,
+              "estimand_id": "EST-F3-D3-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": 0.8081047193547194,
+              "numerator": 458,
+              "observed_denominator": 554,
+              "observed_numerator": 458,
+              "pooled_ratio": 0.8267148014440433,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 0.8483441558441555,
+                "ci_low": 0.7662169312169315,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 0.8081047193547194
+            },
+            "recall": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 500,
+              "estimand_id": "EST-F3-D3-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": 0.9160839623339624,
+              "numerator": 458,
+              "observed_denominator": 500,
+              "observed_numerator": 458,
+              "pooled_ratio": 0.916,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 0.9393722018722016,
+                "ci_low": 0.8915294427794425,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 0.9160839623339624
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F3-D3-01",
+          "evaluation_unit": "received_telemetry_observation",
+          "kind": "ratio",
+          "result_family": "F3_direct_detection",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "event_recall": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 500,
+              "estimand_id": "EST-F3-D3-02",
+              "evaluation_unit": "effect_event",
+              "macro_mean_over_defined_runs": 0.9160839623339624,
+              "numerator": 458,
+              "observed_denominator": 500,
+              "observed_numerator": 458,
+              "pooled_ratio": 0.916,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 0.9393722018722016,
+                "ci_low": 0.8915294427794425,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 0.9160839623339624
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F3-D3-02",
+          "evaluation_unit": "effect_event",
+          "kind": "ratio",
+          "result_family": "F3_direct_detection",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "event_recall": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 500,
+              "estimand_id": "EST-F3-RND-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": 0.010984015984015985,
+              "numerator": 7,
+              "observed_denominator": 500,
+              "observed_numerator": 7,
+              "pooled_ratio": 0.014,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 0.019019314019314018,
+                "ci_low": 0.004139194139194139,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 0.010984015984015985
+            },
+            "fpr": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 48331,
+              "estimand_id": "EST-F3-RND-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": 0.010016791995268011,
+              "numerator": 484,
+              "observed_denominator": 48331,
+              "observed_numerator": 484,
+              "pooled_ratio": 0.010014276551281787,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 0.010900183888525133,
+                "ci_low": 0.009126507103722222,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 0.010016791995268011
+            },
+            "precision": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 491,
+              "estimand_id": "EST-F3-RND-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": 0.011612739112739112,
+              "numerator": 7,
+              "observed_denominator": 491,
+              "observed_numerator": 7,
+              "pooled_ratio": 0.014256619144602852,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 0.02046092796092796,
+                "ci_low": 0.004232804232804232,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 0.011612739112739112
+            },
+            "recall": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 500,
+              "estimand_id": "EST-F3-RND-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": 0.010984015984015985,
+              "numerator": 7,
+              "observed_denominator": 500,
+              "observed_numerator": 7,
+              "pooled_ratio": 0.014,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 0.019019314019314018,
+                "ci_low": 0.004139194139194139,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 0.010984015984015985
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F3-RND-01",
+          "evaluation_unit": "received_telemetry_observation",
+          "kind": "ratio",
+          "result_family": "F3_direct_detection",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "detection_rate": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 500,
+              "estimand_id": "EST-A4-L2-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": 0.9160839623339624,
+              "numerator": 458,
+              "observed_denominator": 500,
+              "observed_numerator": 458,
+              "pooled_ratio": 0.916,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 0.9393722018722016,
+                "ci_low": 0.8915294427794425,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 0.9160839623339624
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-A4-L2-01",
+          "evaluation_unit": "received_telemetry_observation",
+          "kind": "ratio",
+          "result_family": "F3_direct_detection",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "delay_detection_rate": {
+              "defined_run_count": 58,
+              "defined_value_qualifier_code": null,
+              "denominator": 230,
+              "estimand_id": "EST-A4-L2-02",
+              "evaluation_unit": "attack_action",
+              "macro_mean_over_defined_runs": 0.7996361397223466,
+              "numerator": 189,
+              "observed_denominator": 230,
+              "observed_numerator": 189,
+              "pooled_ratio": 0.8217391304347826,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 0.8625261233019852,
+                "ci_low": 0.7273865502313778,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 0.7996361397223466
+            },
+            "modification_detection_rate": {
+              "defined_run_count": 57,
+              "defined_value_qualifier_code": null,
+              "denominator": 270,
+              "estimand_id": "EST-A4-L2-02",
+              "evaluation_unit": "attack_action",
+              "macro_mean_over_defined_runs": 0.9964912280701754,
+              "numerator": 269,
+              "observed_denominator": 270,
+              "observed_numerator": 269,
+              "pooled_ratio": 0.9962962962962963,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 1.0,
+                "ci_low": 0.9894736842105262,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 0.9964912280701754
+            }
+          },
+          "counts": {
+            "drop_subtype": {
+              "actions": 249,
+              "no_decision_opportunity": 249
+            }
+          },
+          "estimand_id": "EST-A4-L2-02",
+          "evaluation_unit": "attack_action",
+          "kind": "mixed",
+          "result_family": "F3_direct_detection",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {},
+          "counts": null,
+          "estimand_id": "EST-A4-L4-01",
+          "kind": "not_applicable",
+          "reason": "NOT APPLICABLE by structural non-observability, not by missing instrumentation. D3 is arrival-driven: the evaluation unit received_telemetry_observation exists only when a packet arrives, so a dropped packet never instantiates it and the estimand has an empty decision set by construction. Binding a drop to a synthetic receive timestamp is forbidden (INV-09); a synthetic miss and a retrofitted absence detector are equally forbidden, the latter because it would measure a different detector than the one under study. The A4 drop count and its no_decision_opportunity accounting are retained under EST-A4-L2-02 as RESCORE_REQUIRED. Manuscript limitation: D3 cannot directly decide on telemetry that never reaches it. Future work, out of scope: a detector for expected-but-absent telemetry.",
+          "status": "NO_ACTION"
+        },
+        {
+          "arms": {
+            "runs_with_a_missed_effect_event": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 60,
+              "estimand_id": "EST-AUX-01",
+              "evaluation_unit": "run",
+              "macro_mean_over_defined_runs": 0.5333333333333333,
+              "numerator": 32,
+              "observed_denominator": 60,
+              "observed_numerator": 32,
+              "pooled_ratio": 0.5333333333333333,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 0.6666666666666666,
+                "ci_low": 0.4166666666666667,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 0.5333333333333333
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-AUX-01",
+          "evaluation_unit": "run",
+          "kind": "ratio",
+          "result_family": "F3_direct_detection",
+          "status": "RESCORE_REQUIRED"
+        }
+      ],
+      "run_count": 60,
+      "scenario": "A4",
+      "source": "results"
+    },
+    {
+      "cell": "B0-D0",
+      "defence": "D0",
+      "estimands": [],
+      "run_count": 60,
+      "scenario": "B0",
+      "source": "results"
+    },
+    {
+      "cell": "B0-D1",
+      "defence": "D1",
+      "estimands": [],
+      "run_count": 60,
+      "scenario": "B0",
+      "source": "results"
+    },
+    {
+      "cell": "B0-D2",
+      "defence": "D2",
+      "estimands": [
+        {
+          "arms": {
+            "event_recall": {
+              "defined_run_count": 0,
+              "defined_value_qualifier_code": null,
+              "denominator": 0,
+              "estimand_id": "EST-F3-D2-01",
+              "evaluation_unit": "flow_window_60s",
+              "macro_mean_over_defined_runs": null,
+              "numerator": 0,
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": "no_defined_run_in_cell",
+              "value": null
+            },
+            "fpr": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 9300,
+              "estimand_id": "EST-F3-D2-01",
+              "evaluation_unit": "flow_window_60s",
+              "macro_mean_over_defined_runs": 0.0,
+              "numerator": 0,
+              "observed_denominator": 9300,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": null,
+              "value": 0.0
+            },
+            "precision": {
+              "defined_run_count": 0,
+              "defined_value_qualifier_code": null,
+              "denominator": 0,
+              "estimand_id": "EST-F3-D2-01",
+              "evaluation_unit": "flow_window_60s",
+              "macro_mean_over_defined_runs": null,
+              "numerator": 0,
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": "no_defined_run_in_cell",
+              "value": null
+            },
+            "recall": {
+              "defined_run_count": 0,
+              "defined_value_qualifier_code": null,
+              "denominator": 0,
+              "estimand_id": "EST-F3-D2-01",
+              "evaluation_unit": "flow_window_60s",
+              "macro_mean_over_defined_runs": null,
+              "numerator": 0,
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": "no_defined_run_in_cell",
+              "value": null
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F3-D2-01",
+          "evaluation_unit": "flow_window_60s",
+          "kind": "ratio",
+          "result_family": "F3_direct_detection",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "event_recall": {
+              "defined_run_count": 0,
+              "defined_value_qualifier_code": null,
+              "denominator": 0,
+              "estimand_id": "EST-F3-RND-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": null,
+              "numerator": 0,
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": "no_defined_run_in_cell",
+              "value": null
+            },
+            "fpr": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 49080,
+              "estimand_id": "EST-F3-RND-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": 0.009270578647106764,
+              "numerator": 455,
+              "observed_denominator": 49080,
+              "observed_numerator": 455,
+              "pooled_ratio": 0.009270578647106764,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 0.010065199674001627,
+                "ci_low": 0.008516707416462916,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 0.009270578647106764
+            },
+            "precision": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 455,
+              "estimand_id": "EST-F3-RND-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": 0.0,
+              "numerator": 0,
+              "observed_denominator": 455,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": null,
+              "value": 0.0
+            },
+            "recall": {
+              "defined_run_count": 0,
+              "defined_value_qualifier_code": null,
+              "denominator": 0,
+              "estimand_id": "EST-F3-RND-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": null,
+              "numerator": 0,
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": "no_defined_run_in_cell",
+              "value": null
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F3-RND-01",
+          "evaluation_unit": "received_telemetry_observation",
+          "kind": "ratio",
+          "result_family": "F3_direct_detection",
+          "status": "RESCORE_REQUIRED"
+        }
+      ],
+      "run_count": 60,
+      "scenario": "B0",
+      "source": "results"
+    },
+    {
+      "cell": "B0-D3",
+      "defence": "D3",
+      "estimands": [
+        {
+          "arms": {
+            "event_recall": {
+              "defined_run_count": 0,
+              "defined_value_qualifier_code": null,
+              "denominator": 0,
+              "estimand_id": "EST-F3-D3-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": null,
+              "numerator": 0,
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": "no_defined_run_in_cell",
+              "value": null
+            },
+            "fpr": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 49080,
+              "estimand_id": "EST-F3-D3-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": 0.0016096169519152403,
+              "numerator": 79,
+              "observed_denominator": 49080,
+              "observed_numerator": 79,
+              "pooled_ratio": 0.0016096169519152403,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 0.0019559902200489,
+                "ci_low": 0.0012836185819070903,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 0.0016096169519152403
+            },
+            "precision": {
+              "defined_run_count": 45,
+              "defined_value_qualifier_code": null,
+              "denominator": 79,
+              "estimand_id": "EST-F3-D3-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": 0.0,
+              "numerator": 0,
+              "observed_denominator": 79,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": null,
+              "value": 0.0
+            },
+            "recall": {
+              "defined_run_count": 0,
+              "defined_value_qualifier_code": null,
+              "denominator": 0,
+              "estimand_id": "EST-F3-D3-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": null,
+              "numerator": 0,
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": "no_defined_run_in_cell",
+              "value": null
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F3-D3-01",
+          "evaluation_unit": "received_telemetry_observation",
+          "kind": "ratio",
+          "result_family": "F3_direct_detection",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "event_recall": {
+              "defined_run_count": 0,
+              "defined_value_qualifier_code": null,
+              "denominator": 0,
+              "estimand_id": "EST-F3-D3-02",
+              "evaluation_unit": "effect_event",
+              "macro_mean_over_defined_runs": null,
+              "numerator": 0,
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": "no_defined_run_in_cell",
+              "value": null
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F3-D3-02",
+          "evaluation_unit": "effect_event",
+          "kind": "ratio",
+          "result_family": "F3_direct_detection",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "event_recall": {
+              "defined_run_count": 0,
+              "defined_value_qualifier_code": null,
+              "denominator": 0,
+              "estimand_id": "EST-F3-RND-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": null,
+              "numerator": 0,
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": "no_defined_run_in_cell",
+              "value": null
+            },
+            "fpr": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 49080,
+              "estimand_id": "EST-F3-RND-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": 0.009270578647106764,
+              "numerator": 455,
+              "observed_denominator": 49080,
+              "observed_numerator": 455,
+              "pooled_ratio": 0.009270578647106764,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": {
+                "ci_high": 0.010065199674001627,
+                "ci_low": 0.008516707416462916,
+                "method": "two-sided 95% percentile bootstrap",
+                "resamples": 2000,
+                "resampling_unit": "run",
+                "seed": 12345
+              },
+              "undefined_reason_code": null,
+              "value": 0.009270578647106764
+            },
+            "precision": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 455,
+              "estimand_id": "EST-F3-RND-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": 0.0,
+              "numerator": 0,
+              "observed_denominator": 455,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": null,
+              "value": 0.0
+            },
+            "recall": {
+              "defined_run_count": 0,
+              "defined_value_qualifier_code": null,
+              "denominator": 0,
+              "estimand_id": "EST-F3-RND-01",
+              "evaluation_unit": "received_telemetry_observation",
+              "macro_mean_over_defined_runs": null,
+              "numerator": 0,
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": "no_defined_run_in_cell",
+              "value": null
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-F3-RND-01",
+          "evaluation_unit": "received_telemetry_observation",
+          "kind": "ratio",
+          "result_family": "F3_direct_detection",
+          "status": "RESCORE_REQUIRED"
+        },
+        {
+          "arms": {
+            "runs_with_a_missed_effect_event": {
+              "defined_run_count": 60,
+              "defined_value_qualifier_code": null,
+              "denominator": 60,
+              "estimand_id": "EST-AUX-01",
+              "evaluation_unit": "run",
+              "macro_mean_over_defined_runs": 0.0,
+              "numerator": 0,
+              "observed_denominator": 60,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "result_family": "F3_direct_detection",
+              "total_run_count": 60,
+              "uncertainty": null,
+              "undefined_reason_code": null,
+              "value": 0.0
+            }
+          },
+          "counts": null,
+          "estimand_id": "EST-AUX-01",
+          "evaluation_unit": "run",
+          "kind": "ratio",
+          "result_family": "F3_direct_detection",
+          "status": "RESCORE_REQUIRED"
+        }
+      ],
+      "run_count": 60,
+      "scenario": "B0",
+      "source": "results"
+    }
+  ],
+  "common_random_numbers": {
+    "per_seed": {
+      "0": {
+        "distinct_truth_signatures": 5,
+        "each_group_is_one_scenario_across_its_four_defences": true,
+        "group_sizes": [
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "groups": {
+          "A1": [
+            "A1-D0",
+            "A1-D1",
+            "A1-D2",
+            "A1-D3"
+          ],
+          "A2": [
+            "A2-D0",
+            "A2-D1",
+            "A2-D2",
+            "A2-D3"
+          ],
+          "A3": [
+            "A3-D0",
+            "A3-D1",
+            "A3-D2",
+            "A3-D3"
+          ],
+          "A4": [
+            "A4-D0",
+            "A4-D1",
+            "A4-D2",
+            "A4-D3"
+          ],
+          "B0": [
+            "B0-D0",
+            "B0-D1",
+            "B0-D2",
+            "B0-D3"
+          ]
+        },
+        "identical_across_all_20_cells": false
+      },
+      "1": {
+        "distinct_truth_signatures": 5,
+        "each_group_is_one_scenario_across_its_four_defences": true,
+        "group_sizes": [
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "groups": {
+          "A1": [
+            "A1-D0",
+            "A1-D1",
+            "A1-D2",
+            "A1-D3"
+          ],
+          "A2": [
+            "A2-D0",
+            "A2-D1",
+            "A2-D2",
+            "A2-D3"
+          ],
+          "A3": [
+            "A3-D0",
+            "A3-D1",
+            "A3-D2",
+            "A3-D3"
+          ],
+          "A4": [
+            "A4-D0",
+            "A4-D1",
+            "A4-D2",
+            "A4-D3"
+          ],
+          "B0": [
+            "B0-D0",
+            "B0-D1",
+            "B0-D2",
+            "B0-D3"
+          ]
+        },
+        "identical_across_all_20_cells": false
+      },
+      "2": {
+        "distinct_truth_signatures": 5,
+        "each_group_is_one_scenario_across_its_four_defences": true,
+        "group_sizes": [
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "groups": {
+          "A1": [
+            "A1-D0",
+            "A1-D1",
+            "A1-D2",
+            "A1-D3"
+          ],
+          "A2": [
+            "A2-D0",
+            "A2-D1",
+            "A2-D2",
+            "A2-D3"
+          ],
+          "A3": [
+            "A3-D0",
+            "A3-D1",
+            "A3-D2",
+            "A3-D3"
+          ],
+          "A4": [
+            "A4-D0",
+            "A4-D1",
+            "A4-D2",
+            "A4-D3"
+          ],
+          "B0": [
+            "B0-D0",
+            "B0-D1",
+            "B0-D2",
+            "B0-D3"
+          ]
+        },
+        "identical_across_all_20_cells": false
+      }
+    },
+    "seeds_examined": [
+      0,
+      1,
+      2
+    ],
+    "statement": "Strict CRN across all 20 cells is NOT CONFIRMED: at a fixed seed the ground-truth stream splits into 5 groups of 4, so scenarios do NOT share a stream. Within a scenario the stream IS shared across its four defence variants (verified), which is the pairing the matrix relies on. Both statements are measured by direct comparison of the per-seed truth records, not assumed.",
+    "strict_common_random_numbers_verified": false,
+    "within_scenario_crn_across_defences_verified": true
+  },
+  "corpus": {
+    "cells": 20,
+    "raw_runs": 1020,
+    "rerun_cells": [
+      "A1-D3",
+      "A2-D3",
+      "A3-D3"
+    ],
+    "rerun_runs": 180,
+    "runs_per_cell": 60,
+    "selected_runs": 1200
+  },
+  "g8_substitution_invariance": {
+    "cells_compared": [
+      "A1-D3",
+      "A2-D3",
+      "A3-D3"
+    ],
+    "meaning": "every estimand value in the three rerun cells is identical whether scored from the accepted raw tree or from the ISS-06 rerun tree; the rerun added instrument fields only",
+    "pass": true,
+    "runs_compared": 180,
+    "value_differences": []
+  },
+  "iss05_closure": {
+    "decision": "NO_ACTION / structurally not applicable",
+    "estimand": "EST-A4-L4-01",
+    "issue": "ISS-05",
+    "number_published": null,
+    "statement": "D3 is arrival-driven; dropped telemetry never instantiates received_telemetry_observation. No numerator, denominator or rate is produced."
+  },
+  "iss06_channel_cooccurrence": {
+    "boolean_combinations": {
+      "physical": 274,
+      "physical+security": 7,
+      "security": 1295
+    },
+    "channel_labels": {
+      "logical": 0,
+      "physical": 281,
+      "security": 1295
+    },
+    "cooccurrence_rows": 7,
+    "d3_alarms": 1576,
+    "priority_boolean_violations": 0,
+    "rows_missing_boolean_fields": 0,
+    "scope": [
+      "A1-D3",
+      "A2-D3",
+      "A3-D3"
+    ],
+    "violations": []
+  },
+  "package_version": "1",
+  "precision_target": {
+    "arms_examined": 5,
+    "arms_meeting_target": 3,
+    "arms_not_meeting_target": 2,
+    "cell": "A1-D3",
+    "detail": [
+      {
+        "arm": "execution_rate",
+        "ci_half_width": 0.01626159124585902,
+        "estimand_id": "EST-F0-01",
+        "macro_mean": 0.9727005652835172,
+        "meets_5_percent_relative_target": true,
+        "relative_half_width": 0.01671798272381921
+      },
+      {
+        "arm": "prevention_rate",
+        "ci_half_width": 0.0,
+        "estimand_id": "EST-F1-01",
+        "macro_mean": 1.0,
+        "meets_5_percent_relative_target": true,
+        "relative_half_width": 0.0
+      },
+      {
+        "arm": "fpr",
+        "ci_half_width": 0.00038563948957684186,
+        "estimand_id": "EST-F3-D3-01",
+        "macro_mean": 0.001976925071836076,
+        "meets_5_percent_relative_target": false,
+        "relative_half_width": 0.1950703620844253
+      },
+      {
+        "arm": "fpr",
+        "ci_half_width": 0.0008048084759576194,
+        "estimand_id": "EST-F3-RND-01",
+        "macro_mean": 0.009800325998370007,
+        "meets_5_percent_relative_target": false,
+        "relative_half_width": 0.08212058212058206
+      },
+      {
+        "arm": "secondary_reporting_rate",
+        "ci_half_width": 0.0,
+        "estimand_id": "EST-F4-01",
+        "macro_mean": 1.0,
+        "meets_5_percent_relative_target": true,
+        "relative_half_width": 0.0
+      }
+    ],
+    "n_runs": 60,
+    "statement": "At N=60 the historical 5% relative precision target is NOT met for 2 of 5 A1-D3 estimand arms carrying an interval. The target is recorded as unmet rather than restated as achieved.",
+    "target": "relative half-width <= 5%"
+  },
+  "schema": "lifesat-corrected-results/v1",
+  "tier2_descriptive": [
+    {
+      "aggregation": "none: five illustrative runs, reported individually",
+      "estimand_id": "EST-F5-01",
+      "evaluation_unit": "pre_uplink_validation_opportunity",
+      "excluded_from_tier1": "descriptive only; never entered into the 20-cell matrix or any pooled Tier-1 rate",
+      "inventory": [
+        "A6s-gate-on-r0",
+        "A6s-gate-off-r0",
+        "A6s-safe-r0",
+        "A6s-safe-large-r0",
+        "A6s-unsupported-r0"
+      ],
+      "result_family": "F5_pre_uplink_validation",
+      "runs": [
+        {
+          "config": "A6s",
+          "declared_expectation": "the unsafe update must be REJECTED and never uplinked",
+          "denominator": 9,
+          "expected_verdict": "rejected",
+          "numerator": 9,
+          "observed_verdicts": {
+            "approved": 0,
+            "rejected": 9,
+            "unsupported": 0
+          },
+          "run_identity": "A6s-gate-on-r0",
+          "scheduled_validation_opportunities": 9,
+          "undefined_reason_code": null,
+          "validation_gate": "on",
+          "value": 1.0
+        },
+        {
+          "config": "A6s-nogate",
+          "declared_expectation": "validation gate OFF: no verdict is scheduled; the update is applied and D3 sees the divergence afterwards",
+          "denominator": 0,
+          "expected_verdict": null,
+          "numerator": 0,
+          "observed_verdicts": {
+            "approved": 0,
+            "rejected": 0,
+            "unsupported": 0
+          },
+          "run_identity": "A6s-gate-off-r0",
+          "scheduled_validation_opportunities": 0,
+          "undefined_reason_code": "no_scheduled_validation_opportunity",
+          "validation_gate": "off",
+          "value": null
+        },
+        {
+          "config": "A6s-safe",
+          "declared_expectation": "a SAFE update must pass the gate (the gate does not reject everything)",
+          "denominator": 9,
+          "expected_verdict": "approved",
+          "numerator": 9,
+          "observed_verdicts": {
+            "approved": 9,
+            "rejected": 0,
+            "unsupported": 0
+          },
+          "run_identity": "A6s-safe-r0",
+          "scheduled_validation_opportunities": 9,
+          "undefined_reason_code": null,
+          "validation_gate": "on",
+          "value": 1.0
+        },
+        {
+          "config": "A6s-safe-large",
+          "declared_expectation": "safe but well away from nominal: approved, model updated, no persistent false alarm",
+          "denominator": 9,
+          "expected_verdict": "approved",
+          "numerator": 9,
+          "observed_verdicts": {
+            "approved": 9,
+            "rejected": 0,
+            "unsupported": 0
+          },
+          "run_identity": "A6s-safe-large-r0",
+          "scheduled_validation_opportunities": 9,
+          "undefined_reason_code": null,
+          "validation_gate": "on",
+          "value": 1.0
+        },
+        {
+          "config": "A6s-unsupported",
+          "declared_expectation": "a parameter the twin cannot model is UNSUPPORTED and must fail closed rather than uplink",
+          "denominator": 9,
+          "expected_verdict": "unsupported",
+          "numerator": 9,
+          "observed_verdicts": {
+            "approved": 0,
+            "rejected": 0,
+            "unsupported": 9
+          },
+          "run_identity": "A6s-unsupported-r0",
+          "scheduled_validation_opportunities": 9,
+          "undefined_reason_code": null,
+          "validation_gate": "on",
+          "value": 1.0
+        }
+      ],
+      "tier": 2,
+      "uncertainty": null
+    },
+    {
+      "aggregation": "none: illustrative runs, reported individually",
+      "declared_expectation": "the stored chain recomputes to the anchored head, and a single altered record is detected at that record",
+      "denominator": 2,
+      "estimand_id": "EST-F6-01",
+      "evaluation_unit": "log_record_chain",
+      "excluded_from_tier1": "descriptive only; never entered into the 20-cell matrix or any pooled Tier-1 rate",
+      "inventory": [
+        "A7c-D3-r0",
+        "A8-D3-r0"
+      ],
+      "numerator": 2,
+      "result_family": "F6_forensic_mechanism",
+      "runs": [
+        {
+          "anchor_agreement": true,
+          "anchor_head": "fa57c304639ece90fabb8f181087c038fd0726ecb1621d661abed1d8c8eac4e6",
+          "chain_intact": true,
+          "chain_length": 2265,
+          "first_break_index": null,
+          "outcome_matches_expectation": true,
+          "recomputed_head": "fa57c304639ece90fabb8f181087c038fd0726ecb1621d661abed1d8c8eac4e6",
+          "run_identity": "A7c-D3-r0",
+          "tamper_mutation": {
+            "detected": true,
+            "detected_at_index": 1132,
+            "detected_at_the_mutated_record": true,
+            "mutated_record_index": 1132
+          }
+        },
+        {
+          "anchor_agreement": true,
+          "anchor_head": "c55a492afa13870cd46425c74d7eb08479fe9071305847e1c6e9d705474e7692",
+          "chain_intact": true,
+          "chain_length": 2327,
+          "first_break_index": null,
+          "outcome_matches_expectation": true,
+          "recomputed_head": "c55a492afa13870cd46425c74d7eb08479fe9071305847e1c6e9d705474e7692",
+          "run_identity": "A8-D3-r0",
+          "tamper_mutation": {
+            "detected": true,
+            "detected_at_index": 1163,
+            "detected_at_the_mutated_record": true,
+            "mutated_record_index": 1163
+          }
+        }
+      ],
+      "tier": 2,
+      "uncertainty": null,
+      "undefined_reason_code": null,
+      "value": 1.0
+    }
+  ],
+  "uncertainty_policy": {
+    "all_zero_suppression": "per estimand result, never per cell",
+    "method": "two-sided 95% percentile bootstrap",
+    "pooled_ratio": "no interval",
+    "resamples": 2000,
+    "resampling_unit": "run",
+    "seed": 12345,
+    "undefined": "null with an undefined_reason_code; never coerced to 0"
+  },
+  "unsupported_estimands": []
+}

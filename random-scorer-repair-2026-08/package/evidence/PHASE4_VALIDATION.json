@@ -1,0 +1,198 @@
+{
+  "canonical_claim": "ACCEPTED-CORPUS RAW RANDOM-ALARM ROWS: 9812 over 1200 runs; seq == n in 0",
+  "corpus_runs_verified": 1200,
+  "executable_identity": "VERIFIED",
+  "invariance": {
+    "arms_compared": 145,
+    "invariant": 123,
+    "legitimately_undefined_both_sides": [
+      [
+        "A1-D2",
+        "EST-F3-RND-01",
+        "recall",
+        "no_defined_run_in_cell"
+      ],
+      [
+        "A1-D3",
+        "EST-F3-RND-01",
+        "recall",
+        "no_defined_run_in_cell"
+      ],
+      [
+        "A2-D2",
+        "EST-F3-RND-01",
+        "recall",
+        "no_defined_run_in_cell"
+      ],
+      [
+        "A2-D3",
+        "EST-F3-RND-01",
+        "recall",
+        "no_defined_run_in_cell"
+      ],
+      [
+        "A3-D2",
+        "EST-F3-RND-01",
+        "recall",
+        "no_defined_run_in_cell"
+      ],
+      [
+        "A3-D3",
+        "EST-F3-RND-01",
+        "recall",
+        "no_defined_run_in_cell"
+      ],
+      [
+        "B0-D2",
+        "EST-F3-RND-01",
+        "recall",
+        "no_defined_run_in_cell"
+      ],
+      [
+        "B0-D3",
+        "EST-F3-RND-01",
+        "recall",
+        "no_defined_run_in_cell"
+      ]
+    ],
+    "moved": [
+      [
+        "A1-D2",
+        "EST-F3-RND-01",
+        "fpr"
+      ],
+      [
+        "A1-D2",
+        "EST-F3-RND-01",
+        "precision"
+      ],
+      [
+        "A1-D3",
+        "EST-F3-RND-01",
+        "fpr"
+      ],
+      [
+        "A1-D3",
+        "EST-F3-RND-01",
+        "precision"
+      ],
+      [
+        "A2-D2",
+        "EST-F3-RND-01",
+        "fpr"
+      ],
+      [
+        "A2-D2",
+        "EST-F3-RND-01",
+        "precision"
+      ],
+      [
+        "A2-D3",
+        "EST-F3-RND-01",
+        "fpr"
+      ],
+      [
+        "A2-D3",
+        "EST-F3-RND-01",
+        "precision"
+      ],
+      [
+        "A3-D2",
+        "EST-F3-RND-01",
+        "fpr"
+      ],
+      [
+        "A3-D2",
+        "EST-F3-RND-01",
+        "precision"
+      ],
+      [
+        "A3-D3",
+        "EST-F3-RND-01",
+        "fpr"
+      ],
+      [
+        "A3-D3",
+        "EST-F3-RND-01",
+        "precision"
+      ],
+      [
+        "A4-D2",
+        "EST-F3-RND-01",
+        "fpr"
+      ],
+      [
+        "A4-D2",
+        "EST-F3-RND-01",
+        "precision"
+      ],
+      [
+        "A4-D2",
+        "EST-F3-RND-01",
+        "recall"
+      ],
+      [
+        "A4-D3",
+        "EST-F3-RND-01",
+        "fpr"
+      ],
+      [
+        "A4-D3",
+        "EST-F3-RND-01",
+        "precision"
+      ],
+      [
+        "A4-D3",
+        "EST-F3-RND-01",
+        "recall"
+      ],
+      [
+        "B0-D2",
+        "EST-F3-RND-01",
+        "fpr"
+      ],
+      [
+        "B0-D2",
+        "EST-F3-RND-01",
+        "precision"
+      ],
+      [
+        "B0-D3",
+        "EST-F3-RND-01",
+        "fpr"
+      ],
+      [
+        "B0-D3",
+        "EST-F3-RND-01",
+        "precision"
+      ]
+    ]
+  },
+  "join_totals": {
+    "alarm_rows": 9812,
+    "by_disposition": {
+      "matched": 9812,
+      "unmatched_duplicate_ordinal": 0,
+      "unmatched_malformed_ordinal": 0,
+      "unmatched_missing_ordinal_field": 0,
+      "unmatched_ordinal_out_of_range": 0
+    },
+    "matched": 9812,
+    "observations": 980604,
+    "runs": 1200,
+    "time_inconsistent": 0,
+    "unmatched": 0
+  },
+  "phase4_settlement_sha256": "6542acc5e04d7131d867969ad70b71fe863eb0fea45a20fe307eeb8b1d45bb16",
+  "pre_repair_scorer_sha256": "de16e29c73b7d2dcac87a114d755e130874eb892215be0947134afcf6f61a4cc",
+  "raw_derived_totals": {
+    "alarm_rows": 9812,
+    "observations": 980604,
+    "runs": 1200,
+    "seq_equals_n": 0
+  },
+  "repaired_scorer_sha256": "8eaa4663270190ad907e2d5e5fc8ea7b420bd4e1295681517135090cca65c677",
+  "residual_findings": [],
+  "successor_sha256": "eeb3d738e59dcf9e9db8aae6c7362f1aae3f2f2b40412c54ba8084f8874594fb",
+  "verdict": "PHASE4_CONFORMANT"
+}

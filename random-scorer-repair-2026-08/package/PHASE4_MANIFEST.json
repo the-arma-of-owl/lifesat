@@ -1,0 +1,31 @@
+{
+  "canonical_member": "successor/PHASE4_SUCCESSOR_RESULT_PACKAGE.json",
+  "files": [
+    {
+      "path": "successor/PHASE4_SUCCESSOR_RESULT_PACKAGE.json",
+      "result_file_sha256": "eeb3d738e59dcf9e9db8aae6c7362f1aae3f2f2b40412c54ba8084f8874594fb"
+    },
+    {
+      "path": "successor/package/POOLED_RESULTS.json",
+      "result_file_sha256": "54e38fec6a6c632a51431189a43aa42566dcd247b8d4a2ed913d4611a44b802b"
+    },
+    {
+      "path": "successor/package/RUN_LEVEL_RESULTS.json",
+      "result_file_sha256": "31b8787d0f1fd196e271b1055174bd8f11e59c85c7dbd43719ee55db58b189b1"
+    },
+    {
+      "path": "successor/package/INPUT_MANIFEST.json",
+      "result_file_sha256": "db2b6182b3b164b6421e14378443268d11f14fec13b52d473b06e2bbbadba482"
+    },
+    {
+      "path": "successor/package/VALIDATION.json",
+      "result_file_sha256": "bee35785f75412320ddb30a29ef33b27de08045318bd3fb3f989047ef27a11b6"
+    },
+    {
+      "path": "successor/package/CORRECTED_RESULTS.sha256",
+      "result_file_sha256": "a10435411356dc82289f950067b3ce611ce2977d5764bba1bb855504cb298bb9"
+    }
+  ],
+  "rule": "SINGLE canonical member, detached. The successor does NOT replace the historical corrected package: results-v2-corrected and its seal stay byte-exact as the rollback target, and both are bound in the settlement.",
+  "schema": "lifesat-v8-phase4-manifest/v1"
+}

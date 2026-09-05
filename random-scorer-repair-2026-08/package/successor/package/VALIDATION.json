@@ -1,0 +1,292 @@
+{
+  "authority": {
+    "authority_utc": "2026-08-11T15:51:34Z",
+    "contract_json_sha256": "913848492f82502f5a28243534eaa3e2e19c3c023ebd8b49df8027b8ccf54e95",
+    "contract_version": "1.4.3-candidate",
+    "old_raw_tree_sha256": "09893fc41cd5fab122b2d956bda46664d60d3b9f33aa68f95d4d41b408711c16",
+    "rerun_tree_sha256": "f7e1d5fe90340d8bef2a0a512322d6b6017b39c56c1cec20a9531a0a01685b63",
+    "scorer_sha256": "8eaa4663270190ad907e2d5e5fc8ea7b420bd4e1295681517135090cca65c677",
+    "seal_sha256": "5c575f3cee35000b4da45c63312ea166ed632b6a4efd7e3fc85efe707ea8d813"
+  },
+  "checks": 55,
+  "detail": [
+    {
+      "detail": "20",
+      "name": "exactly 20 cells",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "60 runs per cell",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "selected corpus is 1200",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "180 runs come from the ISS-06 rerun",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "1020 runs come from the accepted raw tree",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "no duplicate run identity",
+      "pass": true
+    },
+    {
+      "detail": "[]",
+      "name": "input hash readback (events)",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "contract pin",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "seal pin",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "scorer pin",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "old raw tree pin",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "rerun tree pin",
+      "pass": true
+    },
+    {
+      "detail": "(40, 1, 10)",
+      "name": "decision matrix is 40/1/10",
+      "pass": true
+    },
+    {
+      "detail": "[]",
+      "name": "every RESCORE estimand row produces normative output",
+      "pass": true
+    },
+    {
+      "detail": "[]",
+      "name": "no RESCORE estimand is left unsupported",
+      "pass": true
+    },
+    {
+      "detail": "17",
+      "name": "40/40 normative outputs: 17 RESCORE estimands all produced",
+      "pass": true
+    },
+    {
+      "detail": "['EST-F5-01', 'EST-F6-01']",
+      "name": "Tier-2 estimands are produced, not deferred",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "Tier-2 output is excluded from the Tier-1 matrix",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "the single RERUN issue is closed by the accepted rerun",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "no NO_ACTION row produces a number",
+      "pass": true
+    },
+    {
+      "detail": "1576",
+      "name": "ISS-06 d3.alarm count is 1576",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "ISS-06 physical label 281",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "ISS-06 logical label 0",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "ISS-06 security label 1295",
+      "pass": true
+    },
+    {
+      "detail": "7",
+      "name": "ISS-06 co-occurrence rows 7",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "ISS-06 priority/boolean violations 0",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "ISS-06 no alarm row missing the boolean fields",
+      "pass": true
+    },
+    {
+      "detail": "[]",
+      "name": "EST-A4-L2-01 denominator equals received tampered/delayed observations",
+      "pass": true
+    },
+    {
+      "detail": "[]",
+      "name": "the subtype partition accounts for the credit pass EXACTLY",
+      "pass": true
+    },
+    {
+      "detail": "[]",
+      "name": "no credited effect event is orphaned by the partition",
+      "pass": true
+    },
+    {
+      "detail": "[]",
+      "name": "D3 no-decision-opportunity is every drop, not a D2 window class",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "the drop subtype publishes no rate",
+      "pass": true
+    },
+    {
+      "detail": "249",
+      "name": "A4-D3 drop actions are 249",
+      "pass": true
+    },
+    {
+      "detail": "249",
+      "name": "A4-D3 D3 no-decision-opportunity is 249",
+      "pass": true
+    },
+    {
+      "detail": "{'native_decision_opportunity': 248, 'no_native_decision_opportunity': 1, 'unresolved': 0}",
+      "name": "A4-D2 D2 split is 248 native + 1 no-native + 0 unresolved",
+      "pass": true
+    },
+    {
+      "detail": "(249, {'native_decision_opportunity': 248, 'no_native_decision_opportunity': 1, 'unresolved': 0})",
+      "name": "the D3 figure is not borrowed from the D2 split",
+      "pass": true
+    },
+    {
+      "detail": "[]",
+      "name": "alarm-covered drops never exceed the native decision opportunities",
+      "pass": true
+    },
+    {
+      "detail": "[]",
+      "name": "EST-A4-L3-01 recall denominator equals unique truth-positive windows",
+      "pass": true
+    },
+    {
+      "detail": "[]",
+      "name": "G8 substitution invariance",
+      "pass": true
+    },
+    {
+      "detail": "[]",
+      "name": "run-level recomputes macro and pooled exactly",
+      "pass": true
+    },
+    {
+      "detail": "[]",
+      "name": "CI is run-unit, two-sided 95% percentile, 2000 resamples, seed 12345",
+      "pass": true
+    },
+    {
+      "detail": "[]",
+      "name": "no interval on an all-zero estimand result",
+      "pass": true
+    },
+    {
+      "detail": "[]",
+      "name": "no interval on any pooled ratio",
+      "pass": true
+    },
+    {
+      "detail": "[]",
+      "name": "undefined values carry a reason code and are not 0",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "no NaN/Infinity in CORRECTED_RESULTS",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "CORRECTED_RESULTS declares a schema",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "no NaN/Infinity in RUN_LEVEL",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "RUN_LEVEL declares a schema",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "no NaN/Infinity in POOLED",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "POOLED declares a schema",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "no NaN/Infinity in INPUT_MANIFEST",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "INPUT_MANIFEST declares a schema",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "no wall-clock timestamp in the package",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "precision target recorded honestly",
+      "pass": true
+    },
+    {
+      "detail": "",
+      "name": "CRN reported as measured, not assumed",
+      "pass": true
+    }
+  ],
+  "failed": [],
+  "schema": "lifesat-corrected-validation/v1",
+  "verdict": "GREEN"
+}

@@ -1,0 +1,94 @@
+{
+  "csv_header": [
+    "idx",
+    "time",
+    "category",
+    "fields",
+    "prev",
+    "chain"
+  ],
+  "defect_preconditions": {
+    "alarm_row_has_no_tmSeq_field": true,
+    "observation_row_has_seq_field": true,
+    "seq_never_equals_ordinal": true,
+    "statement": "The old join read `tmSeq` off the alarm row (absent -> None) and compared it against the observation's `seq` (present). It therefore matched nothing and reported zeros instead of raising. These three preconditions are what made the failure silent."
+  },
+  "excerpt": [
+    {
+      "alarm_csv_line": "258,42320.018774144344,rnd.alarm,n=94,71b37c25bdfe69ed4f52d6eff1f05b3d9a18ef7f9afe44b0c811c8ccc68551dd,3343910b01ec09a359ebdcfbb8117fe97de60fba940805be7f69a8d288c42065",
+      "alarm_source_idx": 258,
+      "alarm_time": 42320.018774144344,
+      "declared_ordinal": 94,
+      "joined_observation_csv_line": "257,42320.018774144344,tm.recv,seq=4232;ageS=0.018774144344;vbat=7.862256;mode=0;rej=1,2c29385bfaf188ade56d537e086e04a96c57aafd803e23b46967291593275911,71b37c25bdfe69ed4f52d6eff1f05b3d9a18ef7f9afe44b0c811c8ccc68551dd",
+      "joined_observation_source_idx": 257,
+      "joined_observation_time": 42320.018774144344,
+      "observation_seq_field": "4232",
+      "times_equal": true
+    },
+    {
+      "alarm_csv_line": "371,48040.019003749707,rnd.alarm,n=135,fa40390dedac2ec6fdd91d970bcaf79dacdb5e48f312cef122c374857a6ee09b,a72e6c9ac16249294fdd636f8575ea583aa0a94994503874693d3024931254a2",
+      "alarm_source_idx": 371,
+      "alarm_time": 48040.01900374971,
+      "declared_ordinal": 135,
+      "joined_observation_csv_line": "370,48040.019003749707,tm.recv,seq=4804;ageS=0.019003749707;vbat=7.938553;mode=0;rej=1,a0c5575948e7aa8dea413584e20c77fb1656223f1a0a7452563b7f3c8e50e09d,fa40390dedac2ec6fdd91d970bcaf79dacdb5e48f312cef122c374857a6ee09b",
+      "joined_observation_source_idx": 370,
+      "joined_observation_time": 48040.01900374971,
+      "observation_seq_field": "4804",
+      "times_equal": true
+    },
+    {
+      "alarm_csv_line": "665,133640.016909765708,rnd.alarm,n=242,2c13145f21d27343a066d106b41fbfd96e10bac86a0087d142d5c9cbce4c2d06,3b254ab407935afb42fafb005bc02acbba9806d5f80b210d7ecc9d78aae141a5",
+      "alarm_source_idx": 665,
+      "alarm_time": 133640.01690976572,
+      "declared_ordinal": 242,
+      "joined_observation_csv_line": "664,133640.016909765708,tm.recv,seq=13364;ageS=0.016909765708;vbat=8.350877;mode=0;rej=1,210bbb2cbaa5152b0dae253e2f112c8908fffecddea06886bb3766778a6cce1e,2c13145f21d27343a066d106b41fbfd96e10bac86a0087d142d5c9cbce4c2d06",
+      "joined_observation_source_idx": 664,
+      "joined_observation_time": 133640.01690976572,
+      "observation_seq_field": "13364",
+      "times_equal": true
+    },
+    {
+      "alarm_csv_line": "688,133720.016074498243,rnd.alarm,n=250,49b2e92f5620cb616de22f207848d575696a3b771f324f5d0b0e7bc44142d3de,0eda2306153b477c5bdba1bef2446af60248c370bd1f0fadb9102f017ceffee9",
+      "alarm_source_idx": 688,
+      "alarm_time": 133720.01607449824,
+      "declared_ordinal": 250,
+      "joined_observation_csv_line": "687,133720.016074498243,tm.recv,seq=13372;ageS=0.016074498243;vbat=8.346696;mode=0;rej=1,6a4c522a7529937a82994d87870660e91ba47c2f7e07b3181537b4bb1e5b8cf0,49b2e92f5620cb616de22f207848d575696a3b771f324f5d0b0e7bc44142d3de",
+      "joined_observation_source_idx": 687,
+      "joined_observation_time": 133720.01607449824,
+      "observation_seq_field": "13372",
+      "times_equal": true
+    },
+    {
+      "alarm_csv_line": "787,175420.017417948378,rnd.alarm,n=286,10adeaec66f6ff73541bc2d48d86a21074cf81dc2275186955df522cf003b3c4,16948186d2c9c2d91b1ff54c32e2e132d0b3b2a764a6c7c15c35c7eee53e1edf",
+      "alarm_source_idx": 787,
+      "alarm_time": 175420.01741794837,
+      "declared_ordinal": 286,
+      "joined_observation_csv_line": "786,175420.017417948378,tm.recv,seq=17542;ageS=0.017417948378;vbat=8.397479;mode=0;rej=1,a4f954400a61e2f3c7d139b377cc3b092529933bf309e61bbfe4d70414ea4883,10adeaec66f6ff73541bc2d48d86a21074cf81dc2275186955df522cf003b3c4",
+      "joined_observation_source_idx": 786,
+      "joined_observation_time": 175420.01741794837,
+      "observation_seq_field": "17542",
+      "times_equal": true
+    },
+    {
+      "alarm_csv_line": "1371,305580.016008125627,rnd.alarm,n=498,fad9dbced6ed4b99d17cc73ad1d237301d20181c4f3373d96381e3e825ba0024,7417f7f590930c6a92ca75906c7ef7c50bbb4a773b1e6915d1cf5c9f37369aeb",
+      "alarm_source_idx": 1371,
+      "alarm_time": 305580.0160081256,
+      "declared_ordinal": 498,
+      "joined_observation_csv_line": "1370,305580.016008125627,tm.recv,seq=30558;ageS=0.016008125627;vbat=8.346862;mode=0;rej=3,1e59d70133828945802f525085abb68c57b63998debc19382cd00413824bf34b,fad9dbced6ed4b99d17cc73ad1d237301d20181c4f3373d96381e3e825ba0024",
+      "joined_observation_source_idx": 1370,
+      "joined_observation_time": 305580.0160081256,
+      "observation_seq_field": "30558",
+      "times_equal": true
+    }
+  ],
+  "provenance": {
+    "events_sha256": "f85167b45e99c843ac6211fab872096871ed11ba89f2d02f2690507f302cab4b",
+    "manifest_source": "results-v2-iss06",
+    "run_identity": "A1-D3-s00-r0",
+    "source_path": "/home/topya/lifesat_correction_round_v7/simulation/results-v2-iss06/A1-D3-s00-r0-events.csv",
+    "total_alarm_rows_in_run": 10,
+    "total_observation_rows_in_run": 818
+  },
+  "rule": "VERBATIM. Every csv line here is copied byte-for-byte from the immutable corpus at the recorded source idx. Nothing in this fixture is synthesised, because a hand-written fixture would have reproduced the very assumption under test.",
+  "schema": "lifesat-v8-phase4-rnd-alarm-fixture/v1"
+}

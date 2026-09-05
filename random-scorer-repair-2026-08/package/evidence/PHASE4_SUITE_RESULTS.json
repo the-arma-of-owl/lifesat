@@ -1,0 +1,327 @@
+{
+  "detectors_declared": [
+    "D-P4-ANCHOR-01",
+    "D-P4-CONSERVATION-01",
+    "D-P4-CORPUS-IDENTITY-01",
+    "D-P4-DISPOSITION-01",
+    "D-P4-HISTORICAL-IMMUTABLE-01",
+    "D-P4-INVARIANCE-01",
+    "D-P4-JOIN-KEY-01",
+    "D-P4-MEMBERSHIP-SINGLE-01",
+    "D-P4-ORACLE-AGREEMENT-01",
+    "D-P4-ORACLE-AMBIGUOUS-01",
+    "D-P4-ORDINAL-DUPLICATE-01",
+    "D-P4-ORDINAL-RANGE-01",
+    "D-P4-RAW-TOTAL-01",
+    "D-P4-REPAIR-EFFECT-01",
+    "D-P4-SCORER-IDENTITY-01",
+    "D-P4-SETTLEMENT-BINDING-01",
+    "D-P4-SETTLEMENT-KEYS-01",
+    "D-P4-SETTLEMENT-MALFORMED-01",
+    "D-P4-SETTLEMENT-PIN-01",
+    "D-P4-SETTLEMENT-PRESENT-01",
+    "D-P4-TIME-WITNESS-01",
+    "D-P4-WRAPPER-EXECUTABLE-IDENTITY-01"
+  ],
+  "detectors_undeclared": [],
+  "detectors_unexercised": [],
+  "green": {
+    "conservation": {
+      "by_disposition": {
+        "matched": 10,
+        "unmatched_duplicate_ordinal": 0,
+        "unmatched_malformed_ordinal": 0,
+        "unmatched_missing_ordinal_field": 0,
+        "unmatched_ordinal_out_of_range": 0
+      },
+      "exact": true,
+      "join_key_id": "random_alarm_arrival_ordinal",
+      "matched": 10,
+      "matched_time_inconsistent": 0,
+      "observation_count": 818,
+      "raw_alarm_rows": 10,
+      "unmatched": 0
+    },
+    "findings": [],
+    "oracle_agrees": true,
+    "scored_confusion": {
+      "fn": 0,
+      "fp": 10,
+      "tn": 808,
+      "tp": 0
+    },
+    "stage": "GREEN",
+    "verdict": "GREEN"
+  },
+  "mutants": [
+    {
+      "detectors_fired": [
+        "D-P4-JOIN-KEY-01"
+      ],
+      "must_fire": "D-P4-JOIN-KEY-01",
+      "name": "MUT-01-consumer-reads-tmSeq",
+      "outcome": "REJECTED"
+    },
+    {
+      "detectors_fired": [
+        "D-P4-JOIN-KEY-01"
+      ],
+      "must_fire": "D-P4-JOIN-KEY-01",
+      "name": "MUT-02-ordinal-shift-0-based",
+      "outcome": "REJECTED"
+    },
+    {
+      "detectors_fired": [
+        "D-P4-ORDINAL-DUPLICATE-01"
+      ],
+      "must_fire": "D-P4-ORDINAL-DUPLICATE-01",
+      "name": "MUT-03-duplicate-ordinal",
+      "outcome": "REJECTED"
+    },
+    {
+      "detectors_fired": [
+        "D-P4-TIME-WITNESS-01"
+      ],
+      "must_fire": "D-P4-TIME-WITNESS-01",
+      "name": "MUT-04-missing-observation",
+      "outcome": "REJECTED"
+    },
+    {
+      "detectors_fired": [
+        "D-P4-ORDINAL-RANGE-01"
+      ],
+      "must_fire": "D-P4-ORDINAL-RANGE-01",
+      "name": "MUT-05-ordinal-out-of-range",
+      "outcome": "REJECTED"
+    },
+    {
+      "detectors_fired": [
+        "D-P4-CONSERVATION-01"
+      ],
+      "must_fire": "D-P4-CONSERVATION-01",
+      "name": "MUT-06-silent-drop-of-unmatched-rows",
+      "outcome": "REJECTED"
+    },
+    {
+      "detectors_fired": [
+        "D-P4-DISPOSITION-01"
+      ],
+      "must_fire": "D-P4-DISPOSITION-01",
+      "name": "MUT-07-untyped-disposition",
+      "outcome": "REJECTED"
+    },
+    {
+      "detectors_fired": [
+        "D-P4-DISPOSITION-01"
+      ],
+      "must_fire": "D-P4-DISPOSITION-01",
+      "name": "MUT-08-undeclared-disposition",
+      "outcome": "REJECTED"
+    },
+    {
+      "detectors_fired": [
+        "D-P4-ORACLE-AGREEMENT-01"
+      ],
+      "must_fire": "D-P4-ORACLE-AGREEMENT-01",
+      "name": "MUT-09-oracle-disagreement",
+      "outcome": "REJECTED"
+    },
+    {
+      "detectors_fired": [
+        "D-P4-JOIN-KEY-01"
+      ],
+      "must_fire": "D-P4-JOIN-KEY-01",
+      "name": "MUT-10-registry-declares-tmSeq",
+      "outcome": "REJECTED"
+    },
+    {
+      "detectors_fired": [
+        "D-P4-JOIN-KEY-01"
+      ],
+      "must_fire": "D-P4-JOIN-KEY-01",
+      "name": "MUT-11-registry-treats-seq-as-key",
+      "outcome": "REJECTED"
+    },
+    {
+      "detectors_fired": [
+        "D-P4-ORACLE-AGREEMENT-01",
+        "D-P4-ORACLE-AMBIGUOUS-01"
+      ],
+      "must_fire": "D-P4-ORACLE-AMBIGUOUS-01",
+      "name": "MUT-12-oracle-time-witness-ambiguous",
+      "outcome": "REJECTED"
+    },
+    {
+      "detectors_fired": [
+        "D-P4-INVARIANCE-01"
+      ],
+      "must_fire": "D-P4-INVARIANCE-01",
+      "name": "MUT-13-non-random-estimand-moved",
+      "outcome": "REJECTED"
+    },
+    {
+      "detectors_fired": [
+        "D-P4-ANCHOR-01",
+        "D-P4-REPAIR-EFFECT-01"
+      ],
+      "must_fire": "D-P4-REPAIR-EFFECT-01",
+      "name": "MUT-14-repair-did-not-reach-output",
+      "outcome": "REJECTED"
+    },
+    {
+      "detectors_fired": [
+        "D-P4-ANCHOR-01"
+      ],
+      "must_fire": "D-P4-ANCHOR-01",
+      "name": "MUT-15-plan-anchor-mismatch",
+      "outcome": "REJECTED"
+    },
+    {
+      "detectors_fired": [
+        "D-P4-CORPUS-IDENTITY-01"
+      ],
+      "must_fire": "D-P4-CORPUS-IDENTITY-01",
+      "name": "MUT-16-corpus-input-substituted",
+      "outcome": "REJECTED"
+    },
+    {
+      "detectors_fired": [
+        "D-P4-HISTORICAL-IMMUTABLE-01"
+      ],
+      "must_fire": "D-P4-HISTORICAL-IMMUTABLE-01",
+      "name": "MUT-17-historical-package-changed",
+      "outcome": "REJECTED"
+    },
+    {
+      "detectors_fired": [
+        "D-P4-RAW-TOTAL-01"
+      ],
+      "must_fire": "D-P4-RAW-TOTAL-01",
+      "name": "MUT-18-stale-corpus-total-claim",
+      "outcome": "REJECTED"
+    },
+    {
+      "detectors_fired": [
+        "D-P4-RAW-TOTAL-01"
+      ],
+      "must_fire": "D-P4-RAW-TOTAL-01",
+      "name": "MUT-19-no-checkable-corpus-total",
+      "outcome": "REJECTED"
+    },
+    {
+      "detectors_fired": [
+        "D-P4-RAW-TOTAL-01"
+      ],
+      "must_fire": "D-P4-RAW-TOTAL-01",
+      "name": "MUT-20-total-counted-over-wrong-scope",
+      "outcome": "REJECTED"
+    },
+    {
+      "detectors_fired": [
+        "D-P4-SETTLEMENT-PIN-01"
+      ],
+      "must_fire": "D-P4-SETTLEMENT-PIN-01",
+      "name": "SET-01-no-external-pin",
+      "outcome": "REJECTED"
+    },
+    {
+      "detectors_fired": [
+        "D-P4-SETTLEMENT-PIN-01"
+      ],
+      "must_fire": "D-P4-SETTLEMENT-PIN-01",
+      "name": "SET-02-wrong-external-pin",
+      "outcome": "REJECTED"
+    },
+    {
+      "detectors_fired": [
+        "D-P4-SETTLEMENT-PRESENT-01"
+      ],
+      "must_fire": "D-P4-SETTLEMENT-PRESENT-01",
+      "name": "SET-03-settlement-absent",
+      "outcome": "REJECTED"
+    },
+    {
+      "detectors_fired": [
+        "D-P4-SETTLEMENT-MALFORMED-01"
+      ],
+      "must_fire": "D-P4-SETTLEMENT-MALFORMED-01",
+      "name": "SET-04-settlement-array-root",
+      "outcome": "REJECTED"
+    },
+    {
+      "detectors_fired": [
+        "D-P4-SETTLEMENT-MALFORMED-01"
+      ],
+      "must_fire": "D-P4-SETTLEMENT-MALFORMED-01",
+      "name": "SET-05-binding-not-a-digest",
+      "outcome": "REJECTED"
+    },
+    {
+      "detectors_fired": [
+        "D-P4-SETTLEMENT-KEYS-01"
+      ],
+      "must_fire": "D-P4-SETTLEMENT-KEYS-01",
+      "name": "SET-06-settlement-extra-key",
+      "outcome": "REJECTED"
+    },
+    {
+      "detectors_fired": [
+        "D-P4-SETTLEMENT-BINDING-01"
+      ],
+      "must_fire": "D-P4-SETTLEMENT-BINDING-01",
+      "name": "SET-07-seal-binding-wrong",
+      "outcome": "REJECTED"
+    },
+    {
+      "detectors_fired": [
+        "D-P4-SCORER-IDENTITY-01"
+      ],
+      "must_fire": "D-P4-SCORER-IDENTITY-01",
+      "name": "SET-08-successor-scored-by-old-scorer",
+      "outcome": "REJECTED"
+    },
+    {
+      "detectors_fired": [
+        "D-P4-MEMBERSHIP-SINGLE-01"
+      ],
+      "must_fire": "D-P4-MEMBERSHIP-SINGLE-01",
+      "name": "SET-09-successor-set-grows",
+      "outcome": "REJECTED"
+    },
+    {
+      "detectors_fired": [
+        "D-P4-WRAPPER-EXECUTABLE-IDENTITY-01"
+      ],
+      "must_fire": "D-P4-WRAPPER-EXECUTABLE-IDENTITY-01",
+      "name": "IDN-01-candidate-scorer-edited",
+      "outcome": "REJECTED"
+    },
+    {
+      "detectors_fired": [
+        "D-P4-WRAPPER-EXECUTABLE-IDENTITY-01"
+      ],
+      "must_fire": "D-P4-WRAPPER-EXECUTABLE-IDENTITY-01",
+      "name": "IDN-02-compiled-bytecode",
+      "outcome": "REJECTED"
+    },
+    {
+      "detectors_fired": [
+        "D-P4-WRAPPER-EXECUTABLE-IDENTITY-01"
+      ],
+      "must_fire": "D-P4-WRAPPER-EXECUTABLE-IDENTITY-01",
+      "name": "IDN-03-inventory-not-the-settled-one",
+      "outcome": "REJECTED"
+    }
+  ],
+  "mutants_rejected": 32,
+  "red": {
+    "detectors_fired": [
+      "D-P4-JOIN-KEY-01"
+    ],
+    "legacy_credited_observations": 0,
+    "outcome": "REFUSED",
+    "raw_alarm_rows": 10,
+    "stage": "RED",
+    "statement": "the old tmSeq/seq read credits 0 observations while the run carries 10 raw alarm rows; it reported zeros instead of raising, which is why the defect survived"
+  }
+}

@@ -9,7 +9,7 @@ authors:
     orcid: "https://orcid.org/0009-0003-2488-1287"
 repository-code: "https://github.com/the-arma-of-owl/lifesat"
 url: "https://github.com/the-arma-of-owl/lifesat"
-version: "1.0.0"
+version: "1.0.3"
 date-released: "2026-08-29"
 abstract: >-
   OMNeT++/INET simulation sources, analysis pipeline, provenance records and

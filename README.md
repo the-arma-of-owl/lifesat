@@ -39,6 +39,7 @@ scoring contracts and are kept apart on purpose.
 | `matrix-2026-07/` | the historical detection matrix | 20 cells x 60 seeds = 1,200 |
 | `causal-2026-08/` | the cause-discrimination fleet and the twin ablation | 1,116 inferential + 288 robustness = 1,404 |
 | `dtaas/` | the on-demand twin instantiation service | deployment demonstration |
+| `random-scorer-repair-2026-08/` | the repaired random-comparator join behind Table 13 | rescoring only, no new runs |
 
 Running a matrix cell under `causal-2026-08/` will not reproduce the matrix
 numbers, and the reverse is also true. Each directory reproduces its own results.
@@ -190,17 +191,17 @@ corrected-package inputs, then arrange them as the build expects:
 
 ```bash
 # unzip, in one directory:
-#   lifesat-code-1.0.2.zip  lifesat-raw-matrix-1200.zip
+#   lifesat-code-1.0.3.zip  lifesat-raw-matrix-1200.zip
 #   lifesat-sealed-contracts.zip  lifesat-corrected-package-inputs.zip
 ROOT=$PWD
-SIM=$ROOT/lifesat-1.0.2/causal-2026-08
+SIM=$ROOT/lifesat-1.0.3/causal-2026-08
 
 cp -r $ROOT/results          $SIM/          # historical raw records
 cp -r $ROOT/results-v2-iss06 $SIM/          # the 180 A1/A2/A3-D3 reruns
 mkdir -p $SIM/specs
 cp $ROOT/arsiv/specs-sealed/*.json $ROOT/arsiv/specs-sealed/*.md $SIM/specs/
-mkdir -p $ROOT/lifesat-1.0.2/verification
-cp $ROOT/verification/ISS06_FLEET_VERIFICATION.json $ROOT/lifesat-1.0.2/verification/
+mkdir -p $ROOT/lifesat-1.0.3/verification
+cp $ROOT/verification/ISS06_FLEET_VERIFICATION.json $ROOT/lifesat-1.0.3/verification/
 
 cd $SIM/analysis
 LIFESAT_SPECS=$SIM/specs \
@@ -249,6 +250,20 @@ and the reruns it consumes are in the deposit under `arsiv/` and
 `accepted_phase2_v7/`. They are published exactly as accepted, not reformatted,
 because their identity is the digest of their bytes and the pins are recorded in
 `causal-2026-08/analysis/causal/authority.py`.
+
+### The random comparator, and where Table 13 comes from
+
+Table 13 is not produced by `causal-2026-08/analysis/scoring/`. That package
+joins the random detector's alarms on a field the producer does not emit, so it
+credits nothing and reports zeros. The defect, the repaired join, the successor
+result package the table is actually read from, and a regression test that fails
+on the defect are in `random-scorer-repair-2026-08/`.
+
+The historical scoring package is left byte-exact on purpose: its digest is
+pinned by the acceptance seal and by the rebuild of Tables 11, 12 and 14. The
+repair is published as a successor beside it, not in place of it. Comparing both
+scorers over the same 1,200 records moves 22 estimand arms and all 22 are the
+random comparator's; no other table changes.
 
 ## Citation
 

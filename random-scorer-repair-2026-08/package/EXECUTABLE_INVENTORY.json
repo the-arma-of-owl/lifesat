@@ -1,0 +1,267 @@
+{
+  "closed_set_rule": "This is the COMPLETE set of runnable files under the Phase 4 root, INCLUDING the repaired candidate scorer. A path on disk but absent here, a path here but absent on disk, a duplicate path, any compiled bytecode, or any content whose digest differs, are each RED under D-P4-WRAPPER-EXECUTABLE-IDENTITY-01.",
+  "entries": [
+    {
+      "path": "candidate_scorer/build_corrected_package_v1.py",
+      "sha256": "4f8d8a4e845f720d7ae11a76b5f7bca7e1ff9dd07e71825b89478b52a8cd60b3"
+    },
+    {
+      "path": "candidate_scorer/build_paper_assets_v1.py",
+      "sha256": "e608f7d1975b59960f04d3c102f0f7d3e24b9ef9ec86edb67e503408b5cc1c5f"
+    },
+    {
+      "path": "candidate_scorer/build_paper_assets_v2.py",
+      "sha256": "5462ebf97ca8e846cd9eab31b23b288c59486957831b60beca1ff10066e03c69"
+    },
+    {
+      "path": "candidate_scorer/calibrate_d2.py",
+      "sha256": "663e3186b659ffc651729613f7586e1ca3641600e8e3ab53ea7a32235fa80350"
+    },
+    {
+      "path": "candidate_scorer/check_accounting.py",
+      "sha256": "301af606c95034cae5b096e59116ee954c54488930ad6e8bc1b0e4d4fb323740"
+    },
+    {
+      "path": "candidate_scorer/check_attacks.py",
+      "sha256": "c42f623624c030524aad83e2e5eedc05f23497e5e29964417bda5d2f918b3b22"
+    },
+    {
+      "path": "candidate_scorer/check_d3.py",
+      "sha256": "d7da067febed76dc56e46e4cbf1654c6213191af4a354cfccaa03dd703d83c4d"
+    },
+    {
+      "path": "candidate_scorer/check_defences.py",
+      "sha256": "1c28b33a019a1c1c467900171badbf1a9edfa6802c715885175372c42432ccac"
+    },
+    {
+      "path": "candidate_scorer/check_illustrative.py",
+      "sha256": "d0c29bef8bf8ba81df5e151fcba24fbb1eb98318652f43203c24c64f0f2110d9"
+    },
+    {
+      "path": "candidate_scorer/check_matrix.py",
+      "sha256": "4b388698286069031725e832ac1cf5ba4c0968cb9495070de2c639509a68c4ff"
+    },
+    {
+      "path": "candidate_scorer/report.py",
+      "sha256": "dc3392d059f197a4ddd881a7d86c44f7cd412620965bd75357ee86902e62bc4c"
+    },
+    {
+      "path": "candidate_scorer/run_matrix.py",
+      "sha256": "6f5b9963ccf0bed92c04e1f05335b3749eb05c7e026760c531299dee764c5cfd"
+    },
+    {
+      "path": "candidate_scorer/run_rerun_v2.py",
+      "sha256": "8b0f60ccda977d0ab5d0a39984209f54b3428d9cda53395ba93ef7b7581b859f"
+    },
+    {
+      "path": "candidate_scorer/score.py",
+      "sha256": "2174d49340575b76cdb6b21b57242c3b0972f32bdfb034d1e823b50a9e434a0e"
+    },
+    {
+      "path": "candidate_scorer/scoring/__init__.py",
+      "sha256": "bbe6c77321d9fbdb35235536089487fd65a61d9cd1a00138c603e53b9833ea69"
+    },
+    {
+      "path": "candidate_scorer/scoring/artefacts.py",
+      "sha256": "d55eae3d7f20338f92ca3ab74266701e99312296922b24ebc97d4bba6ba1356d"
+    },
+    {
+      "path": "candidate_scorer/scoring/families.py",
+      "sha256": "4e8b8b93ca9002eed80c7a9a3b1a5c9094d18e389b02f40073dc89d7568ddcc2"
+    },
+    {
+      "path": "candidate_scorer/scoring/matching.py",
+      "sha256": "1e47ea75a6f43b99dda9c81b3ffeb5a22cd75c7f785267f812b0172e47c639d6"
+    },
+    {
+      "path": "candidate_scorer/scoring/metrics.py",
+      "sha256": "f3d976fdca89f5c289268ce7ab2265d8cda7d859d65fa0261ddaa424ebd09a95"
+    },
+    {
+      "path": "candidate_scorer/scoring/ontology.py",
+      "sha256": "394a2245fd173796394b1fbbf424cb19d4aad96306a6c6f4860c7e683a768741"
+    },
+    {
+      "path": "candidate_scorer/scoring/output.py",
+      "sha256": "83e2bf063742c14f2166f551b2ea84dae181e99560d94734dbff030332665447"
+    },
+    {
+      "path": "candidate_scorer/scoring/rndjoin.py",
+      "sha256": "f57a0d4a46c55643409b79ae01dc65da3e993b7af25f03689a94807f032e910a"
+    },
+    {
+      "path": "candidate_scorer/scoring/state.py",
+      "sha256": "37306b997b66b5d7e5c736e235e64964bf7d156cbaf959b500171b4a4a5446c1"
+    },
+    {
+      "path": "candidate_scorer/scoring/windows.py",
+      "sha256": "0c94a72ddd148d452f103e650a585a365472a89603ba8164059abe242f1be452"
+    },
+    {
+      "path": "candidate_scorer/select_tle.py",
+      "sha256": "88fb7a12b945deeecd9b797a670a76bc0a4b99de9ec10c4d746aa8b48f0f59e0"
+    },
+    {
+      "path": "candidate_scorer/tests/_run_one_target.py",
+      "sha256": "e98fcb8dce24fd6cc511ca2c2b089bdbc0309cb2d320af2c6e0d907aef49f457"
+    },
+    {
+      "path": "candidate_scorer/tests/_run_task45_modules.py",
+      "sha256": "376e733ecf595f176c2f7ffb8d8fbdc000cff606692843790352514b8dda90ff"
+    },
+    {
+      "path": "candidate_scorer/tests/contract_oracle.py",
+      "sha256": "d88ce8994a8ea380784f9ac6c2ed5b1c15ac2fb55221f023ca22aa53b72872df"
+    },
+    {
+      "path": "candidate_scorer/tests/fleet_guard_mutants_v1.py",
+      "sha256": "b63a436ff69a04d5671ac39c9fb5f0a524316f5612a646d732eb2938658c363b"
+    },
+    {
+      "path": "candidate_scorer/tests/mutations.py",
+      "sha256": "f37c6af9911f611cf3df51adbe0850af5d01c7c8bc7513e47e52d0a9c9e06e6b"
+    },
+    {
+      "path": "candidate_scorer/tests/package_mutants_v1.py",
+      "sha256": "360523e60a6890a5ad7502ea631ac4e35f4f0d6139f111233a9072bbea0ab6a3"
+    },
+    {
+      "path": "candidate_scorer/tests/red_common.py",
+      "sha256": "4b5b30d8bae9d238861ff342b1f4100f5f58088efefd9321f4215b2b36fc3c92"
+    },
+    {
+      "path": "candidate_scorer/tests/reference_scorer.py",
+      "sha256": "95a055e35646b6f98650218da8033a1bdba26d701034eff3df2295c2188f982e"
+    },
+    {
+      "path": "candidate_scorer/tests/run_green_tests.py",
+      "sha256": "435e01036ad9c1a32d897a37cd3a25989f3498ed3954ae483c840bf32e6cd4ee"
+    },
+    {
+      "path": "candidate_scorer/tests/run_mutation_suite.py",
+      "sha256": "fc10bec00eefda7049bbdb9e60312d86dcf3d2733f37637214f5e928f187e3fd"
+    },
+    {
+      "path": "candidate_scorer/tests/run_red_tests.py",
+      "sha256": "72b56c146b483e4ac864d7f3b38a9f9243ba5b9151e697e499d1cce0d53527dc"
+    },
+    {
+      "path": "candidate_scorer/tests/test_corrected_package_v1.py",
+      "sha256": "dcba8791eda956298e3ec6493616d98d2a5cd107448ee450350bd66cc822e1ea"
+    },
+    {
+      "path": "candidate_scorer/tests/test_fleet_driver_guards.py",
+      "sha256": "186f4a066b6c3748b63d356ecefd706e5e7557cea80855c2a694eae6068c099b"
+    },
+    {
+      "path": "candidate_scorer/tests/test_green_01_f4_counter.py",
+      "sha256": "4783ae5c0c2e44b92b459d4dbf4c9cf9c3fffbf4dc15ffc336a5565128a48173"
+    },
+    {
+      "path": "candidate_scorer/tests/test_green_02_semantic_guards.py",
+      "sha256": "fed8ea3f63de49904a7e6f394a1db2f00328471b38abca00cb28758aff189c6f"
+    },
+    {
+      "path": "candidate_scorer/tests/test_red_01_a3_identity.py",
+      "sha256": "558ba232b378ed2e38dd2b9462a6378c62eb644c73010066e9accc52534a66ad"
+    },
+    {
+      "path": "candidate_scorer/tests/test_red_02_families.py",
+      "sha256": "d17c906a5cec551a5bc1443cea874d0206591923c5fcbb59e463cc3d762e0c7f"
+    },
+    {
+      "path": "candidate_scorer/tests/test_red_03_effect_window.py",
+      "sha256": "cd9cc74e02a4013c14cfee13e22962c64d05848f3818e0452f54fe7120d70633"
+    },
+    {
+      "path": "candidate_scorer/tests/test_red_04_d2_native_unit.py",
+      "sha256": "79baa93cc28708b653742e0059d77cbb939218ccf0bd80644acde859f5ad7e83"
+    },
+    {
+      "path": "candidate_scorer/tests/test_red_05_a4_accounting.py",
+      "sha256": "901b014854baa5a89351a34dc592a5e8957053bde90a89504fcf60246a111e85"
+    },
+    {
+      "path": "candidate_scorer/tests/test_red_06_f4_evidence.py",
+      "sha256": "d29e1bf3a1cb84c5a4f43fd87cb8a31b44e71afb6ba476c19256553ec10ff58b"
+    },
+    {
+      "path": "candidate_scorer/tests/test_red_08_aggregation.py",
+      "sha256": "924e314c75e479e1bf192456a4d29163edaa7cc8800793d8bf71f171b65ad044"
+    },
+    {
+      "path": "candidate_scorer/tests/test_red_09_output_schema.py",
+      "sha256": "6c374a563835c0405f7cc39d95ecdcdbc4c5327e9fe4043000be0cf6006b2791"
+    },
+    {
+      "path": "candidate_scorer/verify_access.py",
+      "sha256": "ebe4dec0249621535b08b64be0df5eccdd267c375b979842d93cd46455df8eb7"
+    },
+    {
+      "path": "candidate_scorer/verify_chain.py",
+      "sha256": "b6dee71d0004ed8998cd27dba246c5195857c90eda50befa99d9eb65285afb58"
+    },
+    {
+      "path": "tools/build_fixture.py",
+      "sha256": "e1c955200c71191eaadea8683bf8a96689d293aa1f9a90b1401bd072a48dd9d7"
+    },
+    {
+      "path": "tools/build_phase4_contract.py",
+      "sha256": "c5ebd83f61d7c7e2811a7ab2bd7a2ef4416064ee714ce47f1ae2257b14dc9b6f"
+    },
+    {
+      "path": "tools/build_phase4_membership.py",
+      "sha256": "1e76be595d92af21ce80d2aeb74793c3b37ca703295a2f15cb1a722d7ab89fa1"
+    },
+    {
+      "path": "tools/p4_authority.py",
+      "sha256": "9de1d8ab2b2f9b7ada8d701ad9fb975b819f9cb386cd4194d106c4e78474ef78"
+    },
+    {
+      "path": "tools/p4_checks.py",
+      "sha256": "5b09d2c6da27580866be32945809135f0395620835b82e93a3528504d3b6a6df"
+    },
+    {
+      "path": "tools/p4_identity.py",
+      "sha256": "d43da565842df209a74cada9d6bc2c6127bbdcb46e52c4a5466b1e07153a5cb0"
+    },
+    {
+      "path": "tools/p4_invariance.py",
+      "sha256": "2b20145b8c9da08d5d27dd7240e1f091537922f563e626f9d8901fdd04962d46"
+    },
+    {
+      "path": "tools/p4_mutations.py",
+      "sha256": "b99c312d55e329534f6cb2ade744bd44ba0d2e8a8b831adef4be1f7f888fc674"
+    },
+    {
+      "path": "tools/p4_rawtotals.py",
+      "sha256": "c9e5b4e844c074636f720858ca08d610f5c9dbcba4e8e9d506333ead585974ff"
+    },
+    {
+      "path": "tools/p4_reference_oracle.py",
+      "sha256": "76ecdef9b36bb3be586edf94322528098aaeceda0866c24c41b97be3fc40334d"
+    },
+    {
+      "path": "tools/p4_settlement.py",
+      "sha256": "d7792cf7d83ee20cb29d1b486e244212688c1b0a32f04785716ff7d6b8550eae"
+    },
+    {
+      "path": "tools/run_phase4_suite.py",
+      "sha256": "27881787825f45068c9c30237ad650165ac7aef85d11e722b932e6315bd01153"
+    },
+    {
+      "path": "tools/validate_phase4.py",
+      "sha256": "ffa5e61b23f12ef57ee45aadff82c24c262034075bd65c2805bcc44d5b056a8f"
+    },
+    {
+      "path": "tools/write_p4_sums.py",
+      "sha256": "f192ba23db1796adf044958636f88843be8dd2ee6ebdf5a86dc0193e6e0c5599"
+    }
+  ],
+  "runnable_extensions": [
+    ".py",
+    ".sh"
+  ],
+  "schema": "lifesat-v8-phase4-executable-inventory/v1",
+  "scope": "Binds this root's executables to the settlement and through it to the external pin. It does not defend against a validator edited to skip this check; that is covered out of band by sha256sum -c SHA256SUMS.txt and by the external settlement pin."
+}

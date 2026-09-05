@@ -1,0 +1,1543 @@
+{
+  "authority": {
+    "authority_utc": "2026-08-11T15:51:34Z",
+    "contract_json_sha256": "913848492f82502f5a28243534eaa3e2e19c3c023ebd8b49df8027b8ccf54e95",
+    "contract_version": "1.4.3-candidate",
+    "old_raw_tree_sha256": "09893fc41cd5fab122b2d956bda46664d60d3b9f33aa68f95d4d41b408711c16",
+    "rerun_tree_sha256": "f7e1d5fe90340d8bef2a0a512322d6b6017b39c56c1cec20a9531a0a01685b63",
+    "scorer_sha256": "8eaa4663270190ad907e2d5e5fc8ea7b420bd4e1295681517135090cca65c677",
+    "seal_sha256": "5c575f3cee35000b4da45c63312ea166ed632b6a4efd7e3fc85efe707ea8d813"
+  },
+  "cells": [
+    {
+      "cell": "A1-D0",
+      "estimands": [
+        {
+          "arms": {
+            "execution_rate": {
+              "observed_denominator": 487,
+              "observed_numerator": 474,
+              "pooled_ratio": 0.973305954825462,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F0-01"
+        },
+        {
+          "arms": {
+            "state_transition_rate": {
+              "observed_denominator": 487,
+              "observed_numerator": 474,
+              "pooled_ratio": 0.973305954825462,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F2-01"
+        }
+      ]
+    },
+    {
+      "cell": "A1-D1",
+      "estimands": [
+        {
+          "arms": {
+            "execution_rate": {
+              "observed_denominator": 487,
+              "observed_numerator": 474,
+              "pooled_ratio": 0.973305954825462,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F0-01"
+        },
+        {
+          "arms": {
+            "prevention_rate": {
+              "observed_denominator": 474,
+              "observed_numerator": 474,
+              "pooled_ratio": 1.0,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F1-01"
+        },
+        {
+          "arms": {
+            "acceptance_rate": {
+              "observed_denominator": 474,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F1-02"
+        },
+        {
+          "arms": {
+            "state_transition_rate": {
+              "observed_denominator": 487,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F2-01"
+        }
+      ]
+    },
+    {
+      "cell": "A1-D2",
+      "estimands": [
+        {
+          "arms": {
+            "execution_rate": {
+              "observed_denominator": 487,
+              "observed_numerator": 474,
+              "pooled_ratio": 0.973305954825462,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F0-01"
+        },
+        {
+          "arms": {
+            "prevention_rate": {
+              "observed_denominator": 474,
+              "observed_numerator": 474,
+              "pooled_ratio": 1.0,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F1-01"
+        },
+        {
+          "arms": {
+            "acceptance_rate": {
+              "observed_denominator": 474,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F1-02"
+        },
+        {
+          "arms": {
+            "state_transition_rate": {
+              "observed_denominator": 487,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F2-01"
+        },
+        {
+          "arms": {
+            "event_recall": {
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "fpr": {
+              "observed_denominator": 9300,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "precision": {
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "recall": {
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F3-D2-01"
+        },
+        {
+          "arms": {
+            "event_recall": {
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "fpr": {
+              "observed_denominator": 49080,
+              "observed_numerator": 481,
+              "pooled_ratio": 0.009800325998370009,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "precision": {
+              "observed_denominator": 481,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "recall": {
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F3-RND-01"
+        }
+      ]
+    },
+    {
+      "cell": "A1-D3",
+      "estimands": [
+        {
+          "arms": {
+            "execution_rate": {
+              "observed_denominator": 487,
+              "observed_numerator": 474,
+              "pooled_ratio": 0.973305954825462,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F0-01"
+        },
+        {
+          "arms": {
+            "prevention_rate": {
+              "observed_denominator": 474,
+              "observed_numerator": 474,
+              "pooled_ratio": 1.0,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F1-01"
+        },
+        {
+          "arms": {
+            "acceptance_rate": {
+              "observed_denominator": 474,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F1-02"
+        },
+        {
+          "arms": {
+            "state_transition_rate": {
+              "observed_denominator": 487,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F2-01"
+        },
+        {
+          "arms": {
+            "event_recall": {
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "fpr": {
+              "observed_denominator": 48606,
+              "observed_numerator": 96,
+              "pooled_ratio": 0.0019750648068139736,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "precision": {
+              "observed_denominator": 96,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "recall": {
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F3-D3-01"
+        },
+        {
+          "arms": {
+            "event_recall": {
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F3-D3-02"
+        },
+        {
+          "arms": {
+            "event_recall": {
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "fpr": {
+              "observed_denominator": 49080,
+              "observed_numerator": 481,
+              "pooled_ratio": 0.009800325998370009,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "precision": {
+              "observed_denominator": 481,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "recall": {
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F3-RND-01"
+        },
+        {
+          "arms": {
+            "secondary_reporting_rate": {
+              "observed_denominator": 474,
+              "observed_numerator": 474,
+              "pooled_ratio": 1.0,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F4-01"
+        },
+        {
+          "arms": {
+            "runs_with_a_missed_effect_event": {
+              "observed_denominator": 60,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-AUX-01"
+        }
+      ]
+    },
+    {
+      "cell": "A2-D0",
+      "estimands": [
+        {
+          "arms": {
+            "execution_rate": {
+              "observed_denominator": 472,
+              "observed_numerator": 414,
+              "pooled_ratio": 0.8771186440677966,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F0-01"
+        },
+        {
+          "arms": {
+            "state_transition_rate": {
+              "observed_denominator": 472,
+              "observed_numerator": 328,
+              "pooled_ratio": 0.6949152542372882,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F2-01"
+        }
+      ]
+    },
+    {
+      "cell": "A2-D1",
+      "estimands": [
+        {
+          "arms": {
+            "execution_rate": {
+              "observed_denominator": 472,
+              "observed_numerator": 414,
+              "pooled_ratio": 0.8771186440677966,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F0-01"
+        },
+        {
+          "arms": {
+            "prevention_rate": {
+              "observed_denominator": 414,
+              "observed_numerator": 414,
+              "pooled_ratio": 1.0,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F1-01"
+        },
+        {
+          "arms": {
+            "acceptance_rate": {
+              "observed_denominator": 414,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F1-02"
+        },
+        {
+          "arms": {
+            "state_transition_rate": {
+              "observed_denominator": 472,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F2-01"
+        }
+      ]
+    },
+    {
+      "cell": "A2-D2",
+      "estimands": [
+        {
+          "arms": {
+            "execution_rate": {
+              "observed_denominator": 472,
+              "observed_numerator": 414,
+              "pooled_ratio": 0.8771186440677966,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F0-01"
+        },
+        {
+          "arms": {
+            "prevention_rate": {
+              "observed_denominator": 414,
+              "observed_numerator": 414,
+              "pooled_ratio": 1.0,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F1-01"
+        },
+        {
+          "arms": {
+            "acceptance_rate": {
+              "observed_denominator": 414,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F1-02"
+        },
+        {
+          "arms": {
+            "state_transition_rate": {
+              "observed_denominator": 472,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F2-01"
+        },
+        {
+          "arms": {
+            "event_recall": {
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "fpr": {
+              "observed_denominator": 9300,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "precision": {
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "recall": {
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F3-D2-01"
+        },
+        {
+          "arms": {
+            "event_recall": {
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "fpr": {
+              "observed_denominator": 49080,
+              "observed_numerator": 513,
+              "pooled_ratio": 0.010452322738386309,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "precision": {
+              "observed_denominator": 513,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "recall": {
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F3-RND-01"
+        }
+      ]
+    },
+    {
+      "cell": "A2-D3",
+      "estimands": [
+        {
+          "arms": {
+            "execution_rate": {
+              "observed_denominator": 472,
+              "observed_numerator": 414,
+              "pooled_ratio": 0.8771186440677966,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F0-01"
+        },
+        {
+          "arms": {
+            "prevention_rate": {
+              "observed_denominator": 414,
+              "observed_numerator": 414,
+              "pooled_ratio": 1.0,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F1-01"
+        },
+        {
+          "arms": {
+            "acceptance_rate": {
+              "observed_denominator": 414,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F1-02"
+        },
+        {
+          "arms": {
+            "state_transition_rate": {
+              "observed_denominator": 472,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F2-01"
+        },
+        {
+          "arms": {
+            "event_recall": {
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "fpr": {
+              "observed_denominator": 48666,
+              "observed_numerator": 89,
+              "pooled_ratio": 0.0018287921752352771,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "precision": {
+              "observed_denominator": 89,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "recall": {
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F3-D3-01"
+        },
+        {
+          "arms": {
+            "event_recall": {
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F3-D3-02"
+        },
+        {
+          "arms": {
+            "event_recall": {
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "fpr": {
+              "observed_denominator": 49080,
+              "observed_numerator": 513,
+              "pooled_ratio": 0.010452322738386309,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "precision": {
+              "observed_denominator": 513,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "recall": {
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F3-RND-01"
+        },
+        {
+          "arms": {
+            "secondary_reporting_rate": {
+              "observed_denominator": 414,
+              "observed_numerator": 414,
+              "pooled_ratio": 1.0,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F4-01"
+        },
+        {
+          "arms": {
+            "runs_with_a_missed_effect_event": {
+              "observed_denominator": 60,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-AUX-01"
+        }
+      ]
+    },
+    {
+      "cell": "A3-D0",
+      "estimands": [
+        {
+          "arms": {
+            "execution_rate": {
+              "observed_denominator": 472,
+              "observed_numerator": 414,
+              "pooled_ratio": 0.8771186440677966,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F0-01"
+        },
+        {
+          "arms": {
+            "state_transition_rate": {
+              "observed_denominator": 472,
+              "observed_numerator": 330,
+              "pooled_ratio": 0.6991525423728814,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F2-01"
+        }
+      ]
+    },
+    {
+      "cell": "A3-D1",
+      "estimands": [
+        {
+          "arms": {
+            "execution_rate": {
+              "observed_denominator": 472,
+              "observed_numerator": 414,
+              "pooled_ratio": 0.8771186440677966,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F0-01"
+        },
+        {
+          "arms": {
+            "prevention_rate": {
+              "observed_denominator": 414,
+              "observed_numerator": 414,
+              "pooled_ratio": 1.0,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F1-01"
+        },
+        {
+          "arms": {
+            "acceptance_rate": {
+              "observed_denominator": 414,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F1-02"
+        },
+        {
+          "arms": {
+            "state_transition_rate": {
+              "observed_denominator": 472,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F2-01"
+        }
+      ]
+    },
+    {
+      "cell": "A3-D2",
+      "estimands": [
+        {
+          "arms": {
+            "execution_rate": {
+              "observed_denominator": 472,
+              "observed_numerator": 414,
+              "pooled_ratio": 0.8771186440677966,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F0-01"
+        },
+        {
+          "arms": {
+            "prevention_rate": {
+              "observed_denominator": 414,
+              "observed_numerator": 414,
+              "pooled_ratio": 1.0,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F1-01"
+        },
+        {
+          "arms": {
+            "acceptance_rate": {
+              "observed_denominator": 414,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F1-02"
+        },
+        {
+          "arms": {
+            "state_transition_rate": {
+              "observed_denominator": 472,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F2-01"
+        },
+        {
+          "arms": {
+            "event_recall": {
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "fpr": {
+              "observed_denominator": 9300,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "precision": {
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "recall": {
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F3-D2-01"
+        },
+        {
+          "arms": {
+            "event_recall": {
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "fpr": {
+              "observed_denominator": 49080,
+              "observed_numerator": 513,
+              "pooled_ratio": 0.010452322738386309,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "precision": {
+              "observed_denominator": 513,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "recall": {
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F3-RND-01"
+        }
+      ]
+    },
+    {
+      "cell": "A3-D3",
+      "estimands": [
+        {
+          "arms": {
+            "execution_rate": {
+              "observed_denominator": 472,
+              "observed_numerator": 414,
+              "pooled_ratio": 0.8771186440677966,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F0-01"
+        },
+        {
+          "arms": {
+            "prevention_rate": {
+              "observed_denominator": 414,
+              "observed_numerator": 414,
+              "pooled_ratio": 1.0,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F1-01"
+        },
+        {
+          "arms": {
+            "acceptance_rate": {
+              "observed_denominator": 414,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F1-02"
+        },
+        {
+          "arms": {
+            "state_transition_rate": {
+              "observed_denominator": 472,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F2-01"
+        },
+        {
+          "arms": {
+            "event_recall": {
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "fpr": {
+              "observed_denominator": 48666,
+              "observed_numerator": 89,
+              "pooled_ratio": 0.0018287921752352771,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "precision": {
+              "observed_denominator": 89,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "recall": {
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F3-D3-01"
+        },
+        {
+          "arms": {
+            "event_recall": {
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F3-D3-02"
+        },
+        {
+          "arms": {
+            "event_recall": {
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "fpr": {
+              "observed_denominator": 49080,
+              "observed_numerator": 513,
+              "pooled_ratio": 0.010452322738386309,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "precision": {
+              "observed_denominator": 513,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "recall": {
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F3-RND-01"
+        },
+        {
+          "arms": {
+            "secondary_reporting_rate": {
+              "observed_denominator": 414,
+              "observed_numerator": 414,
+              "pooled_ratio": 1.0,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F4-01"
+        },
+        {
+          "arms": {
+            "runs_with_a_missed_effect_event": {
+              "observed_denominator": 60,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-AUX-01"
+        }
+      ]
+    },
+    {
+      "cell": "A4-D0",
+      "estimands": [
+        {
+          "arms": {
+            "execution_rate": {
+              "observed_denominator": 749,
+              "observed_numerator": 749,
+              "pooled_ratio": 1.0,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F0-01"
+        }
+      ]
+    },
+    {
+      "cell": "A4-D1",
+      "estimands": [
+        {
+          "arms": {
+            "execution_rate": {
+              "observed_denominator": 749,
+              "observed_numerator": 749,
+              "pooled_ratio": 1.0,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F0-01"
+        }
+      ]
+    },
+    {
+      "cell": "A4-D2",
+      "estimands": [
+        {
+          "arms": {
+            "execution_rate": {
+              "observed_denominator": 749,
+              "observed_numerator": 749,
+              "pooled_ratio": 1.0,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F0-01"
+        },
+        {
+          "arms": {
+            "event_recall": {
+              "observed_denominator": 469,
+              "observed_numerator": 254,
+              "pooled_ratio": 0.5415778251599147,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "fpr": {
+              "observed_denominator": 8832,
+              "observed_numerator": 24,
+              "pooled_ratio": 0.002717391304347826,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "precision": {
+              "observed_denominator": 278,
+              "observed_numerator": 254,
+              "pooled_ratio": 0.9136690647482014,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "recall": {
+              "observed_denominator": 469,
+              "observed_numerator": 254,
+              "pooled_ratio": 0.5415778251599147,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F3-D2-01"
+        },
+        {
+          "arms": {
+            "event_recall": {
+              "observed_denominator": 500,
+              "observed_numerator": 7,
+              "pooled_ratio": 0.014,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "fpr": {
+              "observed_denominator": 48331,
+              "observed_numerator": 484,
+              "pooled_ratio": 0.010014276551281787,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "precision": {
+              "observed_denominator": 491,
+              "observed_numerator": 7,
+              "pooled_ratio": 0.014256619144602852,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "recall": {
+              "observed_denominator": 500,
+              "observed_numerator": 7,
+              "pooled_ratio": 0.014,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F3-RND-01"
+        },
+        {
+          "arms": {
+            "alarming_truth_positive_window_rate": {
+              "observed_denominator": 9301,
+              "observed_numerator": 254,
+              "pooled_ratio": 0.02730889151704118,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "truth_positive_window_recall": {
+              "observed_denominator": 469,
+              "observed_numerator": 254,
+              "pooled_ratio": 0.5415778251599147,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-A4-L3-01"
+        },
+        {
+          "arms": {
+            "alarm_covered_drop_rate": {
+              "observed_denominator": 248,
+              "observed_numerator": 209,
+              "pooled_ratio": 0.842741935483871,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-A4-L3-02"
+        }
+      ]
+    },
+    {
+      "cell": "A4-D3",
+      "estimands": [
+        {
+          "arms": {
+            "execution_rate": {
+              "observed_denominator": 749,
+              "observed_numerator": 749,
+              "pooled_ratio": 1.0,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F0-01"
+        },
+        {
+          "arms": {
+            "event_recall": {
+              "observed_denominator": 500,
+              "observed_numerator": 458,
+              "pooled_ratio": 0.916,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "fpr": {
+              "observed_denominator": 48331,
+              "observed_numerator": 96,
+              "pooled_ratio": 0.001986302787031098,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "precision": {
+              "observed_denominator": 554,
+              "observed_numerator": 458,
+              "pooled_ratio": 0.8267148014440433,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "recall": {
+              "observed_denominator": 500,
+              "observed_numerator": 458,
+              "pooled_ratio": 0.916,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F3-D3-01"
+        },
+        {
+          "arms": {
+            "event_recall": {
+              "observed_denominator": 500,
+              "observed_numerator": 458,
+              "pooled_ratio": 0.916,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F3-D3-02"
+        },
+        {
+          "arms": {
+            "event_recall": {
+              "observed_denominator": 500,
+              "observed_numerator": 7,
+              "pooled_ratio": 0.014,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "fpr": {
+              "observed_denominator": 48331,
+              "observed_numerator": 484,
+              "pooled_ratio": 0.010014276551281787,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "precision": {
+              "observed_denominator": 491,
+              "observed_numerator": 7,
+              "pooled_ratio": 0.014256619144602852,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "recall": {
+              "observed_denominator": 500,
+              "observed_numerator": 7,
+              "pooled_ratio": 0.014,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F3-RND-01"
+        },
+        {
+          "arms": {
+            "detection_rate": {
+              "observed_denominator": 500,
+              "observed_numerator": 458,
+              "pooled_ratio": 0.916,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-A4-L2-01"
+        },
+        {
+          "arms": {
+            "delay_detection_rate": {
+              "observed_denominator": 230,
+              "observed_numerator": 189,
+              "pooled_ratio": 0.8217391304347826,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "modification_detection_rate": {
+              "observed_denominator": 270,
+              "observed_numerator": 269,
+              "pooled_ratio": 0.9962962962962963,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-A4-L2-02"
+        },
+        {
+          "arms": {
+            "runs_with_a_missed_effect_event": {
+              "observed_denominator": 60,
+              "observed_numerator": 32,
+              "pooled_ratio": 0.5333333333333333,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-AUX-01"
+        }
+      ]
+    },
+    {
+      "cell": "B0-D0",
+      "estimands": []
+    },
+    {
+      "cell": "B0-D1",
+      "estimands": []
+    },
+    {
+      "cell": "B0-D2",
+      "estimands": [
+        {
+          "arms": {
+            "event_recall": {
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "fpr": {
+              "observed_denominator": 9300,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "precision": {
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "recall": {
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F3-D2-01"
+        },
+        {
+          "arms": {
+            "event_recall": {
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "fpr": {
+              "observed_denominator": 49080,
+              "observed_numerator": 455,
+              "pooled_ratio": 0.009270578647106764,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "precision": {
+              "observed_denominator": 455,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "recall": {
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F3-RND-01"
+        }
+      ]
+    },
+    {
+      "cell": "B0-D3",
+      "estimands": [
+        {
+          "arms": {
+            "event_recall": {
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "fpr": {
+              "observed_denominator": 49080,
+              "observed_numerator": 79,
+              "pooled_ratio": 0.0016096169519152403,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "precision": {
+              "observed_denominator": 79,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "recall": {
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F3-D3-01"
+        },
+        {
+          "arms": {
+            "event_recall": {
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F3-D3-02"
+        },
+        {
+          "arms": {
+            "event_recall": {
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "fpr": {
+              "observed_denominator": 49080,
+              "observed_numerator": 455,
+              "pooled_ratio": 0.009270578647106764,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "precision": {
+              "observed_denominator": 455,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            },
+            "recall": {
+              "observed_denominator": 0,
+              "observed_numerator": 0,
+              "pooled_ratio": null,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-F3-RND-01"
+        },
+        {
+          "arms": {
+            "runs_with_a_missed_effect_event": {
+              "observed_denominator": 60,
+              "observed_numerator": 0,
+              "pooled_ratio": 0.0,
+              "uncertainty": null,
+              "uncertainty_policy": "no interval is published for a pooled ratio"
+            }
+          },
+          "estimand_id": "EST-AUX-01"
+        }
+      ]
+    }
+  ],
+  "policy": "pooled ratios never carry an uncertainty interval",
+  "schema": "lifesat-corrected-pooled/v1"
+}

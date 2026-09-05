@@ -1,0 +1,15 @@
+{
+    "_run_one_target.py": "e98fcb8dce24fd6cc511ca2c2b089bdbc0309cb2d320af2c6e0d907aef49f457",
+    "contract_oracle.py": "d88ce8994a8ea380784f9ac6c2ed5b1c15ac2fb55221f023ca22aa53b72872df",
+    "red_common.py": "4b5b30d8bae9d238861ff342b1f4100f5f58088efefd9321f4215b2b36fc3c92",
+    "reference_scorer.py": "f8e6ecbe906c73da0f48f642d930a046ed624bad11583cbfa41c0547f824937f",
+    "run_red_tests.py": "72b56c146b483e4ac864d7f3b38a9f9243ba5b9151e697e499d1cce0d53527dc",
+    "test_red_01_a3_identity.py": "558ba232b378ed2e38dd2b9462a6378c62eb644c73010066e9accc52534a66ad",
+    "test_red_02_families.py": "d17c906a5cec551a5bc1443cea874d0206591923c5fcbb59e463cc3d762e0c7f",
+    "test_red_03_effect_window.py": "cd9cc74e02a4013c14cfee13e22962c64d05848f3818e0452f54fe7120d70633",
+    "test_red_04_d2_native_unit.py": "79baa93cc28708b653742e0059d77cbb939218ccf0bd80644acde859f5ad7e83",
+    "test_red_05_a4_accounting.py": "901b014854baa5a89351a34dc592a5e8957053bde90a89504fcf60246a111e85",
+    "test_red_06_f4_evidence.py": "d29e1bf3a1cb84c5a4f43fd87cb8a31b44e71afb6ba476c19256553ec10ff58b",
+    "test_red_08_aggregation.py": "924e314c75e479e1bf192456a4d29163edaa7cc8800793d8bf71f171b65ad044",
+    "test_red_09_output_schema.py": "6c374a563835c0405f7cc39d95ecdcdbc4c5327e9fe4043000be0cf6006b2791"
+}

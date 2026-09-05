@@ -1,0 +1,26 @@
+{
+  "expected_manifest_sha256": "c210b9131019731af57d948538c6f0c82faceddce01992e46b61104c690297cf",
+  "expected_run_count": 1200,
+  "historical_contract_json_sha256": "913848492f82502f5a28243534eaa3e2e19c3c023ebd8b49df8027b8ccf54e95",
+  "historical_package_digests": {
+    "CORRECTED_RESULTS.json": "b9eea2345f435d73039f139e762a668589e0a341af794e87b25146c848eaee84",
+    "CORRECTED_RESULTS.sha256": "449409a61e7f2a519e56722539dc9d1ed3be0f3b8508b3f84019519b7bbf8559",
+    "INPUT_MANIFEST.json": "40c377f53eae2757af52134235e985a9fd616beb668fd428d21c67272d69941a",
+    "POOLED_RESULTS.json": "ceedd68a59d2f9d87046b46718054932c91b7adf0a623b93aa41129138e285b7",
+    "RUN_LEVEL_RESULTS.json": "f506e405b30216f632a59180c4a72d935d98bf5f118fa6bf464150f13765c3e5",
+    "VALIDATION.json": "56aa1d34a99ead26750e25f4a8232f823db80797ce9a8980f4291f81346010f0"
+  },
+  "historical_seal_sha256": "5c575f3cee35000b4da45c63312ea166ed632b6a4efd7e3fc85efe707ea8d813",
+  "manifest_path": "PHASE4_MANIFEST.json",
+  "old_raw_tree_sha256": "09893fc41cd5fab122b2d956bda46664d60d3b9f33aa68f95d4d41b408711c16",
+  "phase4_contract_sha256": "c64fd325e390f237e509cedc9f0d7e5d0f5b5bc7cad9a1d9c09c2e30ee0be42a",
+  "pre_repair_scorer_sha256": "de16e29c73b7d2dcac87a114d755e130874eb892215be0947134afcf6f61a4cc",
+  "repaired_scorer_sha256": "8eaa4663270190ad907e2d5e5fc8ea7b420bd4e1295681517135090cca65c677",
+  "rerun_tree_sha256": "f7e1d5fe90340d8bef2a0a512322d6b6017b39c56c1cec20a9531a0a01685b63",
+  "rule": "The validator receives expected_manifest_sha256 from HERE and never from the manifest under test. MANDATORY: absent, unreadable, malformed, wrongly typed, wrongly bound or wrongly pinned, the validation is RED and stops. Pin this file from outside with --expect-phase4-settlement-sha256. The successor set is a SINGLE member and does not replace the historical corrected package, which stays byte-exact as the rollback target.",
+  "schema": "lifesat-v8-phase4-settlement/v1",
+  "successor_canonical_paths": [
+    "successor/PHASE4_SUCCESSOR_RESULT_PACKAGE.json"
+  ],
+  "wrapper_executable_inventory_sha256": "b2c7972050276e19fa0f536ea102f7971d957110407dbc997eb745214446dcc6"
+}
